@@ -201,17 +201,18 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1rem;
     }
-    .pricing-build_card {
+    .build_card.pricing-build_card {
       max-width: none;
       width: 100%;
       border: 0.25px solid var(--border-color--border-primary);
       border-radius: 1rem;
+      justify-content: flex-start;
       align-items: flex-start;
       text-align: left;
       gap: 1rem;
       box-shadow: 6px 6px rgba(0, 0, 0, 0.08);
     }
-    .pricing-build_card.is-featured {
+    .build_card.pricing-build_card.is-featured {
       background-color: var(--base-color-brand--peach-accent);
     }
     .pricing-build_price {
