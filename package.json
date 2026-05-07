@@ -1,0 +1,14 @@
+{
+  "name": "frameworks-studio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tinacms dev -c \"vite\"",
+    "build": "tinacms build && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^2.2.5",
+    "tinacms": "^3.7.5",
+    "vite": "^5.0.0"
+  }
+}

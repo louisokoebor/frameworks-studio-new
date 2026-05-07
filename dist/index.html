@@ -1,0 +1,855 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Apr 21 2026 07:16:46 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="69c1c7e830e725df979bd2c3" data-wf-site="69c1c7e830e725df979bd2ca">
+<head>
+  <meta charset="utf-8">
+  <title>Frameworks Studio | Web Design &amp; Development Agency</title>
+  <meta content="Modern design studio crafting strategic, high-performing websites and mobile apps. Custom design, development, and branding for startups and growing businesses." name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:300,400,500,600,700"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="/assets/favicon-CedPlSKr.png" rel="shortcut icon" type="image/x-icon">
+  <link href="/assets/webclip-BS813L4_.png" rel="apple-touch-icon">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Frameworks Studio",
+  "url": "/",
+  "description": "A digital design & development studio crafting purposeful, high-performing experiences.",
+  "email": "info@frameworksstudio.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Manchester",
+    "addressCountry": "UK"
+  },
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://cdn.prod.website-files.com/693376375e1d458afe602106/6933a0b018820fc92586500c_hero_image.png"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "1",
+    "bestRating": "5"
+  },
+  "review": {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": "Sarah Rock",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Hank mobile"
+      }
+    },
+    "reviewBody": "Working with Frameworks Studio was one of the best decisions we made for our brand. The team translated our ideas into a clean, modern website that communicates exactly who we are.",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  },
+  "areaServed": "UK"
+}
+</script>
+  <style>
+  /* Make sure the outer wrapper hides overflow */
+  .Image-Wrapper {
+    overflow: hidden;
+  }
+  /* Track that moves left continuously */
+  .show-reel-image-slider {
+    display: flex;
+    animation: showreel-scroll 40s linear infinite;
+  }
+  /* Slides should not shrink */
+  .show-reel-image-wrapper {
+    flex: 0 0 auto;
+  }
+  @keyframes showreel-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* Move left by half the total width (because we duplicated the set) */
+      transform: translateX(-50%);
+    }
+  }
+</style>
+  <link rel="stylesheet" crossorigin href="/assets/index-BDkPtfA5.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+</style>
+    </div>
+    <div class="nav_fixed">
+      <div data-animation="default" class="nav_component w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="396176c6-906a-9f74-c6d0-8a4663dfdea9" role="banner" data-duration="400" data-doc-height="1">
+        <div class="padding-global">
+          <div class="brix---container-default container-large w-container">
+            <div class="brix---header-content-wrapper">
+              <a href="index.html" aria-current="page" class="brix---header-logo-link w-nav-brand w--current">
+                <div class="nav_logo-svg w-embed"><svg width="100%" height="100%" viewbox="0 0 138 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="3.17584" x2="25.8086" y2="3.17584" stroke="black" stroke-width="0.197634"></line>
+                    <line y1="24.6832" x2="25.8086" y2="24.6832" stroke="black" stroke-width="0.197634"></line>
+                    <line x1="2.24921" y1="0.17749" x2="2.24921" y2="27.8787" stroke="black" stroke-width="0.197634"></line>
+                    <line x1="23.757" y1="0.17749" x2="23.757" y2="27.8787" stroke="black" stroke-width="0.197634"></line>
+                    <path d="M28.6834 19.9026C28.8753 19.8226 28.9992 19.7871 29.1132 19.6732C29.2271 19.5593 29.2912 19.4048 29.2912 19.2438C29.2912 19.0827 29.2271 18.9282 29.1132 18.8143C28.9992 18.7004 28.9607 18.6322 28.6834 18.5509C28.4061 18.4695 14.9237 13.9117 14.9237 13.9117C14.7085 13.8381 14.477 13.8262 14.2555 13.8776C14.034 13.9289 13.8313 14.0413 13.6705 14.2019C13.5097 14.3626 13.3972 14.5652 13.3458 14.7865C13.2945 15.0079 13.3063 15.2392 13.38 15.4542C13.38 15.4542 18.0457 29.031 18.1027 29.2156C18.1597 29.4002 18.2332 29.5311 18.3472 29.645C18.4611 29.759 18.6157 29.8229 18.7769 29.8229C18.9381 29.8229 19.0927 29.759 19.2067 29.645C19.3206 29.5311 19.3467 29.4666 19.4321 29.2156C19.5176 28.9647 21.8157 22.341 21.8157 22.341C21.8157 22.341 28.4916 19.9826 28.6834 19.9026Z" fill="black" stroke="black" stroke-width="0.0860285" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.3592 19.7405C28.5511 19.6605 28.675 19.625 28.789 19.5111C28.9029 19.3972 28.967 19.2427 28.967 19.0817C28.967 18.9206 28.9029 18.7661 28.789 18.6522C28.675 18.5383 28.6365 18.4701 28.3592 18.3888C28.0818 18.3074 14.5995 13.7496 14.5995 13.7496C14.3843 13.676 14.1528 13.6641 13.9313 13.7155C13.7098 13.7668 13.5071 13.8791 13.3463 14.0398C13.1854 14.2005 13.073 14.4031 13.0216 14.6244C12.9703 14.8458 12.9821 15.0771 13.0558 15.2921C13.0558 15.2921 17.7214 28.8689 17.7784 29.0535C17.8354 29.2381 17.909 29.369 18.0229 29.4829C18.1369 29.5968 18.2915 29.6608 18.4527 29.6608C18.6139 29.6608 18.7685 29.5968 18.8824 29.4829C18.9964 29.369 19.0225 29.3045 19.1079 29.0535C19.1934 28.8026 21.4915 22.1789 21.4915 22.1789C21.4915 22.1789 28.1674 19.8205 28.3592 19.7405Z" fill="#373737" stroke="black" stroke-width="0.0860285" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M30.9169 14V1.75812H38.0002V2.76234H32.0347V7.37098H37.4443V8.37519H32.0347V14H30.9169ZM39.7698 14V1.75812H43.7209C44.5896 1.75812 45.3149 1.91553 45.8967 2.23034C46.4825 2.54117 46.9228 2.97354 47.2177 3.52746C47.5166 4.07738 47.666 4.70901 47.666 5.42232C47.666 6.13563 47.5166 6.76526 47.2177 7.3112C46.9228 7.85714 46.4845 8.28354 45.9027 8.59038C45.3209 8.89723 44.5996 9.05065 43.7388 9.05065H40.3735V8.0285H43.7089C44.3465 8.0285 44.8765 7.9229 45.2989 7.71169C45.7253 7.50049 46.0421 7.19962 46.2494 6.80909C46.4606 6.41856 46.5662 5.95631 46.5662 5.42232C46.5662 4.88833 46.4606 4.42209 46.2494 4.02359C46.0382 3.6211 45.7194 3.31028 45.293 3.0911C44.8706 2.87193 44.3366 2.76234 43.691 2.76234H40.8876V14H39.7698ZM45.1674 8.47681L48.1801 14H46.889L43.9062 8.47681H45.1674ZM49.3967 14H48.2252L52.6784 1.75812H53.8739L58.3271 14H57.1555L53.318 3.21065H53.2343L49.3967 14ZM50.2396 9.30768H56.3127V10.3119H50.2396V9.30768ZM59.4152 1.75812H60.7064L65.1476 12.4219H65.2552L69.6965 1.75812H70.9876V14H69.9356V4.11923H69.84L65.7095 14H64.6934L60.5629 4.11923H60.4673V14H59.4152V1.75812ZM73.2324 14V1.75812H80.3337V2.76234H74.3502V7.37098H79.9571V8.37519H74.3502V12.9958H80.4532V14H73.2324ZM84.3448 14L80.9914 1.75812H82.1271L84.9007 12.2845H84.9963L87.7699 1.75812H89.061L91.8346 12.2845H91.9302L94.7038 1.75812H95.8455L92.4921 14H91.2966L88.4573 3.61712H88.3796L85.5403 14H84.3448ZM106.317 7.87906C106.317 9.15426 106.09 10.2641 105.635 11.2085C105.181 12.149 104.555 12.8782 103.758 13.3963C102.965 13.9103 102.053 14.1674 101.021 14.1674C99.9886 14.1674 99.074 13.9103 98.277 13.3963C97.484 12.8782 96.8604 12.149 96.4061 11.2085C95.9558 10.2641 95.7306 9.15426 95.7306 7.87906C95.7306 6.60387 95.9558 5.49604 96.4061 4.55558C96.8604 3.61114 97.486 2.88189 98.283 2.36783C99.08 1.84978 99.9926 1.59075 101.021 1.59075C102.053 1.59075 102.965 1.84978 103.758 2.36783C104.555 2.88189 105.181 3.61114 105.635 4.55558C106.09 5.49604 106.317 6.60387 106.317 7.87906ZM105.229 7.87906C105.229 6.78319 105.046 5.84473 104.679 5.06367C104.312 4.27863 103.812 3.67889 103.179 3.26445C102.545 2.85001 101.826 2.64279 101.021 2.64279C100.22 2.64279 99.5024 2.85001 98.8688 3.26445C98.2352 3.67889 97.7331 4.27663 97.3625 5.05769C96.9959 5.83875 96.8126 6.77921 96.8126 7.87906C96.8126 8.97493 96.9959 9.9134 97.3625 10.6945C97.7291 11.4755 98.2292 12.0753 98.8628 12.4937C99.4964 12.9081 100.216 13.1153 101.021 13.1153C101.826 13.1153 102.545 12.9081 103.179 12.4937C103.816 12.0792 104.318 11.4815 104.685 10.7004C105.052 9.91539 105.233 8.97493 105.229 7.87906ZM108.01 14V1.75812H111.961C112.83 1.75812 113.555 1.91553 114.137 2.23034C114.723 2.54117 115.163 2.97354 115.458 3.52746C115.757 4.07738 115.906 4.70901 115.906 5.42232C115.906 6.13563 115.757 6.76526 115.458 7.3112C115.163 7.85714 114.725 8.28354 114.143 8.59038C113.561 8.89723 112.84 9.05065 111.979 9.05065H108.614V8.0285H111.949C112.587 8.0285 113.117 7.9229 113.539 7.71169C113.966 7.50049 114.282 7.19962 114.49 6.80909C114.701 6.41856 114.806 5.95631 114.806 5.42232C114.806 4.88833 114.701 4.42209 114.49 4.02359C114.278 3.6211 113.96 3.31028 113.533 3.0911C113.111 2.87193 112.577 2.76234 111.931 2.76234H109.128V14H108.01ZM113.408 8.47681L116.42 14H115.129L112.147 8.47681H113.408ZM117.619 14V1.75812H118.737V8.35128H118.845L124.822 1.75812H126.292L121.062 7.4188L126.269 14H124.906L120.369 8.19587L118.737 10.025V14H117.619ZM134.04 4.81859C133.972 4.13716 133.671 3.5952 133.137 3.19272C132.603 2.79023 131.931 2.58899 131.123 2.58899C130.553 2.58899 130.051 2.68662 129.616 2.88189C129.186 3.07715 128.847 3.34813 128.6 3.69483C128.357 4.03754 128.235 4.42806 128.235 4.86641C128.235 5.1892 128.305 5.47213 128.445 5.71521C128.584 5.9583 128.771 6.16751 129.006 6.34285C129.246 6.5142 129.509 6.66165 129.796 6.78518C130.086 6.90872 130.379 7.01233 130.674 7.09601L131.965 7.46662C132.356 7.57421 132.746 7.71169 133.137 7.87906C133.527 8.04643 133.884 8.25764 134.207 8.51267C134.534 8.76373 134.795 9.07256 134.99 9.43918C135.189 9.80182 135.289 10.2382 135.289 10.7483C135.289 11.4018 135.119 11.9896 134.781 12.5116C134.442 13.0336 133.956 13.4481 133.322 13.7549C132.689 14.0578 131.929 14.2092 131.045 14.2092C130.212 14.2092 129.489 14.0717 128.875 13.7968C128.261 13.5178 127.779 13.1333 127.428 12.6431C127.078 12.153 126.88 11.5851 126.837 10.9395H127.984C128.024 11.4217 128.184 11.8302 128.463 12.1649C128.741 12.4997 129.104 12.7547 129.55 12.93C129.997 13.1014 130.495 13.1871 131.045 13.1871C131.655 13.1871 132.196 13.0854 132.671 12.8822C133.149 12.675 133.523 12.3881 133.794 12.0215C134.069 11.6509 134.207 11.2205 134.207 10.7303C134.207 10.3159 134.099 9.96919 133.884 9.69024C133.669 9.4073 133.368 9.1702 132.982 8.97892C132.599 8.78764 132.155 8.61828 131.649 8.47083L130.184 8.04045C129.224 7.75353 128.478 7.35703 127.948 6.85093C127.418 6.34484 127.153 5.69927 127.153 4.91423C127.153 4.25671 127.329 3.67889 127.679 3.18076C128.034 2.67865 128.512 2.28813 129.114 2.00918C129.72 1.72624 130.399 1.58478 131.152 1.58478C131.914 1.58478 132.587 1.72425 133.173 2.0032C133.759 2.28215 134.223 2.6667 134.566 3.15685C134.912 3.64302 135.098 4.19693 135.121 4.81859H134.04Z" fill="black"></path>
+                    <path d="M37.5638 19.8186C37.4961 19.1372 37.1952 18.5952 36.6612 18.1927C36.1273 17.7902 35.4558 17.589 34.6468 17.589C34.077 17.589 33.5749 17.6866 33.1405 17.8819C32.7101 18.0772 32.3714 18.3481 32.1243 18.6948C31.8813 19.0375 31.7597 19.4281 31.7597 19.8664C31.7597 20.1892 31.8295 20.4721 31.9689 20.7152C32.1084 20.9583 32.2957 21.1675 32.5308 21.3428C32.7699 21.5142 33.0329 21.6616 33.3198 21.7852C33.6107 21.9087 33.9036 22.0123 34.1985 22.096L35.4897 22.4666C35.8802 22.5742 36.2707 22.7117 36.6612 22.8791C37.0518 23.0464 37.4084 23.2576 37.7312 23.5127C38.058 23.7637 38.319 24.0726 38.5143 24.4392C38.7135 24.8018 38.8131 25.2382 38.8131 25.7483C38.8131 26.4018 38.6438 26.9896 38.3051 27.5116C37.9663 28.0336 37.4802 28.4481 36.8465 28.7549C36.2129 29.0578 35.4538 29.2092 34.5691 29.2092C33.7363 29.2092 33.013 29.0717 32.3993 28.7968C31.7856 28.5178 31.3034 28.1333 30.9528 27.6431C30.6021 27.153 30.4048 26.5851 30.361 25.9395H31.5087C31.5485 26.4217 31.7079 26.8302 31.9869 27.1649C32.2658 27.4997 32.6284 27.7547 33.0748 27.93C33.5211 28.1014 34.0192 28.1871 34.5691 28.1871C35.1788 28.1871 35.7208 28.0854 36.195 27.8822C36.6732 27.675 37.0478 27.3881 37.3188 27.0215C37.5937 26.6509 37.7312 26.2205 37.7312 25.7303C37.7312 25.3159 37.6236 24.9692 37.4084 24.6902C37.1932 24.4073 36.8924 24.1702 36.5058 23.9789C36.1233 23.7876 35.6789 23.6183 35.1729 23.4708L33.7084 23.0405C32.748 22.7535 32.0028 22.357 31.4728 21.8509C30.9428 21.3448 30.6778 20.6993 30.6778 19.9142C30.6778 19.2567 30.8531 18.6789 31.2038 18.1808C31.5585 17.6787 32.0367 17.2881 32.6384 17.0092C33.2441 16.7262 33.9236 16.5848 34.6767 16.5848C35.4379 16.5848 36.1113 16.7243 36.6971 17.0032C37.2829 17.2821 37.7472 17.6667 38.0899 18.1569C38.4366 18.643 38.6219 19.1969 38.6458 19.8186H37.5638ZM39.7518 17.7623V16.7581H48.6284V17.7623H44.749V29H43.6312V17.7623H39.7518ZM58.2942 16.7581H59.412V24.8636C59.412 25.6964 59.2167 26.4416 58.8262 27.0992C58.4357 27.7527 57.8917 28.2688 57.1944 28.6473C56.501 29.0219 55.694 29.2092 54.7735 29.2092C53.8569 29.2092 53.05 29.0199 52.3526 28.6414C51.6552 28.2628 51.1113 27.7467 50.7208 27.0932C50.3302 26.4396 50.135 25.6964 50.135 24.8636V16.7581H51.2528V24.7859C51.2528 25.4354 51.3982 26.0152 51.6891 26.5253C51.98 27.0314 52.3885 27.4299 52.9145 27.7208C53.4445 28.0117 54.0642 28.1572 54.7735 28.1572C55.4828 28.1572 56.1025 28.0117 56.6325 27.7208C57.1625 27.4299 57.5709 27.0314 57.8579 26.5253C58.1488 26.0152 58.2942 25.4354 58.2942 24.7859V16.7581ZM65.2373 29H61.6508V16.7581H65.4525C66.6201 16.7581 67.6183 17.0012 68.4472 17.4874C69.2801 17.9735 69.9177 18.6709 70.36 19.5795C70.8023 20.4881 71.0235 21.578 71.0235 22.8492C71.0235 24.1323 70.7964 25.2342 70.3421 26.1547C69.8918 27.0713 69.2342 27.7746 68.3695 28.2648C67.5087 28.7549 66.4647 29 65.2373 29ZM62.7686 27.9958H65.1715C66.2236 27.9958 67.1043 27.7886 67.8136 27.3741C68.5229 26.9597 69.0549 26.3679 69.4096 25.5988C69.7642 24.8297 69.9416 23.9132 69.9416 22.8492C69.9376 21.7932 69.7623 20.8846 69.4156 20.1234C69.0729 19.3623 68.5628 18.7785 67.8853 18.372C67.2119 17.9656 66.379 17.7623 65.3867 17.7623H62.7686V27.9958ZM73.8406 16.7581V29H72.7228V16.7581H73.8406ZM86.1216 22.8791C86.1216 24.1543 85.8945 25.2641 85.4402 26.2085C84.9859 27.149 84.3602 27.8782 83.5632 28.3963C82.7702 28.9103 81.8577 29.1674 80.8255 29.1674C79.7934 29.1674 78.8789 28.9103 78.0819 28.3963C77.2889 27.8782 76.6652 27.149 76.2109 26.2085C75.7606 25.2641 75.5355 24.1543 75.5355 22.8791C75.5355 21.6039 75.7606 20.496 76.2109 19.5556C76.6652 18.6111 77.2909 17.8819 78.0879 17.3678C78.8849 16.8498 79.7974 16.5908 80.8255 16.5908C81.8577 16.5908 82.7702 16.8498 83.5632 17.3678C84.3602 17.8819 84.9859 18.6111 85.4402 19.5556C85.8945 20.496 86.1216 21.6039 86.1216 22.8791ZM85.0337 22.8791C85.0337 21.7832 84.8504 20.8447 84.4838 20.0637C84.1171 19.2786 83.617 18.6789 82.9834 18.2644C82.3498 17.85 81.6305 17.6428 80.8255 17.6428C80.0246 17.6428 79.3073 17.85 78.6737 18.2644C78.04 18.6789 77.5379 19.2766 77.1673 20.0577C76.8007 20.8387 76.6174 21.7792 76.6174 22.8791C76.6174 23.9749 76.8007 24.9134 77.1673 25.6945C77.534 26.4755 78.0341 27.0753 78.6677 27.4937C79.3013 27.9081 80.0206 28.1153 80.8255 28.1153C81.6305 28.1153 82.3498 27.9081 82.9834 27.4937C83.621 27.0792 84.1231 26.4815 84.4897 25.7004C84.8564 24.9154 85.0377 23.9749 85.0337 22.8791Z" fill="#373737"></path>
+                  </svg></div>
+              </a>
+              <div class="header-middle-col">
+                <nav role="navigation" class="brix---header-menu-wrapper w-nav-menu">
+                  <ul role="list" class="brix---header-nav-menu-list">
+                    <li data-w-id="b4b09097-62dc-3d2b-7ca3-e9322f3b3544" class="brix---header-nav-list-item-middle desktop">
+                      <div class="dropdown-wrap dropdown-parent">
+                        <a href="services/untitled/website-management-services-frameworks-studio.html" class="brix---header-nav-link dropdown-parent w-nav-link">Site Management</a>
+                        <div class="nav-dropdown-icon dropdown-arrow w-embed"><svg width="100%
+" height="100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4701 5.47132L8.47006 11.4713C8.226 11.7154 7.84 11.7305 7.57813 11.5169L7.52733 11.4713L1.52734 5.47132L2.47005 4.52861L7.99866 10.0573L13.5273 4.52861L14.4701 5.47132Z" fill="#373737"></path>
+                          </svg></div>
+                      </div>
+                      <div class="nav-dropdown background-color-primary">
+                        <a href="services/untitled/webflow-website-management-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABHJJREFUeAHt3G9S00AYBvB3Y53RfuII9QTiCaz8Ub6JJ7CeQD0BcgLlBJQb1G8FaY0noJxAjtABhmFos+u+kcxAaSEhyb7b5vl9oWJmon3y7G7DBiIAAAAAAAAAAAAAAAAAAPCEere2+tsY0yQHDnp9lfbYov9dilS43+u9SXv8u9XVXUOmRQ7ZN+ckIA9trK01XV0kU8+/sdFwHQYzhvZq5CH7ZmyRIDMaOT8/t0Np3fauIVVthzK03Q1D/4asqraj2++3+bVXgVS5HclrrwKxYXwkQdLtYN4EInV1Sp//ZjuYN4FIXJ23zj8e7ZJjk+1gXgQi3g6huWuyHcyLQMTbIbCym9YOJh6IdDvWV1ZavrSDiQci3Q6lyJt2MNFAfGiH/dIgx2a1g4kGgnbcJRYI2jGdWCBox3QigaAds4kEgnbM5jyQyrZDBZ/SHOc8EMl2bG5uLsm0Q4Xdw8MwzbFOAxFth6Kli/PTzyTSDvXg3JFw+jN1Pbr6S0Ls7ZFl+2WZHMvSDublrpNFkqUdDIGUyK6s2lnawRBIiVSkM7WD1bSh40Cl3lCYmeSmBUlxO8LwhDIqLwmS2Y7piyDSLx4TSCmrLF7vX5yf/b5e2VTOY9vBCp9D1tfXly/OTo+oomGwx8wdiUIDebuysqV0dEQCH758kacdrJAhi3dtaDLfq9yKRJ52sFyBXG+f2dJGNwlyt4M9KhAEMV3edrDUgcQhEL03RrdsEEsEtxTRDjYzkI1ms0FPg6bR9NoGsYkQ7ldEO1gtfuNrtQYp3TAmeGkn5ob9fL2seaWkaZ4M7Z3VjsiG6YLawWqm9mTX8Fxg+I/zlcBN9u7PtjEk8jhDUe1gi3Fz0dC21jTkZpNjRbaDLUAgau+g3/8m8aPZ+OwFtoPNdyBKDepR9EVq4wJdP6hJBZrbQHhbTX0cvemE4VBqW0+gdZsK5uVz6g+Jn+mOdByGVDv4If/9gtvB5i6QJIxkqJBqhyqhHWy+hiw7ZzyP9KskDMl2dEtoB5unQDrJnJF8Y5HmjsRcDFn2E/jOfq/35eb3xFZWinbKagfzvSG8gvo6GQaTasf+Yf8HlcjbhvB/Xkf6w0EYDib/zufHCfLysiE8RPHk/WtKGLw/2OfHCfLyrSF2wlaf7BDVmXWAHl/xDcQGOeaiHcybhnAr6pF+cXBPGNwOe7uiRY65agcTb4hSKrRhbKfZA7vo7WCSgQwDQ1+7vV47zcHcDj26+kaOuWwHkwhkyGv5+lj/uPkh7yFST165bAdzFghfaXb833luP+VmCYJdt6NFjrluBys9kCxzxCxVaQcrJRC+soyivazD0jRVagcrLJB4SCL6qVTQydOGSVVqB8sTiL3PpAakzU+tdTjtFkdeVWsHSx1IPAwRDeyV80cFweDZeDzIOxw9pGrtYHcC+T/+q6EyZmBXRcf29Uk9isKy3/xJVWwHq/EKKH50dzw+eWaHIddv/CzR5eXSk6fpfh1Foecd6cKHXgAAAAAAAAAAAAAAAACAdP4BGjmGQHIO9hkAAAAASUVORK5CYII=" loading="lazy" alt="" class="nav-item_icon">
+                          <p class="text-size-small">Webflow</p>
+                        </a>
+                        <a href="services/untitled/wordpress-website-management-maintenance-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="/assets/Wordpress-Logo-1-f-rxuyJ1.png" loading="lazy" alt="" class="nav-item_icon">
+                          <p class="text-size-small">Wordpress</p>
+                        </a>
+                        <a href="services/untitled/shopify-store-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,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" loading="lazy" alt="" class="nav-item_icon">
+                          <p class="text-size-small">Shopify</p>
+                        </a>
+                        <a href="services/untitled/framer-website-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAvtJREFUeAHt3ctxE0EUheHbEgVbhSAyIARZKtsUKxEBKUAEOANCgAwQGwpw2Z4McAgKwVsojYY5MpSxrcfM9Ov29PkXXrv0lSVNP3yNWDaZTEbPhoOflchY2PLHxeVzsWgglhVFcWPK9ZGpfxlh1lmDoG9FsSSKm5yAIKK4yRkIIop9TkEQUexyDoKI0j0vIIgo3fIGgojSPq8giCjt8g6CiNK8ICCIKM0KBoKIcrigIIgo+wsOgoiyuyggiCjbiwaCiPK4qCCIKPeLDoKIcpcKEESU29SAIKIoA0G5o6gDQTmjqARB/1BEzLVklFoQBJTfZZkVimoQhHNfOaGoB0E5oSQBgnJBSQYE5YCSFAjqO0pyIKjPKEmCoL6iJAuC+ojyRCw7nU0/1i/IWCJW1WssZi3vzGAQFaZcrW7EMmuQSmRS/xxLzKoNynhozNHX8/Ok/1qSfst60Gi1Lq9eHR+/kITrEwjaoJzMZnNJtL6BoFH9Bvb55Wz2RhKsjyCb1lJ9ShGltyAoRZReg6DUUHoPglJCyQIEpYKSDQhKASUrEKQdJTsQpBklSxCkFSVbEKQRJWsQpA0lexAElNPp9K0oiCB/q/dTPpxMp+8lcgT5PyNnsVEI8rDIKATZVkQUguwqEgpB9hUBhSCHCoxCkCYFRCFI0wKhEKRNAVAI0jbPKATpkkcUgnTNEwpBbPKAQhDbHKMQxEUOUazvhxhjllUV+X6IwQ2q6ovEzIiZz+ejxWJhdWnHGuTXqnz9dDi8ql+QaPcyTFVdf7+4PJMe5GTkUW7/j8RnTj5DiOIuZx/qRHGT029ZRLHP+ddeotjl5TmEKN3z9mBIlG55fVInSvu8L50QpV1B1rKI0rxgi4tEaVbQ1V6iHC748jtR9hdlP4Qou4u2QUWU7UXdMSTK46Jv4RLlfir21Ilyl5pDDkS5TdWpE6IoPAaUO4rKc1k5o6g9KJcriuqTizmicOSRsjjySFkceaQsjjxSFkceKYsjj5TFkUfK4sgjZf0BRrM64mwFqZQAAAAASUVORK5CYII=" loading="lazy" alt="" class="nav-item_icon">
+                          <p class="text-size-small">Framer</p>
+                        </a>
+                      </div>
+                    </li>
+                    <li data-w-id="e7c21ceb-ba1d-18b1-d70b-0e3dc12d9cb0" class="brix---header-nav-list-item-middle mobile">
+                      <div class="dropdown-wrap site-management-toggle">
+                        <a href="services/untitled/website-management-services-frameworks-studio.html" class="brix---header-nav-link dropdown-parent w-nav-link">Site Management</a>
+                        <div class="nav-dropdown-icon dropdown-arrow-mobile w-embed"><svg width="100%
+" height="100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4701 5.47132L8.47006 11.4713C8.226 11.7154 7.84 11.7305 7.57813 11.5169L7.52733 11.4713L1.52734 5.47132L2.47005 4.52861L7.99866 10.0573L13.5273 4.52861L14.4701 5.47132Z" fill="#373737"></path>
+                          </svg></div>
+                      </div>
+                      <div class="nav-dropdown--mobile dropdown-mobile">
+                        <a href="services/untitled/webflow-website-management-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABHJJREFUeAHt3G9S00AYBvB3Y53RfuII9QTiCaz8Ub6JJ7CeQD0BcgLlBJQb1G8FaY0noJxAjtABhmFos+u+kcxAaSEhyb7b5vl9oWJmon3y7G7DBiIAAAAAAAAAAAAAAAAAAPCEere2+tsY0yQHDnp9lfbYov9dilS43+u9SXv8u9XVXUOmRQ7ZN+ckIA9trK01XV0kU8+/sdFwHQYzhvZq5CH7ZmyRIDMaOT8/t0Np3fauIVVthzK03Q1D/4asqraj2++3+bVXgVS5HclrrwKxYXwkQdLtYN4EInV1Sp//ZjuYN4FIXJ23zj8e7ZJjk+1gXgQi3g6huWuyHcyLQMTbIbCym9YOJh6IdDvWV1ZavrSDiQci3Q6lyJt2MNFAfGiH/dIgx2a1g4kGgnbcJRYI2jGdWCBox3QigaAds4kEgnbM5jyQyrZDBZ/SHOc8EMl2bG5uLsm0Q4Xdw8MwzbFOAxFth6Kli/PTzyTSDvXg3JFw+jN1Pbr6S0Ls7ZFl+2WZHMvSDublrpNFkqUdDIGUyK6s2lnawRBIiVSkM7WD1bSh40Cl3lCYmeSmBUlxO8LwhDIqLwmS2Y7piyDSLx4TSCmrLF7vX5yf/b5e2VTOY9vBCp9D1tfXly/OTo+oomGwx8wdiUIDebuysqV0dEQCH758kacdrJAhi3dtaDLfq9yKRJ52sFyBXG+f2dJGNwlyt4M9KhAEMV3edrDUgcQhEL03RrdsEEsEtxTRDjYzkI1ms0FPg6bR9NoGsYkQ7ldEO1gtfuNrtQYp3TAmeGkn5ob9fL2seaWkaZ4M7Z3VjsiG6YLawWqm9mTX8Fxg+I/zlcBN9u7PtjEk8jhDUe1gi3Fz0dC21jTkZpNjRbaDLUAgau+g3/8m8aPZ+OwFtoPNdyBKDepR9EVq4wJdP6hJBZrbQHhbTX0cvemE4VBqW0+gdZsK5uVz6g+Jn+mOdByGVDv4If/9gtvB5i6QJIxkqJBqhyqhHWy+hiw7ZzyP9KskDMl2dEtoB5unQDrJnJF8Y5HmjsRcDFn2E/jOfq/35eb3xFZWinbKagfzvSG8gvo6GQaTasf+Yf8HlcjbhvB/Xkf6w0EYDib/zufHCfLysiE8RPHk/WtKGLw/2OfHCfLyrSF2wlaf7BDVmXWAHl/xDcQGOeaiHcybhnAr6pF+cXBPGNwOe7uiRY65agcTb4hSKrRhbKfZA7vo7WCSgQwDQ1+7vV47zcHcDj26+kaOuWwHkwhkyGv5+lj/uPkh7yFST165bAdzFghfaXb833luP+VmCYJdt6NFjrluBys9kCxzxCxVaQcrJRC+soyivazD0jRVagcrLJB4SCL6qVTQydOGSVVqB8sTiL3PpAakzU+tdTjtFkdeVWsHSx1IPAwRDeyV80cFweDZeDzIOxw9pGrtYHcC+T/+q6EyZmBXRcf29Uk9isKy3/xJVWwHq/EKKH50dzw+eWaHIddv/CzR5eXSk6fpfh1Foecd6cKHXgAAAAAAAAAAAAAAAACAdP4BGjmGQHIO9hkAAAAASUVORK5CYII=" loading="lazy" alt="" class="nav-item_icon">
+                          <p class="text-size-medium text-weight-light">Webflow</p>
+                        </a>
+                        <a href="services/untitled/wordpress-website-management-maintenance-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="/assets/Wordpress-Logo-1-f-rxuyJ1.png" loading="lazy" alt="" class="nav-item_icon">
+                          <p class="text-size-medium text-weight-light">Wordpress</p>
+                        </a>
+                        <a href="services/untitled/shopify-store-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,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" loading="lazy" alt="" class="nav-item_icon">
+                          <p class="text-size-medium text-weight-light">Shopify</p>
+                        </a>
+                        <a href="services/untitled/framer-website-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAvtJREFUeAHt3ctxE0EUheHbEgVbhSAyIARZKtsUKxEBKUAEOANCgAwQGwpw2Z4McAgKwVsojYY5MpSxrcfM9Ov29PkXXrv0lSVNP3yNWDaZTEbPhoOflchY2PLHxeVzsWgglhVFcWPK9ZGpfxlh1lmDoG9FsSSKm5yAIKK4yRkIIop9TkEQUexyDoKI0j0vIIgo3fIGgojSPq8giCjt8g6CiNK8ICCIKM0KBoKIcrigIIgo+wsOgoiyuyggiCjbiwaCiPK4qCCIKPeLDoKIcpcKEESU29SAIKIoA0G5o6gDQTmjqARB/1BEzLVklFoQBJTfZZkVimoQhHNfOaGoB0E5oSQBgnJBSQYE5YCSFAjqO0pyIKjPKEmCoL6iJAuC+ojyRCw7nU0/1i/IWCJW1WssZi3vzGAQFaZcrW7EMmuQSmRS/xxLzKoNynhozNHX8/Ok/1qSfst60Gi1Lq9eHR+/kITrEwjaoJzMZnNJtL6BoFH9Bvb55Wz2RhKsjyCb1lJ9ShGltyAoRZReg6DUUHoPglJCyQIEpYKSDQhKASUrEKQdJTsQpBklSxCkFSVbEKQRJWsQpA0lexAElNPp9K0oiCB/q/dTPpxMp+8lcgT5PyNnsVEI8rDIKATZVkQUguwqEgpB9hUBhSCHCoxCkCYFRCFI0wKhEKRNAVAI0jbPKATpkkcUgnTNEwpBbPKAQhDbHKMQxEUOUazvhxhjllUV+X6IwQ2q6ovEzIiZz+ejxWJhdWnHGuTXqnz9dDi8ql+QaPcyTFVdf7+4PJMe5GTkUW7/j8RnTj5DiOIuZx/qRHGT029ZRLHP+ddeotjl5TmEKN3z9mBIlG55fVInSvu8L50QpV1B1rKI0rxgi4tEaVbQ1V6iHC748jtR9hdlP4Qou4u2QUWU7UXdMSTK46Jv4RLlfir21Ilyl5pDDkS5TdWpE6IoPAaUO4rKc1k5o6g9KJcriuqTizmicOSRsjjySFkceaQsjjxSFkceKYsjj5TFkUfK4sgjZf0BRrM64mwFqZQAAAAASUVORK5CYII=" loading="lazy" alt="" class="nav-item_icon">
+                          <p class="text-size-medium text-weight-light">Framer</p>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="brix---header-nav-list-item-middle">
+                      <a href="services/web-design-development-frameworks-studio.html" class="brix---header-nav-link w-nav-link">Design &amp; Development</a>
+                    </li>
+                    <li class="brix---header-nav-list-item-middle">
+                      <a href="projects.html" class="brix---header-nav-link w-nav-link">Projects</a>
+                    </li>
+                    <li class="brix---header-nav-list-item-show-in-mbl">
+                      <a href="contact-us.html" class="button w-button">Get in touch</a>
+                    </li>
+                    <li class="brix---header-nav-list-item-show-in-mbl">
+                      <a href="contact-us.html" class="button-2 w-button">Book Free audit</a>
+                    </li>
+                  </ul>
+                  <div class="nav-dropdown background-color-secondary">
+                    <a href="services/untitled/webflow-website-management-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABHJJREFUeAHt3G9S00AYBvB3Y53RfuII9QTiCaz8Ub6JJ7CeQD0BcgLlBJQb1G8FaY0noJxAjtABhmFos+u+kcxAaSEhyb7b5vl9oWJmon3y7G7DBiIAAAAAAAAAAAAAAAAAAPCEere2+tsY0yQHDnp9lfbYov9dilS43+u9SXv8u9XVXUOmRQ7ZN+ckIA9trK01XV0kU8+/sdFwHQYzhvZq5CH7ZmyRIDMaOT8/t0Np3fauIVVthzK03Q1D/4asqraj2++3+bVXgVS5HclrrwKxYXwkQdLtYN4EInV1Sp//ZjuYN4FIXJ23zj8e7ZJjk+1gXgQi3g6huWuyHcyLQMTbIbCym9YOJh6IdDvWV1ZavrSDiQci3Q6lyJt2MNFAfGiH/dIgx2a1g4kGgnbcJRYI2jGdWCBox3QigaAds4kEgnbM5jyQyrZDBZ/SHOc8EMl2bG5uLsm0Q4Xdw8MwzbFOAxFth6Kli/PTzyTSDvXg3JFw+jN1Pbr6S0Ls7ZFl+2WZHMvSDublrpNFkqUdDIGUyK6s2lnawRBIiVSkM7WD1bSh40Cl3lCYmeSmBUlxO8LwhDIqLwmS2Y7piyDSLx4TSCmrLF7vX5yf/b5e2VTOY9vBCp9D1tfXly/OTo+oomGwx8wdiUIDebuysqV0dEQCH758kacdrJAhi3dtaDLfq9yKRJ52sFyBXG+f2dJGNwlyt4M9KhAEMV3edrDUgcQhEL03RrdsEEsEtxTRDjYzkI1ms0FPg6bR9NoGsYkQ7ldEO1gtfuNrtQYp3TAmeGkn5ob9fL2seaWkaZ4M7Z3VjsiG6YLawWqm9mTX8Fxg+I/zlcBN9u7PtjEk8jhDUe1gi3Fz0dC21jTkZpNjRbaDLUAgau+g3/8m8aPZ+OwFtoPNdyBKDepR9EVq4wJdP6hJBZrbQHhbTX0cvemE4VBqW0+gdZsK5uVz6g+Jn+mOdByGVDv4If/9gtvB5i6QJIxkqJBqhyqhHWy+hiw7ZzyP9KskDMl2dEtoB5unQDrJnJF8Y5HmjsRcDFn2E/jOfq/35eb3xFZWinbKagfzvSG8gvo6GQaTasf+Yf8HlcjbhvB/Xkf6w0EYDib/zufHCfLysiE8RPHk/WtKGLw/2OfHCfLyrSF2wlaf7BDVmXWAHl/xDcQGOeaiHcybhnAr6pF+cXBPGNwOe7uiRY65agcTb4hSKrRhbKfZA7vo7WCSgQwDQ1+7vV47zcHcDj26+kaOuWwHkwhkyGv5+lj/uPkh7yFST165bAdzFghfaXb833luP+VmCYJdt6NFjrluBys9kCxzxCxVaQcrJRC+soyivazD0jRVagcrLJB4SCL6qVTQydOGSVVqB8sTiL3PpAakzU+tdTjtFkdeVWsHSx1IPAwRDeyV80cFweDZeDzIOxw9pGrtYHcC+T/+q6EyZmBXRcf29Uk9isKy3/xJVWwHq/EKKH50dzw+eWaHIddv/CzR5eXSk6fpfh1Foecd6cKHXgAAAAAAAAAAAAAAAACAdP4BGjmGQHIO9hkAAAAASUVORK5CYII=" loading="lazy" alt="" class="nav-item_icon">
+                      <p class="text-size-small">Webflow</p>
+                    </a>
+                    <a href="services/untitled/wordpress-website-management-maintenance-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="/assets/Wordpress-Logo-1-f-rxuyJ1.png" loading="lazy" alt="" class="nav-item_icon">
+                      <p class="text-size-small">Wordpress</p>
+                    </a>
+                    <a href="services/untitled/shopify-store-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,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" loading="lazy" alt="" class="nav-item_icon">
+                      <p class="text-size-small">Shopify</p>
+                    </a>
+                    <a href="services/untitled/framer-website-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAvtJREFUeAHt3ctxE0EUheHbEgVbhSAyIARZKtsUKxEBKUAEOANCgAwQGwpw2Z4McAgKwVsojYY5MpSxrcfM9Ov29PkXXrv0lSVNP3yNWDaZTEbPhoOflchY2PLHxeVzsWgglhVFcWPK9ZGpfxlh1lmDoG9FsSSKm5yAIKK4yRkIIop9TkEQUexyDoKI0j0vIIgo3fIGgojSPq8giCjt8g6CiNK8ICCIKM0KBoKIcrigIIgo+wsOgoiyuyggiCjbiwaCiPK4qCCIKPeLDoKIcpcKEESU29SAIKIoA0G5o6gDQTmjqARB/1BEzLVklFoQBJTfZZkVimoQhHNfOaGoB0E5oSQBgnJBSQYE5YCSFAjqO0pyIKjPKEmCoL6iJAuC+ojyRCw7nU0/1i/IWCJW1WssZi3vzGAQFaZcrW7EMmuQSmRS/xxLzKoNynhozNHX8/Ok/1qSfst60Gi1Lq9eHR+/kITrEwjaoJzMZnNJtL6BoFH9Bvb55Wz2RhKsjyCb1lJ9ShGltyAoRZReg6DUUHoPglJCyQIEpYKSDQhKASUrEKQdJTsQpBklSxCkFSVbEKQRJWsQpA0lexAElNPp9K0oiCB/q/dTPpxMp+8lcgT5PyNnsVEI8rDIKATZVkQUguwqEgpB9hUBhSCHCoxCkCYFRCFI0wKhEKRNAVAI0jbPKATpkkcUgnTNEwpBbPKAQhDbHKMQxEUOUazvhxhjllUV+X6IwQ2q6ovEzIiZz+ejxWJhdWnHGuTXqnz9dDi8ql+QaPcyTFVdf7+4PJMe5GTkUW7/j8RnTj5DiOIuZx/qRHGT029ZRLHP+ddeotjl5TmEKN3z9mBIlG55fVInSvu8L50QpV1B1rKI0rxgi4tEaVbQ1V6iHC748jtR9hdlP4Qou4u2QUWU7UXdMSTK46Jv4RLlfir21Ilyl5pDDkS5TdWpE6IoPAaUO4rKc1k5o6g9KJcriuqTizmicOSRsjjySFkceaQsjjxSFkceKYsjj5TFkUfK4sgjZf0BRrM64mwFqZQAAAAASUVORK5CYII=" loading="lazy" alt="" class="nav-item_icon">
+                      <p class="text-size-small">Framer</p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+              <div class="header-right-col">
+                <div data-w-id="e7c21ceb-ba1d-18b1-d70b-0e3dc12d9cc0" class="hamburger-menu-wrapper w-nav-button">
+                  <div class="brix---hamburger-menu-bar-top"></div>
+                  <div class="brix---hamburger-menu-bar-bottom"></div>
+                </div>
+                <div class="header-hidden-on-mbl">
+                  <a href="contact-us.html" class="button is-small w-button">Get in touch</a>
+                  <a href="contact-us.html" class="button-2 is-small w-button">Book Free audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <section class="section_hero">
+        <div class="padding-global padding-section-large hero">
+          <div class="container-large">
+            <div class="hero_main-grid">
+              <div class="hero_content-layer">
+                <div data-w-id="4cbd310e-4c8b-63b9-b28c-e00dd8285733" style="opacity:0" class="hero_text">
+                  <h1 class="heading-style-h1">Built for launch. <span class="emphasis">Managed</span> for growth.</h1>
+                  <p class="text-size-large text-weight-light">We design, build, and manage high-performing Webflow, Framer, Shopify and WordPress websites so your business gets a site that keeps improving long after launch.</p>
+                </div>
+                <div data-w-id="3a48f5a7-3069-af14-177a-cc1ffffc21c9" style="opacity:0" class="_2-buttons-wrapper">
+                  <a href="contact-us.html" class="button-2 is-icon w-inline-block">
+                    <div>Start a project</div>
+                    <div class="icon-1x1-small w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="currentColor"></rect>
+                        <path d="M8 13.5L11.5 10L8.5 7L8 6.5" stroke="currentColor" stroke-linecap="round"></path>
+                      </svg></div>
+                  </a>
+                  <a href="#projects" class="button w-button">View our work</a>
+                </div>
+              </div>
+              <div class="hero_float-layer">
+                <div class="floating-pill _1">
+                  <div class="w-embed"><svg width="154" height="40" viewbox="0 0 154 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M153.323 39.4876L148.694 26.0624C148.622 25.853 148.333 25.834 148.234 26.0321L145.291 31.9188C145.264 31.9712 145.221 32.0128 145.167 32.0362L140.054 34.259C139.85 34.3479 139.855 34.6395 140.063 34.721L152.996 39.8018C153.194 39.8798 153.393 39.6893 153.323 39.4876Z" fill="#D9D9D9" stroke="black" stroke-width="0.25"></path>
+                      <rect y="1.52588e-05" width="139" height="28.5" rx="14.25" fill="white"></rect>
+                      <rect x="0.25" y="0.250015" width="138.5" height="28" rx="14" stroke="black" stroke-opacity="0.7" stroke-width="0.5"></rect>
+                      <path d="M14.6761 18.75L12.2855 10.0227H13.0952L15.0724 17.527H15.1406L17.1179 10.0227H18.0384L20.0156 17.527H20.0838L22.0611 10.0227H22.875L20.4844 18.75H19.6321L17.608 11.348H17.5526L15.5284 18.75H14.6761ZM25.8346 18.8864C25.2238 18.8864 24.6954 18.7443 24.2494 18.4602C23.8034 18.1733 23.4582 17.777 23.2139 17.2713C22.9724 16.7628 22.8516 16.1776 22.8516 15.5156C22.8516 14.8565 22.9724 14.2713 23.2139 13.76C23.4582 13.2458 23.7948 12.8438 24.2238 12.554C24.6556 12.2614 25.1542 12.1151 25.7195 12.1151C26.0747 12.1151 26.417 12.1804 26.7465 12.3111C27.0761 12.4389 27.3715 12.6364 27.6329 12.9034C27.8971 13.1676 28.1059 13.5014 28.2593 13.9048C28.4127 14.3054 28.4894 14.7798 28.4894 15.3281V15.7031H23.3758V15.0341H27.7139C27.7139 14.6137 27.6286 14.2358 27.4582 13.9006C27.2906 13.5625 27.0562 13.2955 26.7551 13.0994C26.4568 12.9034 26.1116 12.8054 25.7195 12.8054C25.3048 12.8054 24.9397 12.9162 24.6244 13.1378C24.309 13.3594 24.0619 13.652 23.8829 14.0156C23.7068 14.3793 23.6173 14.777 23.6144 15.2088V15.6094C23.6144 16.1293 23.7039 16.5838 23.8829 16.973C24.0647 17.3594 24.3218 17.6591 24.6542 17.8722C24.9866 18.0852 25.3801 18.1918 25.8346 18.1918C26.1443 18.1918 26.4156 18.1435 26.6485 18.0469C26.8843 17.9503 27.0818 17.821 27.2409 17.6591C27.4028 17.4943 27.5249 17.3139 27.6073 17.1179L28.3275 17.3523C28.2281 17.6279 28.0647 17.8821 27.8374 18.1151C27.613 18.348 27.3318 18.5355 26.9937 18.6776C26.6585 18.8168 26.2721 18.8864 25.8346 18.8864ZM29.9586 18.75V10.0227H30.7214V13.4531H30.7896C30.8748 13.2571 30.997 13.0554 31.1561 12.848C31.318 12.6406 31.5296 12.4673 31.791 12.3281C32.0552 12.1861 32.3876 12.1151 32.7882 12.1151C33.3251 12.1151 33.7967 12.2571 34.2029 12.5412C34.6092 12.8225 34.926 13.2173 35.1532 13.7259C35.3805 14.2315 35.4941 14.821 35.4941 15.4943C35.4941 16.1705 35.3805 16.7628 35.1532 17.2713C34.9288 17.7798 34.6135 18.1762 34.2072 18.4602C33.8038 18.7443 33.335 18.8864 32.801 18.8864C32.4032 18.8864 32.0708 18.8154 31.8038 18.6733C31.5396 18.5313 31.3265 18.3565 31.1646 18.1492C31.0027 17.9389 30.8777 17.7344 30.7896 17.5355H30.6958V18.75H29.9586ZM30.7086 15.4815C30.7086 16.01 30.7867 16.4787 30.943 16.8878C31.1021 17.294 31.3294 17.6137 31.6248 17.8466C31.9231 18.0767 32.2839 18.1918 32.7072 18.1918C33.1419 18.1918 33.5098 18.0725 33.8109 17.8338C34.112 17.5923 34.3407 17.2671 34.497 16.858C34.6532 16.4489 34.7314 15.9901 34.7314 15.4815C34.7314 14.9787 34.6532 14.5256 34.497 14.1222C34.3436 13.7188 34.1163 13.3992 33.8152 13.1634C33.514 12.9247 33.1447 12.8054 32.7072 12.8054C32.2811 12.8054 31.9189 12.9205 31.6206 13.1506C31.3251 13.3779 31.0992 13.6932 30.943 14.0966C30.7867 14.4972 30.7086 14.9588 30.7086 15.4815ZM41.1981 13.6406L40.5035 13.8367C40.4353 13.6406 40.3387 13.4631 40.2137 13.304C40.0887 13.1449 39.9253 13.0185 39.7236 12.9247C39.5248 12.831 39.2776 12.7841 38.9821 12.7841C38.539 12.7841 38.1753 12.8892 37.8912 13.0994C37.6071 13.3097 37.4651 13.581 37.4651 13.9134C37.4651 14.1946 37.5617 14.4233 37.7549 14.5994C37.9509 14.7727 38.252 14.9105 38.6583 15.0128L39.6469 15.2557C40.1952 15.3892 40.6057 15.6009 40.8785 15.8906C41.154 16.1804 41.2918 16.544 41.2918 16.9815C41.2918 17.3509 41.1895 17.679 40.985 17.9659C40.7804 18.2529 40.4949 18.4787 40.1285 18.6435C39.7648 18.8054 39.3429 18.8864 38.8628 18.8864C38.2236 18.8864 37.6966 18.7429 37.2819 18.456C36.8671 18.1662 36.6015 17.7486 36.485 17.2031L37.2137 17.0242C37.3074 17.4134 37.4907 17.7074 37.7634 17.9063C38.039 18.1051 38.4012 18.2046 38.85 18.2046C39.3529 18.2046 39.7549 18.0923 40.056 17.8679C40.3571 17.6406 40.5077 17.3565 40.5077 17.0156C40.5077 16.7514 40.4196 16.5298 40.2435 16.3509C40.0674 16.169 39.8003 16.0355 39.4424 15.9503L38.3728 15.6946C37.8046 15.5583 37.3841 15.3423 37.1114 15.0469C36.8387 14.7514 36.7023 14.385 36.7023 13.9475C36.7023 13.5867 36.8003 13.2699 36.9963 12.9972C37.1924 12.7216 37.4623 12.5057 37.806 12.3494C38.1498 12.1932 38.5418 12.1151 38.9821 12.1151C39.5816 12.1151 40.0603 12.2514 40.4182 12.5242C40.779 12.794 41.039 13.1662 41.1981 13.6406ZM42.6012 18.75V12.2046H43.364V18.75H42.6012ZM42.989 11.0796C42.8327 11.0796 42.6992 11.027 42.5884 10.9219C42.4776 10.8139 42.4222 10.6847 42.4222 10.5341C42.4222 10.3835 42.4776 10.2557 42.5884 10.1506C42.6992 10.0426 42.8327 9.98865 42.989 9.98865C43.1452 9.98865 43.2787 10.0426 43.3895 10.1506C43.5003 10.2557 43.5557 10.3835 43.5557 10.5341C43.5557 10.6847 43.5003 10.8139 43.3895 10.9219C43.2787 11.027 43.1452 11.0796 42.989 11.0796ZM47.5881 12.2046V12.8651H44.4646V12.2046H47.5881ZM45.4404 10.6364H46.2032V17.0412C46.2032 17.3139 46.2501 17.5284 46.3438 17.6847C46.4376 17.8381 46.5597 17.9475 46.7103 18.0128C46.8609 18.0753 47.0214 18.1065 47.1918 18.1065C47.2913 18.1065 47.3765 18.1009 47.4475 18.0895C47.5185 18.0753 47.581 18.0611 47.635 18.0469L47.7969 18.733C47.7231 18.7614 47.6322 18.7869 47.5242 18.8097C47.4163 18.8352 47.2827 18.848 47.1237 18.848C46.8452 18.848 46.5768 18.7869 46.3183 18.6648C46.0626 18.5426 45.8523 18.3608 45.6876 18.1193C45.5228 17.8779 45.4404 17.5781 45.4404 17.2202V10.6364ZM51.5268 18.8864C50.916 18.8864 50.3876 18.7443 49.9416 18.4602C49.4955 18.1733 49.1504 17.777 48.9061 17.2713C48.6646 16.7628 48.5438 16.1776 48.5438 15.5156C48.5438 14.8565 48.6646 14.2713 48.9061 13.76C49.1504 13.2458 49.487 12.8438 49.916 12.554C50.3478 12.2614 50.8464 12.1151 51.4117 12.1151C51.7668 12.1151 52.1092 12.1804 52.4387 12.3111C52.7683 12.4389 53.0637 12.6364 53.3251 12.9034C53.5893 13.1676 53.7981 13.5014 53.9515 13.9048C54.1049 14.3054 54.1816 14.7798 54.1816 15.3281V15.7031H49.068V15.0341H53.4061C53.4061 14.6137 53.3208 14.2358 53.1504 13.9006C52.9828 13.5625 52.7484 13.2955 52.4472 13.0994C52.1489 12.9034 51.8038 12.8054 51.4117 12.8054C50.997 12.8054 50.6319 12.9162 50.3166 13.1378C50.0012 13.3594 49.7541 13.652 49.5751 14.0156C49.3989 14.3793 49.3095 14.777 49.3066 15.2088V15.6094C49.3066 16.1293 49.3961 16.5838 49.5751 16.973C49.7569 17.3594 50.014 17.6591 50.3464 17.8722C50.6788 18.0852 51.0722 18.1918 51.5268 18.1918C51.8364 18.1918 52.1078 18.1435 52.3407 18.0469C52.5765 17.9503 52.7739 17.821 52.933 17.6591C53.095 17.4943 53.2171 17.3139 53.2995 17.1179L54.0197 17.3523C53.9203 17.6279 53.7569 17.8821 53.5296 18.1151C53.3052 18.348 53.0239 18.5355 52.6859 18.6776C52.3507 18.8168 51.9643 18.8864 51.5268 18.8864ZM58.6658 10.0227H59.5863L62.7525 17.625H62.8292L65.9954 10.0227H66.9158V18.75H66.1658V11.706H66.0976L63.153 18.75H62.4286L59.484 11.706H59.4158V18.75H58.6658V10.0227ZM70.5466 18.8992C70.1517 18.8992 69.7909 18.8225 69.4642 18.669C69.1375 18.5128 68.8775 18.2884 68.6844 17.9958C68.4912 17.7003 68.3946 17.3423 68.3946 16.9219C68.3946 16.598 68.4557 16.3253 68.5778 16.1037C68.7 15.8821 68.8733 15.7003 69.0977 15.5583C69.3221 15.4162 69.5878 15.304 69.8946 15.2216C70.2014 15.1392 70.5395 15.0753 70.9088 15.0298C71.2753 14.9844 71.5849 14.9446 71.8378 14.9105C72.0935 14.8764 72.2881 14.8225 72.4216 14.7486C72.5551 14.6747 72.6219 14.5554 72.6219 14.3906V14.2372C72.6219 13.7912 72.4883 13.4404 72.2213 13.1847C71.9571 12.9262 71.5764 12.7969 71.0792 12.7969C70.6077 12.7969 70.2227 12.9006 69.9244 13.108C69.629 13.3154 69.4216 13.5597 69.3023 13.8409L68.5821 13.581C68.7298 13.223 68.9344 12.9375 69.1957 12.7244C69.4571 12.5085 69.7497 12.3537 70.0736 12.26C70.3974 12.1634 70.7256 12.1151 71.0579 12.1151C71.3079 12.1151 71.5679 12.1477 71.8378 12.2131C72.1105 12.2784 72.3633 12.3921 72.5963 12.554C72.8292 12.7131 73.0182 12.9361 73.1631 13.223C73.3079 13.5071 73.3804 13.8679 73.3804 14.3054V18.75H72.6219V17.7145H72.575C72.4841 17.9077 72.3491 18.0952 72.1702 18.277C71.9912 18.4588 71.7667 18.608 71.4969 18.7244C71.227 18.8409 70.9102 18.8992 70.5466 18.8992ZM70.6488 18.2046C71.0523 18.2046 71.4017 18.1151 71.6971 17.9361C71.9926 17.7571 72.2199 17.5199 72.379 17.2244C72.5409 16.9262 72.6219 16.598 72.6219 16.2401V15.294C72.565 15.348 72.4699 15.3963 72.3363 15.4389C72.2057 15.4815 72.0537 15.5199 71.8804 15.554C71.7099 15.5852 71.5395 15.6122 71.369 15.635C71.1986 15.6577 71.0452 15.6776 70.9088 15.6946C70.5395 15.7401 70.2241 15.8111 69.9628 15.9077C69.7014 16.0043 69.5011 16.1378 69.3619 16.3083C69.2227 16.4759 69.1531 16.6918 69.1531 16.956C69.1531 17.3537 69.2952 17.6619 69.5792 17.8807C69.8633 18.0966 70.2199 18.2046 70.6488 18.2046ZM75.0467 18.75V12.2046H75.8094V18.75H75.0467ZM75.4344 11.0796C75.2782 11.0796 75.1447 11.027 75.0339 10.9219C74.9231 10.8139 74.8677 10.6847 74.8677 10.5341C74.8677 10.3835 74.9231 10.2557 75.0339 10.1506C75.1447 10.0426 75.2782 9.98865 75.4344 9.98865C75.5907 9.98865 75.7242 10.0426 75.835 10.1506C75.9458 10.2557 76.0012 10.3835 76.0012 10.5341C76.0012 10.6847 75.9458 10.8139 75.835 10.9219C75.7242 11.027 75.5907 11.0796 75.4344 11.0796ZM78.214 14.6591V18.75H77.4555V12.2046H78.1927V13.2315H78.2609C78.4143 12.8963 78.6529 12.6279 78.9768 12.4262C79.3035 12.2216 79.7069 12.1193 80.187 12.1193C80.6274 12.1193 81.0137 12.2117 81.3461 12.3963C81.6813 12.5781 81.9413 12.8466 82.1259 13.2017C82.3134 13.5568 82.4072 13.9929 82.4072 14.51V18.75H81.6487V14.5568C81.6487 14.0199 81.4981 13.5952 81.197 13.2827C80.8987 12.9702 80.4981 12.8139 79.9953 12.8139C79.6515 12.8139 79.3461 12.8878 79.0791 13.0355C78.812 13.1833 78.6004 13.3963 78.4441 13.6747C78.2907 13.9503 78.214 14.2784 78.214 14.6591ZM86.6228 12.2046V12.8651H83.4992V12.2046H86.6228ZM84.4751 10.6364H85.2379V17.0412C85.2379 17.3139 85.2848 17.5284 85.3785 17.6847C85.4723 17.8381 85.5944 17.9475 85.745 18.0128C85.8956 18.0753 86.0561 18.1065 86.2265 18.1065C86.326 18.1065 86.4112 18.1009 86.4822 18.0895C86.5532 18.0753 86.6157 18.0611 86.6697 18.0469L86.8316 18.733C86.7578 18.7614 86.6669 18.7869 86.5589 18.8097C86.451 18.8352 86.3174 18.848 86.1583 18.848C85.8799 18.848 85.6115 18.7869 85.3529 18.6648C85.0973 18.5426 84.887 18.3608 84.7223 18.1193C84.5575 17.8779 84.4751 17.5781 84.4751 17.2202V10.6364ZM90.5615 18.8864C89.9507 18.8864 89.4223 18.7443 88.9762 18.4602C88.5302 18.1733 88.1851 17.777 87.9407 17.2713C87.6993 16.7628 87.5785 16.1776 87.5785 15.5156C87.5785 14.8565 87.6993 14.2713 87.9407 13.76C88.1851 13.2458 88.5217 12.8438 88.9507 12.554C89.3825 12.2614 89.8811 12.1151 90.4464 12.1151C90.8015 12.1151 91.1439 12.1804 91.4734 12.3111C91.803 12.4389 92.0984 12.6364 92.3598 12.9034C92.624 13.1676 92.8328 13.5014 92.9862 13.9048C93.1396 14.3054 93.2163 14.7798 93.2163 15.3281V15.7031H88.1027V15.0341H92.4407C92.4407 14.6137 92.3555 14.2358 92.1851 13.9006C92.0174 13.5625 91.7831 13.2955 91.4819 13.0994C91.1836 12.9034 90.8385 12.8054 90.4464 12.8054C90.0316 12.8054 89.6666 12.9162 89.3512 13.1378C89.0359 13.3594 88.7887 13.652 88.6098 14.0156C88.4336 14.3793 88.3441 14.777 88.3413 15.2088V15.6094C88.3413 16.1293 88.4308 16.5838 88.6098 16.973C88.7916 17.3594 89.0487 17.6591 89.3811 17.8722C89.7135 18.0852 90.1069 18.1918 90.5615 18.1918C90.8711 18.1918 91.1424 18.1435 91.3754 18.0469C91.6112 17.9503 91.8086 17.821 91.9677 17.6591C92.1297 17.4943 92.2518 17.3139 92.3342 17.1179L93.0544 17.3523C92.9549 17.6279 92.7916 17.8821 92.5643 18.1151C92.3399 18.348 92.0586 18.5355 91.7206 18.6776C91.3853 18.8168 90.999 18.8864 90.5615 18.8864ZM95.2863 14.6591V18.75H94.5278V12.2046H95.265V13.2315H95.3332C95.4866 12.8963 95.7253 12.6279 96.0491 12.4262C96.3758 12.2216 96.7792 12.1193 97.2594 12.1193C97.6997 12.1193 98.0861 12.2117 98.4185 12.3963C98.7537 12.5781 99.0136 12.8466 99.1983 13.2017C99.3858 13.5568 99.4795 13.9929 99.4795 14.51V18.75H98.721V14.5568C98.721 14.0199 98.5704 13.5952 98.2693 13.2827C97.971 12.9702 97.5704 12.8139 97.0676 12.8139C96.7238 12.8139 96.4185 12.8878 96.1514 13.0355C95.8844 13.1833 95.6727 13.3963 95.5165 13.6747C95.3631 13.9503 95.2863 14.2784 95.2863 14.6591ZM102.945 18.8992C102.55 18.8992 102.189 18.8225 101.863 18.669C101.536 18.5128 101.276 18.2884 101.083 17.9958C100.89 17.7003 100.793 17.3423 100.793 16.9219C100.793 16.598 100.854 16.3253 100.976 16.1037C101.099 15.8821 101.272 15.7003 101.496 15.5583C101.721 15.4162 101.986 15.304 102.293 15.2216C102.6 15.1392 102.938 15.0753 103.307 15.0298C103.674 14.9844 103.984 14.9446 104.236 14.9105C104.492 14.8764 104.687 14.8225 104.82 14.7486C104.954 14.6747 105.02 14.5554 105.02 14.3906V14.2372C105.02 13.7912 104.887 13.4404 104.62 13.1847C104.356 12.9262 103.975 12.7969 103.478 12.7969C103.006 12.7969 102.621 12.9006 102.323 13.108C102.028 13.3154 101.82 13.5597 101.701 13.8409L100.981 13.581C101.128 13.223 101.333 12.9375 101.594 12.7244C101.856 12.5085 102.148 12.3537 102.472 12.26C102.796 12.1634 103.124 12.1151 103.457 12.1151C103.707 12.1151 103.966 12.1477 104.236 12.2131C104.509 12.2784 104.762 12.3921 104.995 12.554C105.228 12.7131 105.417 12.9361 105.562 13.223C105.707 13.5071 105.779 13.8679 105.779 14.3054V18.75H105.02V17.7145H104.974C104.883 17.9077 104.748 18.0952 104.569 18.277C104.39 18.4588 104.165 18.608 103.895 18.7244C103.626 18.8409 103.309 18.8992 102.945 18.8992ZM103.047 18.2046C103.451 18.2046 103.8 18.1151 104.096 17.9361C104.391 17.7571 104.618 17.5199 104.778 17.2244C104.939 16.9262 105.02 16.598 105.02 16.2401V15.294C104.964 15.348 104.868 15.3963 104.735 15.4389C104.604 15.4815 104.452 15.5199 104.279 15.554C104.109 15.5852 103.938 15.6122 103.768 15.635C103.597 15.6577 103.444 15.6776 103.307 15.6946C102.938 15.7401 102.623 15.8111 102.361 15.9077C102.1 16.0043 101.9 16.1378 101.761 16.3083C101.621 16.4759 101.552 16.6918 101.552 16.956C101.552 17.3537 101.694 17.6619 101.978 17.8807C102.262 18.0966 102.618 18.2046 103.047 18.2046ZM108.195 14.6591V18.75H107.437V12.2046H108.174V13.2315H108.242C108.396 12.8963 108.634 12.6279 108.958 12.4262C109.285 12.2216 109.688 12.1193 110.168 12.1193C110.609 12.1193 110.995 12.2117 111.327 12.3963C111.663 12.5781 111.923 12.8466 112.107 13.2017C112.295 13.5568 112.388 13.9929 112.388 14.51V18.75H111.63V14.5568C111.63 14.0199 111.479 13.5952 111.178 13.2827C110.88 12.9702 110.479 12.8139 109.977 12.8139C109.633 12.8139 109.327 12.8878 109.06 13.0355C108.793 13.1833 108.582 13.3963 108.425 13.6747C108.272 13.9503 108.195 14.2784 108.195 14.6591ZM116.583 18.8864C115.998 18.8864 115.488 18.7401 115.053 18.4475C114.621 18.1548 114.286 17.7543 114.047 17.2458C113.809 16.7372 113.689 16.1577 113.689 15.5071C113.689 14.8509 113.81 14.2671 114.052 13.7557C114.296 13.2443 114.634 12.8438 115.066 12.554C115.498 12.2614 115.999 12.1151 116.57 12.1151C117.007 12.1151 117.404 12.2003 117.759 12.3708C118.114 12.5384 118.407 12.7756 118.637 13.0824C118.87 13.3864 119.016 13.7415 119.076 14.1477H118.309C118.229 13.7784 118.037 13.4631 117.733 13.2017C117.432 12.9375 117.049 12.8054 116.583 12.8054C116.165 12.8054 115.796 12.919 115.475 13.1463C115.154 13.3708 114.902 13.6847 114.721 14.0881C114.542 14.4887 114.452 14.9531 114.452 15.4815C114.452 16.0128 114.54 16.483 114.716 16.8921C114.892 17.2983 115.14 17.6165 115.458 17.8466C115.779 18.0767 116.154 18.1918 116.583 18.1918C116.873 18.1918 117.137 18.1378 117.375 18.0298C117.617 17.919 117.819 17.7628 117.98 17.5611C118.145 17.3594 118.256 17.1193 118.313 16.8409H119.08C119.023 17.2358 118.882 17.5881 118.658 17.8977C118.436 18.2046 118.148 18.446 117.793 18.6222C117.441 18.7983 117.037 18.8864 116.583 18.8864ZM122.992 18.8864C122.381 18.8864 121.853 18.7443 121.407 18.4602C120.961 18.1733 120.616 17.777 120.371 17.2713C120.13 16.7628 120.009 16.1776 120.009 15.5156C120.009 14.8565 120.13 14.2713 120.371 13.76C120.616 13.2458 120.952 12.8438 121.381 12.554C121.813 12.2614 122.312 12.1151 122.877 12.1151C123.232 12.1151 123.574 12.1804 123.904 12.3111C124.233 12.4389 124.529 12.6364 124.79 12.9034C125.054 13.1676 125.263 13.5014 125.417 13.9048C125.57 14.3054 125.647 14.7798 125.647 15.3281V15.7031H120.533V15.0341H124.871C124.871 14.6137 124.786 14.2358 124.616 13.9006C124.448 13.5625 124.214 13.2955 123.912 13.0994C123.614 12.9034 123.269 12.8054 122.877 12.8054C122.462 12.8054 122.097 12.9162 121.782 13.1378C121.466 13.3594 121.219 13.652 121.04 14.0156C120.864 14.3793 120.775 14.777 120.772 15.2088V15.6094C120.772 16.1293 120.861 16.5838 121.04 16.973C121.222 17.3594 121.479 17.6591 121.812 17.8722C122.144 18.0852 122.537 18.1918 122.992 18.1918C123.302 18.1918 123.573 18.1435 123.806 18.0469C124.042 17.9503 124.239 17.821 124.398 17.6591C124.56 17.4943 124.682 17.3139 124.765 17.1179L125.485 17.3523C125.385 17.6279 125.222 17.8821 124.995 18.1151C124.77 18.348 124.489 18.5355 124.151 18.6776C123.816 18.8168 123.429 18.8864 122.992 18.8864Z" fill="black"></path>
+                    </svg></div>
+                </div>
+                <div class="floating-pill _2">
+                  <div class="w-embed"><svg width="108" height="38" viewbox="0 0 108 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.512355 37.3234L13.9376 32.694C14.147 32.6218 14.166 32.3331 13.9679 32.2341L8.08125 29.2907C8.02876 29.2645 7.98718 29.2206 7.96378 29.1668L5.74097 24.0543C5.65212 23.85 5.3605 23.8552 5.27902 24.0626L0.198169 36.9957C0.120166 37.1942 0.310682 37.393 0.512355 37.3234Z" fill="#FECCB4" stroke="black" stroke-width="0.25"></path>
+                      <rect x="12.25" y="0.25" width="95.5" height="28" rx="14" fill="white"></rect>
+                      <rect x="12.25" y="0.25" width="95.5" height="28" rx="14" stroke="black" stroke-width="0.5"></rect>
+                      <path d="M31.9943 12.75H31.1932C31.1335 12.4517 31.0256 12.1761 30.8693 11.9233C30.7159 11.6676 30.5227 11.4446 30.2898 11.2543C30.0568 11.0639 29.7926 10.9162 29.4972 10.8111C29.2017 10.706 28.8821 10.6534 28.5384 10.6534C27.9872 10.6534 27.4844 10.7969 27.0298 11.0838C26.5781 11.3707 26.2159 11.7926 25.9432 12.3494C25.6733 12.9034 25.5384 13.5824 25.5384 14.3864C25.5384 15.196 25.6733 15.8778 25.9432 16.4318C26.2159 16.9858 26.5781 17.4062 27.0298 17.6932C27.4844 17.9773 27.9872 18.1193 28.5384 18.1193C28.8821 18.1193 29.2017 18.0668 29.4972 17.9616C29.7926 17.8565 30.0568 17.7102 30.2898 17.5227C30.5227 17.3324 30.7159 17.1094 30.8693 16.8537C31.0256 16.598 31.1335 16.321 31.1932 16.0227H31.9943C31.9233 16.4233 31.7898 16.7969 31.5938 17.1435C31.4006 17.4872 31.1534 17.7884 30.8523 18.0469C30.554 18.3054 30.2102 18.5071 29.821 18.652C29.4318 18.7969 29.0043 18.8693 28.5384 18.8693C27.8054 18.8693 27.1548 18.6861 26.5866 18.3196C26.0185 17.9503 25.5724 17.4304 25.2486 16.7599C24.9276 16.0895 24.767 15.2983 24.767 14.3864C24.767 13.4744 24.9276 12.6832 25.2486 12.0128C25.5724 11.3423 26.0185 10.8239 26.5866 10.4574C27.1548 10.0881 27.8054 9.90341 28.5384 9.90341C29.0043 9.90341 29.4318 9.97585 29.821 10.1207C30.2102 10.2628 30.554 10.4645 30.8523 10.7259C31.1534 10.9844 31.4006 11.2855 31.5938 11.6293C31.7898 11.973 31.9233 12.3466 31.9943 12.75ZM33.5061 10.0227H34.4266L37.5928 17.625H37.6695L40.8357 10.0227H41.7561V18.75H41.0061V11.706H40.9379L37.9933 18.75H37.2689L34.3243 11.706H34.2561V18.75H33.5061V10.0227ZM48.4551 12.2045C48.4068 11.7187 48.1923 11.3324 47.8116 11.0455C47.4309 10.7585 46.9522 10.6151 46.3755 10.6151C45.9693 10.6151 45.6113 10.6847 45.3017 10.8239C44.9948 10.9631 44.7534 11.1562 44.5772 11.4034C44.4039 11.6477 44.3173 11.9261 44.3173 12.2386C44.3173 12.4688 44.367 12.6705 44.4664 12.8438C44.5659 13.017 44.6994 13.1662 44.867 13.2912C45.0375 13.4134 45.225 13.5185 45.4295 13.6065C45.6369 13.6946 45.8457 13.7685 46.0559 13.8281L46.9764 14.0923C47.2548 14.169 47.5332 14.267 47.8116 14.3864C48.09 14.5057 48.3443 14.6562 48.5744 14.8381C48.8073 15.017 48.9934 15.2372 49.1326 15.4986C49.2747 15.7571 49.3457 16.0682 49.3457 16.4318C49.3457 16.8977 49.225 17.3168 48.9835 17.6889C48.742 18.0611 48.3954 18.3565 47.9437 18.5753C47.492 18.7912 46.9508 18.8991 46.3201 18.8991C45.7264 18.8991 45.2108 18.8011 44.7733 18.6051C44.3358 18.4062 43.992 18.1321 43.742 17.7827C43.492 17.4332 43.3514 17.0284 43.3201 16.5682H44.1383C44.1667 16.9119 44.2804 17.2031 44.4792 17.4418C44.6781 17.6804 44.9366 17.8622 45.2548 17.9872C45.573 18.1094 45.9281 18.1705 46.3201 18.1705C46.7548 18.1705 47.1412 18.098 47.4792 17.9531C47.8201 17.8054 48.0872 17.6009 48.2804 17.3395C48.4764 17.0753 48.5744 16.7685 48.5744 16.419C48.5744 16.1236 48.4977 15.8764 48.3443 15.6776C48.1909 15.4759 47.9764 15.3068 47.7008 15.1705C47.4281 15.0341 47.1113 14.9134 46.7505 14.8082L45.7065 14.5014C45.0218 14.2969 44.4906 14.0142 44.1127 13.6534C43.7349 13.2926 43.546 12.8324 43.546 12.2727C43.546 11.804 43.671 11.392 43.921 11.0369C44.1738 10.679 44.5147 10.4006 44.9437 10.2017C45.3755 10 45.8599 9.89915 46.3968 9.89915C46.9394 9.89915 47.4196 9.99858 47.8372 10.1974C48.2548 10.3963 48.5858 10.6705 48.8301 11.0199C49.0772 11.3665 49.2093 11.7614 49.2264 12.2045H48.4551ZM58.6569 12.2045C58.6087 11.7187 58.3942 11.3324 58.0135 11.0455C57.6328 10.7585 57.1541 10.6151 56.5774 10.6151C56.1711 10.6151 55.8132 10.6847 55.5035 10.8239C55.1967 10.9631 54.9552 11.1562 54.7791 11.4034C54.6058 11.6477 54.5192 11.9261 54.5192 12.2386C54.5192 12.4688 54.5689 12.6705 54.6683 12.8438C54.7677 13.017 54.9013 13.1662 55.0689 13.2912C55.2393 13.4134 55.4268 13.5185 55.6314 13.6065C55.8388 13.6946 56.0476 13.7685 56.2578 13.8281L57.1783 14.0923C57.4567 14.169 57.7351 14.267 58.0135 14.3864C58.2919 14.5057 58.5462 14.6562 58.7763 14.8381C59.0092 15.017 59.1953 15.2372 59.3345 15.4986C59.4765 15.7571 59.5476 16.0682 59.5476 16.4318C59.5476 16.8977 59.4268 17.3168 59.1854 17.6889C58.9439 18.0611 58.5973 18.3565 58.1456 18.5753C57.6939 18.7912 57.1527 18.8991 56.522 18.8991C55.9283 18.8991 55.4126 18.8011 54.9751 18.6051C54.5376 18.4062 54.1939 18.1321 53.9439 17.7827C53.6939 17.4332 53.5533 17.0284 53.522 16.5682H54.3402C54.3686 16.9119 54.4822 17.2031 54.6811 17.4418C54.88 17.6804 55.1385 17.8622 55.4567 17.9872C55.7748 18.1094 56.13 18.1705 56.522 18.1705C56.9567 18.1705 57.343 18.098 57.6811 17.9531C58.022 17.8054 58.289 17.6009 58.4822 17.3395C58.6783 17.0753 58.7763 16.7685 58.7763 16.419C58.7763 16.1236 58.6996 15.8764 58.5462 15.6776C58.3927 15.4759 58.1783 15.3068 57.9027 15.1705C57.63 15.0341 57.3132 14.9134 56.9524 14.8082L55.9084 14.5014C55.2237 14.2969 54.6925 14.0142 54.3146 13.6534C53.9368 13.2926 53.7479 12.8324 53.7479 12.2727C53.7479 11.804 53.8729 11.392 54.1229 11.0369C54.3757 10.679 54.7166 10.4006 55.1456 10.2017C55.5774 10 56.0618 9.89915 56.5987 9.89915C57.1413 9.89915 57.6214 9.99858 58.039 10.1974C58.4567 10.3963 58.7876 10.6705 59.0319 11.0199C59.2791 11.3665 59.4112 11.7614 59.4283 12.2045H58.6569ZM65.1066 16.2486V12.2045H65.8651V18.75H65.1066V17.6634H65.0469C64.8935 17.9986 64.6506 18.2784 64.3183 18.5028C63.9859 18.7244 63.5796 18.8352 63.0995 18.8352C62.6819 18.8352 62.3112 18.7443 61.9873 18.5625C61.6634 18.3778 61.4092 18.108 61.2245 17.7528C61.0398 17.3977 60.9475 16.9616 60.9475 16.4446V12.2045H61.706V16.3977C61.706 16.9091 61.8566 17.321 62.1577 17.6335C62.4589 17.9432 62.8452 18.098 63.3168 18.098C63.6123 18.098 63.8964 18.027 64.1691 17.8849C64.4418 17.7429 64.6663 17.5355 64.8424 17.2628C65.0185 16.9872 65.1066 16.6491 65.1066 16.2486ZM67.5133 21.2045V12.2045H68.2505V13.4531H68.34C68.4309 13.2571 68.5559 13.0568 68.715 12.8523C68.8741 12.6449 69.0843 12.4702 69.3457 12.3281C69.6099 12.1861 69.9423 12.1151 70.3428 12.1151C70.8826 12.1151 71.3542 12.2571 71.7576 12.5412C72.1639 12.8224 72.4792 13.2173 72.7036 13.7259C72.9309 14.2315 73.0445 14.821 73.0445 15.4943C73.0445 16.1705 72.9309 16.7628 72.7036 17.2713C72.4792 17.7798 72.1639 18.1761 71.7576 18.4602C71.3542 18.7443 70.8855 18.8864 70.3514 18.8864C69.9565 18.8864 69.6255 18.8153 69.3585 18.6733C69.0943 18.5312 68.8798 18.3565 68.715 18.1491C68.5531 17.9389 68.4281 17.7344 68.34 17.5355H68.2718V21.2045H67.5133ZM68.2633 15.4815C68.2633 16.0099 68.3414 16.4787 68.4977 16.8878C68.6568 17.294 68.884 17.6136 69.1795 17.8466C69.4778 18.0767 69.8386 18.1918 70.2619 18.1918C70.6965 18.1918 71.063 18.0724 71.3613 17.8338C71.6624 17.5923 71.8911 17.267 72.0474 16.858C72.2065 16.4489 72.286 15.9901 72.286 15.4815C72.286 14.9787 72.2079 14.5256 72.0516 14.1222C71.8982 13.7187 71.671 13.3991 71.3698 13.1634C71.0687 12.9247 70.6994 12.8054 70.2619 12.8054C69.8357 12.8054 69.4735 12.9205 69.1752 13.1506C68.8769 13.3778 68.6497 13.6932 68.4934 14.0966C68.34 14.4972 68.2633 14.9588 68.2633 15.4815ZM74.3486 21.2045V12.2045H75.0858V13.4531H75.1753C75.2662 13.2571 75.3912 13.0568 75.5503 12.8523C75.7094 12.6449 75.9196 12.4702 76.181 12.3281C76.4452 12.1861 76.7776 12.1151 77.1782 12.1151C77.7179 12.1151 78.1895 12.2571 78.5929 12.5412C78.9992 12.8224 79.3145 13.2173 79.5389 13.7259C79.7662 14.2315 79.8799 14.821 79.8799 15.4943C79.8799 16.1705 79.7662 16.7628 79.5389 17.2713C79.3145 17.7798 78.9992 18.1761 78.5929 18.4602C78.1895 18.7443 77.7208 18.8864 77.1867 18.8864C76.7918 18.8864 76.4608 18.8153 76.1938 18.6733C75.9296 18.5312 75.7151 18.3565 75.5503 18.1491C75.3884 17.9389 75.2634 17.7344 75.1753 17.5355H75.1071V21.2045H74.3486ZM75.0986 15.4815C75.0986 16.0099 75.1767 16.4787 75.333 16.8878C75.4921 17.294 75.7193 17.6136 76.0148 17.8466C76.3131 18.0767 76.6739 18.1918 77.0972 18.1918C77.5318 18.1918 77.8983 18.0724 78.1966 17.8338C78.4978 17.5923 78.7264 17.267 78.8827 16.858C79.0418 16.4489 79.1213 15.9901 79.1213 15.4815C79.1213 14.9787 79.0432 14.5256 78.887 14.1222C78.7336 13.7187 78.5063 13.3991 78.2051 13.1634C77.904 12.9247 77.5347 12.8054 77.0972 12.8054C76.6711 12.8054 76.3088 12.9205 76.0105 13.1506C75.7122 13.3778 75.485 13.6932 75.3287 14.0966C75.1753 14.4972 75.0986 14.9588 75.0986 15.4815ZM83.728 18.8864C83.1626 18.8864 82.6626 18.7429 82.228 18.456C81.7961 18.169 81.4581 17.7727 81.2137 17.267C80.9694 16.7585 80.8473 16.1719 80.8473 15.5071C80.8473 14.8366 80.9694 14.2472 81.2137 13.7386C81.4581 13.2273 81.7961 12.8295 82.228 12.5455C82.6626 12.2585 83.1626 12.1151 83.728 12.1151C84.2933 12.1151 84.7919 12.2585 85.2237 12.5455C85.6555 12.8324 85.9936 13.2301 86.2379 13.7386C86.4851 14.2472 86.6086 14.8366 86.6086 15.5071C86.6086 16.1719 86.4865 16.7585 86.2422 17.267C85.9978 17.7727 85.6584 18.169 85.2237 18.456C84.7919 18.7429 84.2933 18.8864 83.728 18.8864ZM83.728 18.1918C84.1825 18.1918 84.5674 18.0696 84.8828 17.8253C85.1981 17.581 85.4368 17.2557 85.5987 16.8494C85.7635 16.4432 85.8459 15.9957 85.8459 15.5071C85.8459 15.0185 85.7635 14.5696 85.5987 14.1605C85.4368 13.7514 85.1981 13.4233 84.8828 13.1761C84.5674 12.929 84.1825 12.8054 83.728 12.8054C83.2762 12.8054 82.8913 12.929 82.5731 13.1761C82.2578 13.4233 82.0177 13.7514 81.853 14.1605C81.691 14.5696 81.6101 15.0185 81.6101 15.5071C81.6101 15.9957 81.691 16.4432 81.853 16.8494C82.0177 17.2557 82.2578 17.581 82.5731 17.8253C82.8885 18.0696 83.2734 18.1918 83.728 18.1918ZM87.9138 18.75V12.2045H88.651V13.2102H88.7064C88.8371 12.8807 89.0643 12.6151 89.3882 12.4134C89.7149 12.2088 90.0842 12.1065 90.4961 12.1065C90.5586 12.1065 90.6283 12.108 90.705 12.1108C90.7817 12.1136 90.8456 12.1165 90.8967 12.1193V12.8906C90.8626 12.8849 90.803 12.8764 90.7177 12.8651C90.6325 12.8537 90.5402 12.848 90.4408 12.848C90.0998 12.848 89.7959 12.9205 89.5288 13.0653C89.2646 13.2074 89.0558 13.4048 88.9024 13.6577C88.749 13.9105 88.6723 14.1989 88.6723 14.5227V18.75H87.9138ZM94.8194 12.2045V12.8651H91.6958V12.2045H94.8194ZM92.6717 10.6364H93.4344V17.0412C93.4344 17.3139 93.4813 17.5284 93.5751 17.6847C93.6688 17.8381 93.791 17.9474 93.9415 18.0128C94.0921 18.0753 94.2526 18.1065 94.4231 18.1065C94.5225 18.1065 94.6077 18.1009 94.6788 18.0895C94.7498 18.0753 94.8123 18.0611 94.8663 18.0469L95.0282 18.733C94.9543 18.7614 94.8634 18.7869 94.7555 18.8097C94.6475 18.8352 94.514 18.848 94.3549 18.848C94.0765 18.848 93.808 18.7869 93.5495 18.6648C93.2938 18.5426 93.0836 18.3608 92.9188 18.1193C92.754 17.8778 92.6717 17.5781 92.6717 17.2202V10.6364Z" fill="black"></path>
+                    </svg></div>
+                </div>
+                <div class="floating-pill _3">
+                  <div class="w-embed"><svg width="131" height="42" viewbox="0 0 131 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M130.488 0.176674L117.062 4.80608C116.853 4.87828 116.834 5.16698 117.032 5.26603L122.919 8.20938C122.971 8.23562 123.013 8.27949 123.036 8.3333L125.259 13.4458C125.348 13.6501 125.64 13.6449 125.721 13.4375L130.802 0.50443C130.88 0.305877 130.689 0.107132 130.488 0.176674Z" fill="white" stroke="black" stroke-width="0.25"></path>
+                      <rect x="0.25" y="13.75" width="115.5" height="28" rx="14" fill="white"></rect>
+                      <rect x="0.25" y="13.75" width="115.5" height="28" rx="14" stroke="black" stroke-width="0.5"></rect>
+                      <path d="M19.9943 26.25H19.1932C19.1335 25.9517 19.0256 25.6761 18.8693 25.4233C18.7159 25.1676 18.5227 24.9446 18.2898 24.7543C18.0568 24.5639 17.7926 24.4162 17.4972 24.3111C17.2017 24.206 16.8821 24.1534 16.5384 24.1534C15.9872 24.1534 15.4844 24.2969 15.0298 24.5838C14.5781 24.8707 14.2159 25.2926 13.9432 25.8494C13.6733 26.4034 13.5384 27.0824 13.5384 27.8864C13.5384 28.696 13.6733 29.3778 13.9432 29.9318C14.2159 30.4858 14.5781 30.9062 15.0298 31.1932C15.4844 31.4773 15.9872 31.6193 16.5384 31.6193C16.8821 31.6193 17.2017 31.5668 17.4972 31.4616C17.7926 31.3565 18.0568 31.2102 18.2898 31.0227C18.5227 30.8324 18.7159 30.6094 18.8693 30.3537C19.0256 30.098 19.1335 29.821 19.1932 29.5227H19.9943C19.9233 29.9233 19.7898 30.2969 19.5938 30.6435C19.4006 30.9872 19.1534 31.2884 18.8523 31.5469C18.554 31.8054 18.2102 32.0071 17.821 32.152C17.4318 32.2969 17.0043 32.3693 16.5384 32.3693C15.8054 32.3693 15.1548 32.1861 14.5866 31.8196C14.0185 31.4503 13.5724 30.9304 13.2486 30.2599C12.9276 29.5895 12.767 28.7983 12.767 27.8864C12.767 26.9744 12.9276 26.1832 13.2486 25.5128C13.5724 24.8423 14.0185 24.3239 14.5866 23.9574C15.1548 23.5881 15.8054 23.4034 16.5384 23.4034C17.0043 23.4034 17.4318 23.4759 17.821 23.6207C18.2102 23.7628 18.554 23.9645 18.8523 24.2259C19.1534 24.4844 19.4006 24.7855 19.5938 25.1293C19.7898 25.473 19.9233 25.8466 19.9943 26.25ZM23.8925 32.3864C23.3271 32.3864 22.8271 32.2429 22.3925 31.956C21.9607 31.669 21.6226 31.2727 21.3783 30.767C21.134 30.2585 21.0118 29.6719 21.0118 29.0071C21.0118 28.3366 21.134 27.7472 21.3783 27.2386C21.6226 26.7273 21.9607 26.3295 22.3925 26.0455C22.8271 25.7585 23.3271 25.6151 23.8925 25.6151C24.4578 25.6151 24.9564 25.7585 25.3882 26.0455C25.82 26.3324 26.1581 26.7301 26.4024 27.2386C26.6496 27.7472 26.7732 28.3366 26.7732 29.0071C26.7732 29.6719 26.651 30.2585 26.4067 30.767C26.1624 31.2727 25.8229 31.669 25.3882 31.956C24.9564 32.2429 24.4578 32.3864 23.8925 32.3864ZM23.8925 31.6918C24.347 31.6918 24.732 31.5696 25.0473 31.3253C25.3627 31.081 25.6013 30.7557 25.7632 30.3494C25.928 29.9432 26.0104 29.4957 26.0104 29.0071C26.0104 28.5185 25.928 28.0696 25.7632 27.6605C25.6013 27.2514 25.3627 26.9233 25.0473 26.6761C24.732 26.429 24.347 26.3054 23.8925 26.3054C23.4408 26.3054 23.0558 26.429 22.7377 26.6761C22.4223 26.9233 22.1823 27.2514 22.0175 27.6605C21.8556 28.0696 21.7746 28.5185 21.7746 29.0071C21.7746 29.4957 21.8556 29.9432 22.0175 30.3494C22.1823 30.7557 22.4223 31.081 22.7377 31.3253C23.053 31.5696 23.4379 31.6918 23.8925 31.6918ZM28.8368 28.1591V32.25H28.0783V25.7045H28.8155V26.7315H28.8837C29.0371 26.3963 29.2757 26.1278 29.5996 25.9261C29.9263 25.7216 30.3297 25.6193 30.8098 25.6193C31.2502 25.6193 31.6365 25.7116 31.9689 25.8963C32.3041 26.0781 32.5641 26.3466 32.7487 26.7017C32.9362 27.0568 33.03 27.4929 33.03 28.0099V32.25H32.2715V28.0568C32.2715 27.5199 32.1209 27.0952 31.8198 26.7827C31.5215 26.4702 31.1209 26.3139 30.6181 26.3139C30.2743 26.3139 29.9689 26.3878 29.7019 26.5355C29.4348 26.6832 29.2232 26.8963 29.0669 27.1747C28.9135 27.4503 28.8368 27.7784 28.8368 28.1591ZM37.2456 25.7045V26.3651H34.1221V25.7045H37.2456ZM35.0979 24.1364H35.8607V30.5412C35.8607 30.8139 35.9076 31.0284 36.0013 31.1847C36.0951 31.3381 36.2172 31.4474 36.3678 31.5128C36.5184 31.5753 36.6789 31.6065 36.8493 31.6065C36.9488 31.6065 37.034 31.6009 37.105 31.5895C37.176 31.5753 37.2385 31.5611 37.2925 31.5469L37.4544 32.233C37.3806 32.2614 37.2897 32.2869 37.1817 32.3097C37.0738 32.3352 36.9402 32.348 36.7812 32.348C36.5027 32.348 36.2343 32.2869 35.9758 32.1648C35.7201 32.0426 35.5098 31.8608 35.3451 31.6193C35.1803 31.3778 35.0979 31.0781 35.0979 30.7202V24.1364ZM41.1843 32.3864C40.5735 32.3864 40.0451 32.2443 39.5991 31.9602C39.153 31.6733 38.8079 31.277 38.5636 30.7713C38.3221 30.2628 38.2013 29.6776 38.2013 29.0156C38.2013 28.3565 38.3221 27.7713 38.5636 27.2599C38.8079 26.7457 39.1445 26.3437 39.5735 26.054C40.0053 25.7614 40.5039 25.6151 41.0692 25.6151C41.4243 25.6151 41.7667 25.6804 42.0962 25.8111C42.4258 25.9389 42.7212 26.1364 42.9826 26.4034C43.2468 26.6676 43.4556 27.0014 43.609 27.4048C43.7624 27.8054 43.8391 28.2798 43.8391 28.8281V29.2031H38.7255V28.5341H43.0636C43.0636 28.1136 42.9783 27.7358 42.8079 27.4006C42.6403 27.0625 42.4059 26.7955 42.1047 26.5994C41.8064 26.4034 41.4613 26.3054 41.0692 26.3054C40.6545 26.3054 40.2894 26.4162 39.9741 26.6378C39.6587 26.8594 39.4116 27.152 39.2326 27.5156C39.0564 27.8793 38.967 28.277 38.9641 28.7088V29.1094C38.9641 29.6293 39.0536 30.0838 39.2326 30.473C39.4144 30.8594 39.6715 31.1591 40.0039 31.3722C40.3363 31.5852 40.7297 31.6918 41.1843 31.6918C41.4939 31.6918 41.7653 31.6435 41.9982 31.5469C42.234 31.4503 42.4314 31.321 42.5905 31.1591C42.7525 30.9943 42.8746 30.8139 42.957 30.6179L43.6772 30.8523C43.5778 31.1278 43.4144 31.3821 43.1871 31.6151C42.9627 31.848 42.6814 32.0355 42.3434 32.1776C42.0082 32.3168 41.6218 32.3864 41.1843 32.3864ZM45.9092 28.1591V32.25H45.1506V25.7045H45.8879V26.7315H45.956C46.1094 26.3963 46.3481 26.1278 46.6719 25.9261C46.9987 25.7216 47.4021 25.6193 47.8822 25.6193C48.3225 25.6193 48.7089 25.7116 49.0413 25.8963C49.3765 26.0781 49.6364 26.3466 49.8211 26.7017C50.0086 27.0568 50.1023 27.4929 50.1023 28.0099V32.25H49.3438V28.0568C49.3438 27.5199 49.1933 27.0952 48.8921 26.7827C48.5938 26.4702 48.1933 26.3139 47.6904 26.3139C47.3467 26.3139 47.0413 26.3878 46.7742 26.5355C46.5072 26.6832 46.2955 26.8963 46.1393 27.1747C45.9859 27.4503 45.9092 27.7784 45.9092 28.1591ZM54.318 25.7045V26.3651H51.1944V25.7045H54.318ZM52.1703 24.1364H52.933V30.5412C52.933 30.8139 52.9799 31.0284 53.0737 31.1847C53.1674 31.3381 53.2896 31.4474 53.4401 31.5128C53.5907 31.5753 53.7512 31.6065 53.9217 31.6065C54.0211 31.6065 54.1063 31.6009 54.1774 31.5895C54.2484 31.5753 54.3109 31.5611 54.3649 31.5469L54.5268 32.233C54.4529 32.2614 54.362 32.2869 54.2541 32.3097C54.1461 32.3352 54.0126 32.348 53.8535 32.348C53.5751 32.348 53.3066 32.2869 53.0481 32.1648C52.7924 32.0426 52.5822 31.8608 52.4174 31.6193C52.2526 31.3778 52.1703 31.0781 52.1703 30.7202V24.1364ZM64.6701 23.5227H65.4669V29.3011C65.4669 29.8949 65.3277 30.4261 65.0493 30.8949C64.7709 31.3608 64.3831 31.7287 63.886 31.9986C63.3917 32.2656 62.8164 32.3991 62.1601 32.3991C61.5067 32.3991 60.9314 32.2642 60.4343 31.9943C59.9371 31.7244 59.5493 31.3565 59.2709 30.8906C58.9925 30.4247 58.8533 29.8949 58.8533 29.3011V23.5227H59.6502V29.2457C59.6502 29.7088 59.7539 30.1222 59.9613 30.4858C60.1686 30.8466 60.4598 31.1307 60.8348 31.3381C61.2127 31.5455 61.6544 31.6491 62.1601 31.6491C62.6658 31.6491 63.1076 31.5455 63.4854 31.3381C63.8633 31.1307 64.1544 30.8466 64.359 30.4858C64.5664 30.1222 64.6701 29.7088 64.6701 29.2457V23.5227ZM67.2653 34.7045V25.7045H68.0025V26.9531H68.092C68.1829 26.7571 68.3079 26.5568 68.467 26.3523C68.6261 26.1449 68.8363 25.9702 69.0977 25.8281C69.3619 25.6861 69.6943 25.6151 70.0949 25.6151C70.6346 25.6151 71.1062 25.7571 71.5096 26.0412C71.9159 26.3224 72.2312 26.7173 72.4557 27.2259C72.6829 27.7315 72.7966 28.321 72.7966 28.9943C72.7966 29.6705 72.6829 30.2628 72.4557 30.7713C72.2312 31.2798 71.9159 31.6761 71.5096 31.9602C71.1062 32.2443 70.6375 32.3864 70.1034 32.3864C69.7085 32.3864 69.3775 32.3153 69.1105 32.1733C68.8463 32.0312 68.6318 31.8565 68.467 31.6491C68.3051 31.4389 68.1801 31.2344 68.092 31.0355H68.0238V34.7045H67.2653ZM68.0153 28.9815C68.0153 29.5099 68.0935 29.9787 68.2497 30.3878C68.4088 30.794 68.6361 31.1136 68.9315 31.3466C69.2298 31.5767 69.5906 31.6918 70.0139 31.6918C70.4486 31.6918 70.815 31.5724 71.1133 31.3338C71.4145 31.0923 71.6432 30.767 71.7994 30.358C71.9585 29.9489 72.0381 29.4901 72.0381 28.9815C72.0381 28.4787 71.9599 28.0256 71.8037 27.6222C71.6503 27.2187 71.423 26.8991 71.1219 26.6634C70.8207 26.4247 70.4514 26.3054 70.0139 26.3054C69.5878 26.3054 69.2256 26.4205 68.9273 26.6506C68.629 26.8778 68.4017 27.1932 68.2454 27.5966C68.092 27.9972 68.0153 28.4588 68.0153 28.9815ZM76.4572 32.3864C75.9202 32.3864 75.4501 32.2443 75.0467 31.9602C74.6433 31.6761 74.3279 31.2798 74.1006 30.7713C73.8762 30.2628 73.764 29.6705 73.764 28.9943C73.764 28.321 73.8762 27.7315 74.1006 27.2259C74.3279 26.7173 74.6447 26.3224 75.0509 26.0412C75.4572 25.7571 75.9302 25.6151 76.47 25.6151C76.8677 25.6151 77.1987 25.6861 77.4629 25.8281C77.7271 25.9673 77.9387 26.1406 78.0978 26.348C78.2569 26.5554 78.3805 26.7571 78.4685 26.9531H78.5367V23.5227H79.2995V32.25H78.558V31.0355H78.4685C78.3805 31.2344 78.2555 31.4389 78.0935 31.6491C77.9316 31.8565 77.7171 32.0312 77.4501 32.1733C77.1859 32.3153 76.8549 32.3864 76.4572 32.3864ZM76.5467 31.6918C76.97 31.6918 77.3308 31.5767 77.6291 31.3466C77.9273 31.1136 78.1546 30.794 78.3109 30.3878C78.47 29.9787 78.5495 29.5099 78.5495 28.9815C78.5495 28.4588 78.4714 27.9972 78.3151 27.5966C78.1589 27.1932 77.9316 26.8778 77.6333 26.6506C77.335 26.4205 76.9728 26.3054 76.5467 26.3054C76.1092 26.3054 75.7398 26.4247 75.4387 26.6634C75.1404 26.8991 74.9131 27.2187 74.7569 27.6222C74.6035 28.0256 74.5268 28.4787 74.5268 28.9815C74.5268 29.4901 74.6049 29.9489 74.7612 30.358C74.9174 30.767 75.1447 31.0923 75.443 31.3338C75.7441 31.5724 76.112 31.6918 76.5467 31.6918ZM82.9281 32.3991C82.5333 32.3991 82.1725 32.3224 81.8458 32.169C81.519 32.0128 81.2591 31.7884 81.0659 31.4957C80.8727 31.2003 80.7762 30.8423 80.7762 30.4219C80.7762 30.098 80.8372 29.8253 80.9594 29.6037C81.0815 29.3821 81.2548 29.2003 81.4793 29.0582C81.7037 28.9162 81.9693 28.804 82.2762 28.7216C82.583 28.6392 82.921 28.5753 83.2904 28.5298C83.6568 28.4844 83.9665 28.4446 84.2193 28.4105C84.475 28.3764 84.6696 28.3224 84.8031 28.2486C84.9367 28.1747 85.0034 28.0554 85.0034 27.8906V27.7372C85.0034 27.2912 84.8699 26.9403 84.6029 26.6847C84.3387 26.4261 83.958 26.2969 83.4608 26.2969C82.9892 26.2969 82.6043 26.4006 82.306 26.608C82.0105 26.8153 81.8031 27.0597 81.6838 27.3409L80.9637 27.081C81.1114 26.723 81.3159 26.4375 81.5773 26.2244C81.8387 26.0085 82.1313 25.8537 82.4551 25.7599C82.779 25.6634 83.1071 25.6151 83.4395 25.6151C83.6895 25.6151 83.9494 25.6477 84.2193 25.7131C84.4921 25.7784 84.7449 25.892 84.9779 26.054C85.2108 26.2131 85.3997 26.4361 85.5446 26.723C85.6895 27.0071 85.7619 27.3679 85.7619 27.8054V32.25H85.0034V31.2145H84.9565C84.8656 31.4077 84.7307 31.5952 84.5517 31.777C84.3727 31.9588 84.1483 32.108 83.8784 32.2244C83.6085 32.3409 83.2918 32.3991 82.9281 32.3991ZM83.0304 31.7045C83.4338 31.7045 83.7833 31.6151 84.0787 31.4361C84.3742 31.2571 84.6014 31.0199 84.7605 30.7244C84.9225 30.4261 85.0034 30.098 85.0034 29.7401V28.794C84.9466 28.848 84.8514 28.8963 84.7179 28.9389C84.5872 28.9815 84.4352 29.0199 84.2619 29.054C84.0915 29.0852 83.921 29.1122 83.7506 29.1349C83.5801 29.1577 83.4267 29.1776 83.2904 29.1946C82.921 29.2401 82.6057 29.3111 82.3443 29.4077C82.083 29.5043 81.8827 29.6378 81.7435 29.8082C81.6043 29.9759 81.5347 30.1918 81.5347 30.456C81.5347 30.8537 81.6767 31.1619 81.9608 31.3807C82.2449 31.5966 82.6014 31.7045 83.0304 31.7045ZM89.9978 25.7045V26.3651H86.8742V25.7045H89.9978ZM87.8501 24.1364H88.6129V30.5412C88.6129 30.8139 88.6598 31.0284 88.7535 31.1847C88.8473 31.3381 88.9694 31.4474 89.12 31.5128C89.2706 31.5753 89.4311 31.6065 89.6015 31.6065C89.701 31.6065 89.7862 31.6009 89.8572 31.5895C89.9282 31.5753 89.9907 31.5611 90.0447 31.5469L90.2066 32.233C90.1328 32.2614 90.0419 32.2869 89.9339 32.3097C89.826 32.3352 89.6924 32.348 89.5333 32.348C89.2549 32.348 88.9865 32.2869 88.7279 32.1648C88.4723 32.0426 88.262 31.8608 88.0973 31.6193C87.9325 31.3778 87.8501 31.0781 87.8501 30.7202V24.1364ZM93.9365 32.3864C93.3257 32.3864 92.7973 32.2443 92.3512 31.9602C91.9052 31.6733 91.5601 31.277 91.3157 30.7713C91.0743 30.2628 90.9535 29.6776 90.9535 29.0156C90.9535 28.3565 91.0743 27.7713 91.3157 27.2599C91.5601 26.7457 91.8967 26.3437 92.3257 26.054C92.7575 25.7614 93.2561 25.6151 93.8214 25.6151C94.1765 25.6151 94.5189 25.6804 94.8484 25.8111C95.178 25.9389 95.4734 26.1364 95.7348 26.4034C95.999 26.6676 96.2078 27.0014 96.3612 27.4048C96.5146 27.8054 96.5913 28.2798 96.5913 28.8281V29.2031H91.4777V28.5341H95.8157C95.8157 28.1136 95.7305 27.7358 95.5601 27.4006C95.3924 27.0625 95.1581 26.7955 94.8569 26.5994C94.5586 26.4034 94.2135 26.3054 93.8214 26.3054C93.4066 26.3054 93.0416 26.4162 92.7262 26.6378C92.4109 26.8594 92.1637 27.152 91.9848 27.5156C91.8086 27.8793 91.7191 28.277 91.7163 28.7088V29.1094C91.7163 29.6293 91.8058 30.0838 91.9848 30.473C92.1666 30.8594 92.4237 31.1591 92.7561 31.3722C93.0885 31.5852 93.4819 31.6918 93.9365 31.6918C94.2461 31.6918 94.5174 31.6435 94.7504 31.5469C94.9862 31.4503 95.1836 31.321 95.3427 31.1591C95.5047 30.9943 95.6268 30.8139 95.7092 30.6179L96.4294 30.8523C96.3299 31.1278 96.1666 31.3821 95.9393 31.6151C95.7149 31.848 95.4336 32.0355 95.0956 32.1776C94.7603 32.3168 94.374 32.3864 93.9365 32.3864ZM102.301 27.1406L101.606 27.3366C101.538 27.1406 101.441 26.9631 101.316 26.804C101.191 26.6449 101.028 26.5185 100.826 26.4247C100.627 26.331 100.38 26.2841 100.085 26.2841C99.6415 26.2841 99.2778 26.3892 98.9937 26.5994C98.7096 26.8097 98.5676 27.081 98.5676 27.4134C98.5676 27.6946 98.6642 27.9233 98.8574 28.0994C99.0534 28.2727 99.3545 28.4105 99.7608 28.5128L100.749 28.7557C101.298 28.8892 101.708 29.1009 101.981 29.3906C102.257 29.6804 102.394 30.044 102.394 30.4815C102.394 30.8509 102.292 31.179 102.087 31.4659C101.883 31.7528 101.597 31.9787 101.231 32.1435C100.867 32.3054 100.445 32.3864 99.9653 32.3864C99.3261 32.3864 98.7991 32.2429 98.3844 31.956C97.9696 31.6662 97.704 31.2486 97.5875 30.7031L98.3162 30.5241C98.4099 30.9134 98.5932 31.2074 98.8659 31.4062C99.1415 31.6051 99.5037 31.7045 99.9525 31.7045C100.455 31.7045 100.857 31.5923 101.159 31.3679C101.46 31.1406 101.61 30.8565 101.61 30.5156C101.61 30.2514 101.522 30.0298 101.346 29.8509C101.17 29.669 100.903 29.5355 100.545 29.4503L99.4753 29.1946C98.9071 29.0582 98.4866 28.8423 98.2139 28.5469C97.9412 28.2514 97.8048 27.8849 97.8048 27.4474C97.8048 27.0866 97.9028 26.7699 98.0988 26.4972C98.2949 26.2216 98.5648 26.0057 98.9085 25.8494C99.2523 25.6932 99.6443 25.6151 100.085 25.6151C100.684 25.6151 101.163 25.7514 101.521 26.0241C101.882 26.294 102.141 26.6662 102.301 27.1406Z" fill="black"></path>
+                    </svg></div>
+                </div>
+                <div class="floating-pill _4">
+                  <div class="w-embed"><svg width="174" height="43" viewbox="0 0 174 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.176674 0.512355L4.80608 13.9376C4.87828 14.147 5.16698 14.166 5.26603 13.9679L8.20938 8.08125C8.23562 8.02876 8.27949 7.98718 8.3333 7.96378L13.4458 5.74097C13.6501 5.65212 13.6449 5.3605 13.4375 5.27902L0.50443 0.198169C0.305876 0.120166 0.107131 0.310682 0.176674 0.512355Z" fill="#9AD3CF" stroke="black" stroke-width="0.25"></path>
+                      <rect x="12.25" y="14" width="161.5" height="28" rx="14" fill="white"></rect>
+                      <rect x="12.25" y="14" width="161.5" height="28" rx="14" stroke="black" stroke-width="0.5"></rect>
+                      <path d="M25.1591 32.5V23.7727H27.9759C28.5952 23.7727 29.1122 23.892 29.527 24.1307C29.9446 24.3665 30.2585 24.6875 30.4688 25.0938C30.6818 25.5 30.7884 25.9574 30.7884 26.4659C30.7884 26.9744 30.6832 27.4332 30.473 27.8423C30.2628 28.2486 29.9503 28.571 29.5355 28.8097C29.1207 29.0455 28.6051 29.1634 27.9886 29.1634H25.7727V28.4474H27.9673C28.4247 28.4474 28.804 28.3622 29.1051 28.1918C29.4063 28.0185 29.6307 27.7827 29.7784 27.4844C29.929 27.1861 30.0043 26.8466 30.0043 26.4659C30.0043 26.0852 29.929 25.7457 29.7784 25.4474C29.6307 25.1491 29.4048 24.9148 29.1009 24.7443C28.7997 24.5739 28.4176 24.4886 27.9545 24.4886H25.956V32.5H25.1591ZM34.7174 32.6364C34.1066 32.6364 33.5782 32.4943 33.1322 32.2102C32.6862 31.9233 32.341 31.527 32.0967 31.0213C31.8552 30.5128 31.7345 29.9276 31.7345 29.2656C31.7345 28.6065 31.8552 28.0213 32.0967 27.5099C32.341 26.9957 32.6776 26.5937 33.1066 26.304C33.5384 26.0114 34.037 25.8651 34.6024 25.8651C34.9575 25.8651 35.2998 25.9304 35.6293 26.0611C35.9589 26.1889 36.2543 26.3864 36.5157 26.6534C36.7799 26.9176 36.9887 27.2514 37.1421 27.6548C37.2955 28.0554 37.3722 28.5298 37.3722 29.0781V29.4531H32.2586V28.7841H36.5967C36.5967 28.3636 36.5114 27.9858 36.341 27.6506C36.1734 27.3125 35.939 27.0455 35.6379 26.8494C35.3396 26.6534 34.9944 26.5554 34.6024 26.5554C34.1876 26.5554 33.8225 26.6662 33.5072 26.8878C33.1918 27.1094 32.9447 27.402 32.7657 27.7656C32.5896 28.1293 32.5001 28.527 32.4972 28.9588V29.3594C32.4972 29.8793 32.5867 30.3338 32.7657 30.723C32.9475 31.1094 33.2046 31.4091 33.537 31.6222C33.8694 31.8352 34.2629 31.9418 34.7174 31.9418C35.0271 31.9418 35.2984 31.8935 35.5313 31.7969C35.7671 31.7003 35.9646 31.571 36.1237 31.4091C36.2856 31.2443 36.4078 31.0639 36.4901 30.8679L37.2103 31.1023C37.1109 31.3778 36.9475 31.6321 36.7203 31.8651C36.4958 32.098 36.2146 32.2855 35.8765 32.4276C35.5413 32.5668 35.1549 32.6364 34.7174 32.6364ZM38.6838 32.5V25.9545H39.421V26.9602H39.4764C39.6071 26.6307 39.8343 26.3651 40.1582 26.1634C40.4849 25.9588 40.8542 25.8565 41.2662 25.8565C41.3287 25.8565 41.3983 25.858 41.475 25.8608C41.5517 25.8636 41.6156 25.8665 41.6667 25.8693V26.6406C41.6326 26.6349 41.573 26.6264 41.4877 26.6151C41.4025 26.6037 41.3102 26.598 41.2108 26.598C40.8698 26.598 40.5659 26.6705 40.2988 26.8153C40.0346 26.9574 39.8258 27.1548 39.6724 27.4077C39.519 27.6605 39.4423 27.9489 39.4423 28.2727V32.5H38.6838ZM45.7044 25.9545V26.6151H42.4871V25.9545H45.7044ZM43.4928 32.5V24.9957C43.4928 24.6435 43.5738 24.3466 43.7357 24.1051C43.9005 23.8636 44.115 23.6804 44.3792 23.5554C44.6434 23.4304 44.9232 23.3679 45.2187 23.3679C45.4175 23.3679 45.5823 23.3849 45.713 23.419C45.8465 23.4503 45.9516 23.4815 46.0283 23.5128L45.8067 24.1776C45.7499 24.1605 45.6803 24.1406 45.5979 24.1179C45.5155 24.0952 45.4118 24.0838 45.2868 24.0838C44.9573 24.0838 44.703 24.1761 44.524 24.3608C44.3451 24.5455 44.2556 24.8097 44.2556 25.1534L44.2513 32.5H43.4928ZM49.1328 32.6364C48.5675 32.6364 48.0675 32.4929 47.6328 32.206C47.201 31.919 46.8629 31.5227 46.6186 31.017C46.3743 30.5085 46.2521 29.9219 46.2521 29.2571C46.2521 28.5866 46.3743 27.9972 46.6186 27.4886C46.8629 26.9773 47.201 26.5795 47.6328 26.2955C48.0675 26.0085 48.5675 25.8651 49.1328 25.8651C49.6981 25.8651 50.1967 26.0085 50.6285 26.2955C51.0604 26.5824 51.3984 26.9801 51.6427 27.4886C51.8899 27.9972 52.0135 28.5866 52.0135 29.2571C52.0135 29.9219 51.8913 30.5085 51.647 31.017C51.4027 31.5227 51.0632 31.919 50.6285 32.206C50.1967 32.4929 49.6981 32.6364 49.1328 32.6364ZM49.1328 31.9418C49.5873 31.9418 49.9723 31.8196 50.2876 31.5753C50.603 31.331 50.8416 31.0057 51.0035 30.5994C51.1683 30.1932 51.2507 29.7457 51.2507 29.2571C51.2507 28.7685 51.1683 28.3196 51.0035 27.9105C50.8416 27.5014 50.603 27.1733 50.2876 26.9261C49.9723 26.679 49.5873 26.5554 49.1328 26.5554C48.6811 26.5554 48.2962 26.679 47.978 26.9261C47.6626 27.1733 47.4226 27.5014 47.2578 27.9105C47.0959 28.3196 47.0149 28.7685 47.0149 29.2571C47.0149 29.7457 47.0959 30.1932 47.2578 30.5994C47.4226 31.0057 47.6626 31.331 47.978 31.5753C48.2933 31.8196 48.6783 31.9418 49.1328 31.9418ZM53.3186 32.5V25.9545H54.0558V26.9602H54.1112C54.2419 26.6307 54.4692 26.3651 54.793 26.1634C55.1197 25.9588 55.4891 25.8565 55.901 25.8565C55.9635 25.8565 56.0331 25.858 56.1098 25.8608C56.1865 25.8636 56.2504 25.8665 56.3016 25.8693V26.6406C56.2675 26.6349 56.2078 26.6264 56.1226 26.6151C56.0374 26.6037 55.945 26.598 55.8456 26.598C55.5047 26.598 55.2007 26.6705 54.9337 26.8153C54.6695 26.9574 54.4607 27.1548 54.3072 27.4077C54.1538 27.6605 54.0771 27.9489 54.0771 28.2727V32.5H53.3186ZM57.236 32.5V25.9545H57.9732V26.9602H58.0413C58.172 26.6222 58.3894 26.3565 58.6933 26.1634C59.0002 25.9673 59.3681 25.8693 59.797 25.8693C60.2487 25.8693 60.6195 25.9759 60.9092 26.1889C61.2019 26.3991 61.4206 26.6889 61.5655 27.0582H61.6209C61.7686 26.6946 62.0087 26.4062 62.3411 26.1932C62.6763 25.9773 63.0825 25.8693 63.5598 25.8693C64.1678 25.8693 64.6479 26.0611 65.0002 26.4446C65.3524 26.8253 65.5286 27.3821 65.5286 28.1151V32.5H64.77V28.1151C64.77 27.598 64.6379 27.2102 64.3737 26.9517C64.1095 26.6932 63.7615 26.5639 63.3297 26.5639C62.8297 26.5639 62.4448 26.7173 62.1749 27.0241C61.905 27.331 61.77 27.7202 61.77 28.1918V32.5H60.9945V28.0469C60.9945 27.6037 60.8709 27.2457 60.6237 26.973C60.3766 26.7003 60.0286 26.5639 59.5797 26.5639C59.2786 26.5639 59.0073 26.6378 58.7658 26.7855C58.5271 26.9332 58.3382 27.1392 58.199 27.4034C58.0627 27.6648 57.9945 27.9659 57.9945 28.3068V32.5H57.236ZM69.0049 32.6491C68.61 32.6491 68.2492 32.5724 67.9225 32.419C67.5958 32.2628 67.3358 32.0384 67.1426 31.7457C66.9495 31.4503 66.8529 31.0923 66.8529 30.6719C66.8529 30.348 66.9139 30.0753 67.0361 29.8537C67.1583 29.6321 67.3316 29.4503 67.556 29.3082C67.7804 29.1662 68.0461 29.054 68.3529 28.9716C68.6597 28.8892 68.9978 28.8253 69.3671 28.7798C69.7336 28.7344 70.0432 28.6946 70.2961 28.6605C70.5517 28.6264 70.7463 28.5724 70.8799 28.4986C71.0134 28.4247 71.0801 28.3054 71.0801 28.1406V27.9872C71.0801 27.5412 70.9466 27.1903 70.6796 26.9347C70.4154 26.6761 70.0347 26.5469 69.5375 26.5469C69.0659 26.5469 68.681 26.6506 68.3827 26.858C68.0872 27.0653 67.8799 27.3097 67.7605 27.5909L67.0404 27.331C67.1881 26.973 67.3926 26.6875 67.654 26.4744C67.9154 26.2585 68.208 26.1037 68.5318 26.0099C68.8557 25.9134 69.1838 25.8651 69.5162 25.8651C69.7662 25.8651 70.0262 25.8977 70.2961 25.9631C70.5688 26.0284 70.8216 26.142 71.0546 26.304C71.2875 26.4631 71.4764 26.6861 71.6213 26.973C71.7662 27.2571 71.8387 27.6179 71.8387 28.0554V32.5H71.0801V31.4645H71.0333C70.9424 31.6577 70.8074 31.8452 70.6284 32.027C70.4495 32.2088 70.225 32.358 69.9551 32.4744C69.6853 32.5909 69.3685 32.6491 69.0049 32.6491ZM69.1071 31.9545C69.5105 31.9545 69.86 31.8651 70.1554 31.6861C70.4509 31.5071 70.6782 31.2699 70.8372 30.9744C70.9992 30.6761 71.0801 30.348 71.0801 29.9901V29.044C71.0233 29.098 70.9282 29.1463 70.7946 29.1889C70.6639 29.2315 70.512 29.2699 70.3387 29.304C70.1682 29.3352 69.9978 29.3622 69.8273 29.3849C69.6568 29.4077 69.5034 29.4276 69.3671 29.4446C68.9978 29.4901 68.6824 29.5611 68.4211 29.6577C68.1597 29.7543 67.9594 29.8878 67.8202 30.0582C67.681 30.2259 67.6114 30.4418 67.6114 30.706C67.6114 31.1037 67.7534 31.4119 68.0375 31.6307C68.3216 31.8466 68.6782 31.9545 69.1071 31.9545ZM74.2549 28.4091V32.5H73.4964V25.9545H74.2336V26.9815H74.3018C74.4552 26.6463 74.6939 26.3778 75.0177 26.1761C75.3444 25.9716 75.7478 25.8693 76.228 25.8693C76.6683 25.8693 77.0547 25.9616 77.387 26.1463C77.7223 26.3281 77.9822 26.5966 78.1669 26.9517C78.3544 27.3068 78.4481 27.7429 78.4481 28.2599V32.5H77.6896V28.3068C77.6896 27.7699 77.539 27.3452 77.2379 27.0327C76.9396 26.7202 76.539 26.5639 76.0362 26.5639C75.6924 26.5639 75.387 26.6378 75.12 26.7855C74.853 26.9332 74.6413 27.1463 74.4851 27.4247C74.3316 27.7003 74.2549 28.0284 74.2549 28.4091ZM82.6425 32.6364C82.0572 32.6364 81.5473 32.4901 81.1126 32.1974C80.6808 31.9048 80.3456 31.5043 80.1069 30.9957C79.8683 30.4872 79.749 29.9077 79.749 29.2571C79.749 28.6009 79.8697 28.017 80.1112 27.5057C80.3555 26.9943 80.6936 26.5937 81.1254 26.304C81.5572 26.0114 82.0586 25.8651 82.6297 25.8651C83.0672 25.8651 83.4635 25.9503 83.8186 26.1207C84.1737 26.2884 84.4663 26.5256 84.6964 26.8324C84.9294 27.1364 85.0757 27.4915 85.1354 27.8977H84.3683C84.2888 27.5284 84.097 27.2131 83.793 26.9517C83.4919 26.6875 83.1084 26.5554 82.6425 26.5554C82.2248 26.5554 81.8555 26.669 81.5345 26.8963C81.2135 27.1207 80.9621 27.4347 80.7802 27.8381C80.6013 28.2386 80.5118 28.7031 80.5118 29.2315C80.5118 29.7628 80.5998 30.233 80.776 30.642C80.9521 31.0483 81.1993 31.3665 81.5175 31.5966C81.8385 31.8267 82.2135 31.9418 82.6425 31.9418C82.9322 31.9418 83.1964 31.8878 83.4351 31.7798C83.6765 31.669 83.8783 31.5128 84.0402 31.3111C84.205 31.1094 84.3158 30.8693 84.3726 30.5909H85.1396C85.0828 30.9858 84.9422 31.3381 84.7177 31.6477C84.4961 31.9545 84.2078 32.196 83.8527 32.3722C83.5004 32.5483 83.097 32.6364 82.6425 32.6364ZM89.0516 32.6364C88.4408 32.6364 87.9124 32.4943 87.4664 32.2102C87.0204 31.9233 86.6752 31.527 86.4309 31.0213C86.1894 30.5128 86.0687 29.9276 86.0687 29.2656C86.0687 28.6065 86.1894 28.0213 86.4309 27.5099C86.6752 26.9957 87.0119 26.5937 87.4408 26.304C87.8727 26.0114 88.3712 25.8651 88.9366 25.8651C89.2917 25.8651 89.634 25.9304 89.9636 26.0611C90.2931 26.1889 90.5886 26.3864 90.8499 26.6534C91.1141 26.9176 91.3229 27.2514 91.4764 27.6548C91.6298 28.0554 91.7065 28.5298 91.7065 29.0781V29.4531H86.5928V28.7841H90.9309C90.9309 28.3636 90.8457 27.9858 90.6752 27.6506C90.5076 27.3125 90.2732 27.0455 89.9721 26.8494C89.6738 26.6534 89.3286 26.5554 88.9366 26.5554C88.5218 26.5554 88.1567 26.6662 87.8414 26.8878C87.5261 27.1094 87.2789 27.402 87.0999 27.7656C86.9238 28.1293 86.8343 28.527 86.8315 28.9588V29.3594C86.8315 29.8793 86.921 30.3338 87.0999 30.723C87.2817 31.1094 87.5389 31.4091 87.8712 31.6222C88.2036 31.8352 88.5971 31.9418 89.0516 31.9418C89.3613 31.9418 89.6326 31.8935 89.8656 31.7969C90.1014 31.7003 90.2988 31.571 90.4579 31.4091C90.6198 31.2443 90.742 31.0639 90.8244 30.8679L91.5445 31.1023C91.4451 31.3778 91.2817 31.6321 91.0545 31.8651C90.83 32.098 90.5488 32.2855 90.2107 32.4276C89.8755 32.5668 89.4891 32.6364 89.0516 32.6364ZM103.345 28.1364C103.345 29.0455 103.184 29.8366 102.86 30.5099C102.536 31.1804 102.09 31.7003 101.522 32.0696C100.956 32.4361 100.306 32.6193 99.5699 32.6193C98.8341 32.6193 98.1821 32.4361 97.6139 32.0696C97.0486 31.7003 96.604 31.1804 96.2801 30.5099C95.9591 29.8366 95.7986 29.0455 95.7986 28.1364C95.7986 27.2273 95.9591 26.4375 96.2801 25.767C96.604 25.0937 97.05 24.5739 97.6182 24.2074C98.1864 23.8381 98.837 23.6534 99.5699 23.6534C100.306 23.6534 100.956 23.8381 101.522 24.2074C102.09 24.5739 102.536 25.0937 102.86 25.767C103.184 26.4375 103.345 27.2273 103.345 28.1364ZM102.57 28.1364C102.57 27.3551 102.439 26.6861 102.178 26.1293C101.917 25.5696 101.56 25.142 101.108 24.8466C100.657 24.5511 100.144 24.4034 99.5699 24.4034C98.9989 24.4034 98.4875 24.5511 98.0358 24.8466C97.5841 25.142 97.2262 25.5682 96.962 26.125C96.7006 26.6818 96.5699 27.3523 96.5699 28.1364C96.5699 28.9176 96.7006 29.5866 96.962 30.1435C97.2233 30.7003 97.5799 31.1278 98.0316 31.4261C98.4833 31.7216 98.9961 31.8693 99.5699 31.8693C100.144 31.8693 100.657 31.7216 101.108 31.4261C101.563 31.1307 101.921 30.7045 102.182 30.1477C102.443 29.5881 102.573 28.9176 102.57 28.1364ZM104.755 34.9545V25.9545H105.492V27.2031H105.582C105.673 27.0071 105.798 26.8068 105.957 26.6023C106.116 26.3949 106.326 26.2202 106.587 26.0781C106.852 25.9361 107.184 25.8651 107.585 25.8651C108.124 25.8651 108.596 26.0071 108.999 26.2912C109.406 26.5724 109.721 26.9673 109.945 27.4759C110.173 27.9815 110.286 28.571 110.286 29.2443C110.286 29.9205 110.173 30.5128 109.945 31.0213C109.721 31.5298 109.406 31.9261 108.999 32.2102C108.596 32.4943 108.127 32.6364 107.593 32.6364C107.198 32.6364 106.867 32.5653 106.6 32.4233C106.336 32.2812 106.121 32.1065 105.957 31.8991C105.795 31.6889 105.67 31.4844 105.582 31.2855H105.514V34.9545H104.755ZM105.505 29.2315C105.505 29.7599 105.583 30.2287 105.739 30.6378C105.898 31.044 106.126 31.3636 106.421 31.5966C106.72 31.8267 107.08 31.9418 107.504 31.9418C107.938 31.9418 108.305 31.8224 108.603 31.5838C108.904 31.3423 109.133 31.017 109.289 30.608C109.448 30.1989 109.528 29.7401 109.528 29.2315C109.528 28.7287 109.45 28.2756 109.293 27.8722C109.14 27.4687 108.913 27.1491 108.612 26.9134C108.31 26.6747 107.941 26.5554 107.504 26.5554C107.077 26.5554 106.715 26.6705 106.417 26.9006C106.119 27.1278 105.891 27.4432 105.735 27.8466C105.582 28.2472 105.505 28.7088 105.505 29.2315ZM114.168 25.9545V26.6151H111.045V25.9545H114.168ZM112.021 24.3864H112.784V30.7912C112.784 31.0639 112.83 31.2784 112.924 31.4347C113.018 31.5881 113.14 31.6974 113.291 31.7628C113.441 31.8253 113.602 31.8565 113.772 31.8565C113.872 31.8565 113.957 31.8509 114.028 31.8395C114.099 31.8253 114.161 31.8111 114.215 31.7969L114.377 32.483C114.303 32.5114 114.212 32.5369 114.105 32.5597C113.997 32.5852 113.863 32.598 113.704 32.598C113.426 32.598 113.157 32.5369 112.899 32.4148C112.643 32.2926 112.433 32.1108 112.268 31.8693C112.103 31.6278 112.021 31.3281 112.021 30.9702V24.3864ZM115.54 32.5V25.9545H116.302V32.5H115.54ZM115.927 24.8295C115.771 24.8295 115.638 24.777 115.527 24.6719C115.416 24.5639 115.361 24.4347 115.361 24.2841C115.361 24.1335 115.416 24.0057 115.527 23.9006C115.638 23.7926 115.771 23.7386 115.927 23.7386C116.084 23.7386 116.217 23.7926 116.328 23.9006C116.439 24.0057 116.494 24.1335 116.494 24.2841C116.494 24.4347 116.439 24.5639 116.328 24.6719C116.217 24.777 116.084 24.8295 115.927 24.8295ZM117.948 32.5V25.9545H118.686V26.9602H118.754C118.885 26.6222 119.102 26.3565 119.406 26.1634C119.713 25.9673 120.081 25.8693 120.51 25.8693C120.961 25.8693 121.332 25.9759 121.622 26.1889C121.914 26.3991 122.133 26.6889 122.278 27.0582H122.333C122.481 26.6946 122.721 26.4062 123.054 26.1932C123.389 25.9773 123.795 25.8693 124.272 25.8693C124.88 25.8693 125.36 26.0611 125.713 26.4446C126.065 26.8253 126.241 27.3821 126.241 28.1151V32.5H125.483V28.1151C125.483 27.598 125.35 27.2102 125.086 26.9517C124.822 26.6932 124.474 26.5639 124.042 26.5639C123.542 26.5639 123.157 26.7173 122.887 27.0241C122.617 27.331 122.483 27.7202 122.483 28.1918V32.5H121.707V28.0469C121.707 27.6037 121.583 27.2457 121.336 26.973C121.089 26.7003 120.741 26.5639 120.292 26.5639C119.991 26.5639 119.72 26.6378 119.478 26.7855C119.24 26.9332 119.051 27.1392 118.912 27.4034C118.775 27.6648 118.707 27.9659 118.707 28.3068V32.5H117.948ZM127.898 32.5V25.9545H128.661V32.5H127.898ZM128.286 24.8295C128.129 24.8295 127.996 24.777 127.885 24.6719C127.774 24.5639 127.719 24.4347 127.719 24.2841C127.719 24.1335 127.774 24.0057 127.885 23.9006C127.996 23.7926 128.129 23.7386 128.286 23.7386C128.442 23.7386 128.575 23.7926 128.686 23.9006C128.797 24.0057 128.852 24.1335 128.852 24.2841C128.852 24.4347 128.797 24.5639 128.686 24.6719C128.575 24.777 128.442 24.8295 128.286 24.8295ZM134.704 27.3906L134.01 27.5866C133.942 27.3906 133.845 27.2131 133.72 27.054C133.595 26.8949 133.432 26.7685 133.23 26.6747C133.031 26.581 132.784 26.5341 132.488 26.5341C132.045 26.5341 131.682 26.6392 131.397 26.8494C131.113 27.0597 130.971 27.331 130.971 27.6634C130.971 27.9446 131.068 28.1733 131.261 28.3494C131.457 28.5227 131.758 28.6605 132.165 28.7628L133.153 29.0057C133.701 29.1392 134.112 29.3509 134.385 29.6406C134.66 29.9304 134.798 30.294 134.798 30.7315C134.798 31.1009 134.696 31.429 134.491 31.7159C134.287 32.0028 134.001 32.2287 133.635 32.3935C133.271 32.5554 132.849 32.6364 132.369 32.6364C131.73 32.6364 131.203 32.4929 130.788 32.206C130.373 31.9162 130.108 31.4986 129.991 30.9531L130.72 30.7741C130.814 31.1634 130.997 31.4574 131.27 31.6562C131.545 31.8551 131.907 31.9545 132.356 31.9545C132.859 31.9545 133.261 31.8423 133.562 31.6179C133.863 31.3906 134.014 31.1065 134.014 30.7656C134.014 30.5014 133.926 30.2798 133.75 30.1009C133.574 29.919 133.307 29.7855 132.949 29.7003L131.879 29.4446C131.311 29.3082 130.89 29.0923 130.618 28.7969C130.345 28.5014 130.209 28.1349 130.209 27.6974C130.209 27.3366 130.307 27.0199 130.503 26.7472C130.699 26.4716 130.969 26.2557 131.312 26.0994C131.656 25.9432 132.048 25.8651 132.488 25.8651C133.088 25.8651 133.567 26.0014 133.924 26.2741C134.285 26.544 134.545 26.9162 134.704 27.3906ZM137.927 32.6491C137.532 32.6491 137.171 32.5724 136.845 32.419C136.518 32.2628 136.258 32.0384 136.065 31.7457C135.872 31.4503 135.775 31.0923 135.775 30.6719C135.775 30.348 135.836 30.0753 135.958 29.8537C136.08 29.6321 136.254 29.4503 136.478 29.3082C136.703 29.1662 136.968 29.054 137.275 28.9716C137.582 28.8892 137.92 28.8253 138.289 28.7798C138.656 28.7344 138.965 28.6946 139.218 28.6605C139.474 28.6264 139.669 28.5724 139.802 28.4986C139.936 28.4247 140.002 28.3054 140.002 28.1406V27.9872C140.002 27.5412 139.869 27.1903 139.602 26.9347C139.338 26.6761 138.957 26.5469 138.46 26.5469C137.988 26.5469 137.603 26.6506 137.305 26.858C137.009 27.0653 136.802 27.3097 136.683 27.5909L135.963 27.331C136.11 26.973 136.315 26.6875 136.576 26.4744C136.838 26.2585 137.13 26.1037 137.454 26.0099C137.778 25.9134 138.106 25.8651 138.438 25.8651C138.688 25.8651 138.948 25.8977 139.218 25.9631C139.491 26.0284 139.744 26.142 139.977 26.304C140.21 26.4631 140.399 26.6861 140.544 26.973C140.688 27.2571 140.761 27.6179 140.761 28.0554V32.5H140.002V31.4645H139.955C139.865 31.6577 139.73 31.8452 139.551 32.027C139.372 32.2088 139.147 32.358 138.877 32.4744C138.607 32.5909 138.291 32.6491 137.927 32.6491ZM138.029 31.9545C138.433 31.9545 138.782 31.8651 139.078 31.6861C139.373 31.5071 139.6 31.2699 139.759 30.9744C139.921 30.6761 140.002 30.348 140.002 29.9901V29.044C139.946 29.098 139.85 29.1463 139.717 29.1889C139.586 29.2315 139.434 29.2699 139.261 29.304C139.09 29.3352 138.92 29.3622 138.749 29.3849C138.579 29.4077 138.426 29.4276 138.289 29.4446C137.92 29.4901 137.605 29.5611 137.343 29.6577C137.082 29.7543 136.882 29.8878 136.742 30.0582C136.603 30.2259 136.534 30.4418 136.534 30.706C136.534 31.1037 136.676 31.4119 136.96 31.6307C137.244 31.8466 137.6 31.9545 138.029 31.9545ZM144.997 25.9545V26.6151H141.873V25.9545H144.997ZM142.849 24.3864H143.612V30.7912C143.612 31.0639 143.659 31.2784 143.752 31.4347C143.846 31.5881 143.968 31.6974 144.119 31.7628C144.269 31.8253 144.43 31.8565 144.6 31.8565C144.7 31.8565 144.785 31.8509 144.856 31.8395C144.927 31.8253 144.99 31.8111 145.044 31.7969L145.206 32.483C145.132 32.5114 145.041 32.5369 144.933 32.5597C144.825 32.5852 144.691 32.598 144.532 32.598C144.254 32.598 143.985 32.5369 143.727 32.4148C143.471 32.2926 143.261 32.1108 143.096 31.8693C142.931 31.6278 142.849 31.3281 142.849 30.9702V24.3864ZM146.368 32.5V25.9545H147.131V32.5H146.368ZM146.756 24.8295C146.599 24.8295 146.466 24.777 146.355 24.6719C146.244 24.5639 146.189 24.4347 146.189 24.2841C146.189 24.1335 146.244 24.0057 146.355 23.9006C146.466 23.7926 146.599 23.7386 146.756 23.7386C146.912 23.7386 147.045 23.7926 147.156 23.9006C147.267 24.0057 147.322 24.1335 147.322 24.2841C147.322 24.4347 147.267 24.5639 147.156 24.6719C147.045 24.777 146.912 24.8295 146.756 24.8295ZM151.321 32.6364C150.755 32.6364 150.255 32.4929 149.821 32.206C149.389 31.919 149.051 31.5227 148.807 31.017C148.562 30.5085 148.44 29.9219 148.44 29.2571C148.44 28.5866 148.562 27.9972 148.807 27.4886C149.051 26.9773 149.389 26.5795 149.821 26.2955C150.255 26.0085 150.755 25.8651 151.321 25.8651C151.886 25.8651 152.385 26.0085 152.817 26.2955C153.248 26.5824 153.586 26.9801 153.831 27.4886C154.078 27.9972 154.201 28.5866 154.201 29.2571C154.201 29.9219 154.079 30.5085 153.835 31.017C153.591 31.5227 153.251 31.919 152.817 32.206C152.385 32.4929 151.886 32.6364 151.321 32.6364ZM151.321 31.9418C151.775 31.9418 152.16 31.8196 152.476 31.5753C152.791 31.331 153.03 31.0057 153.192 30.5994C153.356 30.1932 153.439 29.7457 153.439 29.2571C153.439 28.7685 153.356 28.3196 153.192 27.9105C153.03 27.5014 152.791 27.1733 152.476 26.9261C152.16 26.679 151.775 26.5554 151.321 26.5554C150.869 26.5554 150.484 26.679 150.166 26.9261C149.851 27.1733 149.611 27.5014 149.446 27.9105C149.284 28.3196 149.203 28.7685 149.203 29.2571C149.203 29.7457 149.284 30.1932 149.446 30.5994C149.611 31.0057 149.851 31.331 150.166 31.5753C150.481 31.8196 150.866 31.9418 151.321 31.9418ZM156.265 28.4091V32.5H155.507V25.9545H156.244V26.9815H156.312C156.465 26.6463 156.704 26.3778 157.028 26.1761C157.355 25.9716 157.758 25.8693 158.238 25.8693C158.678 25.8693 159.065 25.9616 159.397 26.1463C159.732 26.3281 159.992 26.5966 160.177 26.9517C160.365 27.3068 160.458 27.7429 160.458 28.2599V32.5H159.7V28.3068C159.7 27.7699 159.549 27.3452 159.248 27.0327C158.95 26.7202 158.549 26.5639 158.046 26.5639C157.703 26.5639 157.397 26.6378 157.13 26.7855C156.863 26.9332 156.651 27.1463 156.495 27.4247C156.342 27.7003 156.265 28.0284 156.265 28.4091Z" fill="black"></path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_trust-bar">
+              <div class="outer-div">
+                <div class="trust-bar_line top"></div>
+                <div class="trust-bar_line left"></div>
+                <div class="trust-bar_line right"></div>
+                <div class="trust-bar_line bottom"></div>
+              </div>
+              <div class="trust-bar-content">
+                <div class="trust-bar_item">
+                  <p class="trust-bar_item">Monthly support available</p>
+                </div>
+                <div class="trust-bar_item">
+                  <div class="trust-bar_divider"></div>
+                </div>
+                <div class="trust-bar_item">
+                  <p class="trust-bar_item">Webflow, Framer Shopify &amp; WordPress</p>
+                </div>
+                <div class="trust-bar_item">
+                  <div class="trust-bar_divider"></div>
+                </div>
+                <div class="trust-bar_item">
+                  <p class="trust-bar_item">Audit-led onboarding</p>
+                </div>
+                <div class="trust-bar_item">
+                  <div class="trust-bar_divider"></div>
+                </div>
+                <div class="trust-bar_item">
+                  <p class="trust-bar_item">Ongoing site improvements</p>
+                </div>
+              </div>
+            </div>
+            <div class="image-wrapper start">
+              <div class="show-reel-image-slider">
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/arewa-clinic_1arewa-clinic-DCth9wKj.avif" alt="Website homepage of Arewa Clinic showing close-up of a person’s face and promotional text for aesthetic skin care with images of popular treatments below." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/offic-fitout_1offic-fitout-CUQp9KjY.avif" alt="Modern office interior with glass walls, ergonomic chairs, and wooden floors, promoting workspace design." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/seedrock-consulting_1seedrock-consulting-Bd7La-qN.avif" alt="Website homepage for SeedRock Consulting showing market challenges statistics and approach icons against a cityscape background." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/okiemint_1okiemint-BFqM7xjp.avif" alt="Website homepage with green background highlighting software growth services and images of people working and devices, plus sections describing strategic digital products." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/ace-accountants_1ace-accountants-zXK_9sFV.avif" alt="Website homepage of Ace Accountants featuring a headline &#x27;Grow Your Business We Handle the Numbers&#x27;, a blue call-to-action button, financial icons, client testimonials, and a smiling woman with text highlighting core benefits of accounting services." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/arewa-clinic_1arewa-clinic-DCth9wKj.avif" alt="Website homepage of Arewa Clinic showing close-up of a person’s face and promotional text for aesthetic skin care with images of popular treatments below." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/offic-fitout_1offic-fitout-CUQp9KjY.avif" alt="Modern office interior with glass walls, ergonomic chairs, and wooden floors, promoting workspace design." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/seedrock-consulting_1seedrock-consulting-Bd7La-qN.avif" alt="Website homepage for SeedRock Consulting showing market challenges statistics and approach icons against a cityscape background." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/okiemint_1okiemint-BFqM7xjp.avif" alt="Website homepage with green background highlighting software growth services and images of people working and devices, plus sections describing strategic digital products." class="show-reel-image"></div>
+                <div class="show-reel-image-wrapper"><img loading="lazy" src="/assets/ace-accountants_1ace-accountants-zXK_9sFV.avif" alt="Website homepage of Ace Accountants featuring a headline &#x27;Grow Your Business We Handle the Numbers&#x27;, a blue call-to-action button, financial icons, client testimonials, and a smiling woman with text highlighting core benefits of accounting services." class="show-reel-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_services">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="services_component">
+              <div class="services_header">
+                <p class="text-size-small">SERVICES</p>
+                <div class="services_heading-wrap">
+                  <h2 class="heading-style-h2">Website services <span class="emphasis">built for growth.</span></h2>
+                </div>
+                <p class="text-size-regular text-weight-light">From new website builds to ongoing management, we help businesses launch better and keep improving after go-live.</p>
+              </div>
+              <div class="services_grid">
+                <div class="services_card _1"><img class="services_card-image" src="/assets/webdesign-imagw-DnJT5ty9.avif" data-figma-image-id="69dd752155ea59535b47d6eb" alt="Illustration of web design elements with computer windows, a pencil, a rocket icon, and a launch button with a cursor." data-figma-id="403:427" data-figma-image-hash="f5206e8ded0dfe4a0740b4ac8532e5c8" loading="lazy">
+                  <div data-figma-id="403:428" class="services_card-body">
+                    <p data-figma-id="403:429" class="services_card-title">Website Design &amp; Build</p>
+                    <p data-figma-id="403:430" class="services_card-text">New websites, redesigns, and platform migrations built for performance, clarity, and long-term growth.</p>
+                  </div>
+                </div>
+                <div class="services_divider"></div>
+                <div class="services_card is-featured"><img class="services_card-image" src="/assets/website-managementimage-DvUkqmQF.avif" data-figma-image-id="69dd752155ea59535b47d6eb" alt="Illustration of multiple digital analytics dashboards with charts, graphs, a gear icon, a clock, and a wrench symbolizing data analysis and optimization." data-figma-id="403:427" data-figma-image-hash="f5206e8ded0dfe4a0740b4ac8532e5c8" loading="lazy">
+                  <div data-figma-id="403:428" class="services_card-body">
+                    <p data-figma-id="403:429" class="services_card-title">Website Management</p>
+                    <p data-figma-id="403:430" class="services_card-text">Ongoing maintenance, CMS support, fixes, and improvements for businesses that need a reliable website partner.</p>
+                  </div>
+                </div>
+                <div class="services_divider"></div>
+                <div class="services_card _2"><img class="services_card-image" src="/assets/seo-performance-image-FFHmkpG2.avif" data-figma-image-id="69dd752155ea59535b47d6eb" alt="Illustration of a computer screen with a speedometer gauge, documents, and a magnifying glass highlighting a chart, symbolizing data analysis and optimization." data-figma-id="403:427" data-figma-image-hash="f5206e8ded0dfe4a0740b4ac8532e5c8" loading="lazy">
+                  <div data-figma-id="403:428" class="services_card-body">
+                    <p data-figma-id="403:429" class="services_card-title">SEO &amp; Performance</p>
+                    <p data-figma-id="403:430" class="services_card-text">Technical SEO, speed improvements, Core Web Vitals, and ongoing optimisation so your website stays fast and visible.</p>
+                  </div>
+                </div>
+                <div class="services_divider"></div>
+                <div class="services_card _4"><img class="services_card-image" src="/assets/customfeatures-image-C8vdeeFj.avif" data-figma-image-id="69dd752155ea59535b47d6eb" alt="Digital illustration of a computer interface with charts, settings gears, a mobile phone with a checklist, and an API label." data-figma-id="403:427" data-figma-image-hash="f5206e8ded0dfe4a0740b4ac8532e5c8" loading="lazy">
+                  <div data-figma-id="403:428" class="services_card-body">
+                    <p data-figma-id="403:429" class="services_card-title">Custom Features</p>
+                    <p data-figma-id="403:430" class="services_card-text">Booking systems, dashboards, automations, forms, APIs, and custom functionality built into your website.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="services_cta-wrap">
+                <a href="#" class="button is-small w-button">Explore all Plans</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="section_steps">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="steps_component">
+              <div class="steps_header">
+                <p class="text-size-small">HOW IT WORKS</p>
+                <h2 class="heading-style-h2">Three steps.<br>‍<span class="emphasis">Then we take it from here.</span></h2>
+              </div>
+              <div class="steps_grid">
+                <div data-figma-id="403:504" class="steps_card">
+                  <div class="steps_card-header-wrap">
+                    <p data-figma-id="403:507" class="steps_card-eyebrow emphasis-2 text-size-regular">STEP 01</p>
+                    <h3 data-figma-id="403:508" class="heading-style-h3">Audit</h3>
+                  </div>
+                  <p data-figma-id="403:509" class="steps_card-text text-size-regular text-weight-light">We review your current website: structure, speed, content setup, SEO basics, and maintenance risks. You get a clear picture of where things stand and what needs attention.</p>
+                </div>
+                <div data-figma-id="403:504" class="steps_card">
+                  <div class="steps_card-header-wrap">
+                    <p data-figma-id="403:507" class="steps_card-eyebrow emphasis-2 text-size-regular">STEP 02</p>
+                    <h3 data-figma-id="403:508" class="heading-style-h3">Build or Onboard</h3>
+                  </div>
+                  <p data-figma-id="403:509" class="steps_card-text text-size-regular text-weight-light">We either design and build your new site from scratch, or take over management of your existing one. Either way, you get a clean handover and a structured starting point.</p>
+                </div>
+                <div data-figma-id="403:504" class="steps_card _3">
+                  <div class="steps_card-header-wrap">
+                    <p data-figma-id="403:507" class="steps_card-eyebrow emphasis-2 text-size-regular">STEP 03</p>
+                    <h3 data-figma-id="403:508" class="heading-style-h3">Ongoing Management</h3>
+                  </div>
+                  <p data-figma-id="403:509" class="steps_card-text text-size-regular text-weight-light">You stay on a monthly plan. We handle updates, support requests, performance work, content publishing, and technical improvements — with clear reporting each month and a simple way to request changes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section_platforms background-color-secondary">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="platforms_component">
+              <div class="platforms_header">
+                <p class="text-size-small">SERVICES</p>
+                <div class="platforms_heading-wrap">
+                  <h2 class="heading-style-h2">Website management across<br> <span class="emphasis"><em>Webflow, WordPress, Shopify &amp;Framer</em>.</span></h2>
+                </div>
+                <p class="text-size-regular text-weight-light text-align-center">We manage websites across Webflow, WordPress, and Framer, with platform-specific support tailored to how each one works.</p>
+              </div>
+              <div class="platforms_grid">
+                <div class="platforms_card _1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABHJJREFUeAHt3G9S00AYBvB3Y53RfuII9QTiCaz8Ub6JJ7CeQD0BcgLlBJQb1G8FaY0noJxAjtABhmFos+u+kcxAaSEhyb7b5vl9oWJmon3y7G7DBiIAAAAAAAAAAAAAAAAAAPCEere2+tsY0yQHDnp9lfbYov9dilS43+u9SXv8u9XVXUOmRQ7ZN+ckIA9trK01XV0kU8+/sdFwHQYzhvZq5CH7ZmyRIDMaOT8/t0Np3fauIVVthzK03Q1D/4asqraj2++3+bVXgVS5HclrrwKxYXwkQdLtYN4EInV1Sp//ZjuYN4FIXJ23zj8e7ZJjk+1gXgQi3g6huWuyHcyLQMTbIbCym9YOJh6IdDvWV1ZavrSDiQci3Q6lyJt2MNFAfGiH/dIgx2a1g4kGgnbcJRYI2jGdWCBox3QigaAds4kEgnbM5jyQyrZDBZ/SHOc8EMl2bG5uLsm0Q4Xdw8MwzbFOAxFth6Kli/PTzyTSDvXg3JFw+jN1Pbr6S0Ls7ZFl+2WZHMvSDublrpNFkqUdDIGUyK6s2lnawRBIiVSkM7WD1bSh40Cl3lCYmeSmBUlxO8LwhDIqLwmS2Y7piyDSLx4TSCmrLF7vX5yf/b5e2VTOY9vBCp9D1tfXly/OTo+oomGwx8wdiUIDebuysqV0dEQCH758kacdrJAhi3dtaDLfq9yKRJ52sFyBXG+f2dJGNwlyt4M9KhAEMV3edrDUgcQhEL03RrdsEEsEtxTRDjYzkI1ms0FPg6bR9NoGsYkQ7ldEO1gtfuNrtQYp3TAmeGkn5ob9fL2seaWkaZ4M7Z3VjsiG6YLawWqm9mTX8Fxg+I/zlcBN9u7PtjEk8jhDUe1gi3Fz0dC21jTkZpNjRbaDLUAgau+g3/8m8aPZ+OwFtoPNdyBKDepR9EVq4wJdP6hJBZrbQHhbTX0cvemE4VBqW0+gdZsK5uVz6g+Jn+mOdByGVDv4If/9gtvB5i6QJIxkqJBqhyqhHWy+hiw7ZzyP9KskDMl2dEtoB5unQDrJnJF8Y5HmjsRcDFn2E/jOfq/35eb3xFZWinbKagfzvSG8gvo6GQaTasf+Yf8HlcjbhvB/Xkf6w0EYDib/zufHCfLysiE8RPHk/WtKGLw/2OfHCfLyrSF2wlaf7BDVmXWAHl/xDcQGOeaiHcybhnAr6pF+cXBPGNwOe7uiRY65agcTb4hSKrRhbKfZA7vo7WCSgQwDQ1+7vV47zcHcDj26+kaOuWwHkwhkyGv5+lj/uPkh7yFST165bAdzFghfaXb833luP+VmCYJdt6NFjrluBys9kCxzxCxVaQcrJRC+soyivazD0jRVagcrLJB4SCL6qVTQydOGSVVqB8sTiL3PpAakzU+tdTjtFkdeVWsHSx1IPAwRDeyV80cFweDZeDzIOxw9pGrtYHcC+T/+q6EyZmBXRcf29Uk9isKy3/xJVWwHq/EKKH50dzw+eWaHIddv/CzR5eXSk6fpfh1Foecd6cKHXgAAAAAAAAAAAAAAAACAdP4BGjmGQHIO9hkAAAAASUVORK5CYII=" loading="lazy" alt="" class="platforms_card-logo">
+                  <h3>Webflow</h3>
+                  <a href="#" class="button is-small w-button">Explore Webflow</a>
+                </div>
+                <div class="platforms_card"><img src="/assets/Wordpress-Logo-1-f-rxuyJ1.png" loading="lazy" alt="" class="platforms_card-logo">
+                  <h3>WordPress</h3>
+                  <a href="#" class="button is-small w-button">Explore Wordpress</a>
+                </div>
+                <div class="platforms_card"><img src="data:image/png;base64,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" loading="lazy" alt="" class="platforms_card-logo">
+                  <h3>Shopify</h3>
+                  <a href="#" class="button is-small w-button">Explore Shopify</a>
+                </div>
+                <div class="platforms_card end"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAvtJREFUeAHt3ctxE0EUheHbEgVbhSAyIARZKtsUKxEBKUAEOANCgAwQGwpw2Z4McAgKwVsojYY5MpSxrcfM9Ov29PkXXrv0lSVNP3yNWDaZTEbPhoOflchY2PLHxeVzsWgglhVFcWPK9ZGpfxlh1lmDoG9FsSSKm5yAIKK4yRkIIop9TkEQUexyDoKI0j0vIIgo3fIGgojSPq8giCjt8g6CiNK8ICCIKM0KBoKIcrigIIgo+wsOgoiyuyggiCjbiwaCiPK4qCCIKPeLDoKIcpcKEESU29SAIKIoA0G5o6gDQTmjqARB/1BEzLVklFoQBJTfZZkVimoQhHNfOaGoB0E5oSQBgnJBSQYE5YCSFAjqO0pyIKjPKEmCoL6iJAuC+ojyRCw7nU0/1i/IWCJW1WssZi3vzGAQFaZcrW7EMmuQSmRS/xxLzKoNynhozNHX8/Ok/1qSfst60Gi1Lq9eHR+/kITrEwjaoJzMZnNJtL6BoFH9Bvb55Wz2RhKsjyCb1lJ9ShGltyAoRZReg6DUUHoPglJCyQIEpYKSDQhKASUrEKQdJTsQpBklSxCkFSVbEKQRJWsQpA0lexAElNPp9K0oiCB/q/dTPpxMp+8lcgT5PyNnsVEI8rDIKATZVkQUguwqEgpB9hUBhSCHCoxCkCYFRCFI0wKhEKRNAVAI0jbPKATpkkcUgnTNEwpBbPKAQhDbHKMQxEUOUazvhxhjllUV+X6IwQ2q6ovEzIiZz+ejxWJhdWnHGuTXqnz9dDi8ql+QaPcyTFVdf7+4PJMe5GTkUW7/j8RnTj5DiOIuZx/qRHGT029ZRLHP+ddeotjl5TmEKN3z9mBIlG55fVInSvu8L50QpV1B1rKI0rxgi4tEaVbQ1V6iHC748jtR9hdlP4Qou4u2QUWU7UXdMSTK46Jv4RLlfir21Ilyl5pDDkS5TdWpE6IoPAaUO4rKc1k5o6g9KJcriuqTizmicOSRsjjySFkceaQsjjxSFkceKYsjj5TFkUfK4sgjZf0BRrM64mwFqZQAAAAASUVORK5CYII=" loading="lazy" alt="" class="platforms_card-logo">
+                  <h3>Framer</h3>
+                  <a href="#" class="button is-small w-button">Explore Framer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_cta">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="cta_component">
+              <div class="cta_content">
+                <div class="cta_heading-wrap">
+                  <h2 class="heading-style-h2">Ready to stop worrying <span class="emphasis">built for growth.</span></h2>
+                </div>
+                <p class="text-size-regular text-weight-light">Book a free site audit and find out exactly where your website stands and what we can do about it.</p>
+              </div>
+              <div class="cta_actions">
+                <a href="contact-us.html" class="button-2 is-icon w-inline-block">
+                  <div>Book a free site audit</div>
+                  <div class="icon-1x1-small w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="currentColor"></rect>
+                      <path d="M8 13.5L11.5 10L8.5 7L8 6.5" stroke="currentColor" stroke-linecap="round"></path>
+                    </svg></div>
+                </a>
+                <a href="#projects" class="button w-button">View Our Plans</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-w-id="b89fcdee-22f1-d4ef-8d2c-ae1a47e629d7" style="opacity:0" class="footer-wrapper">
+      <div data-w-id="1cc23872-6da5-e7ce-defc-ff550c4f2a3f" class="section_footer">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="footer_grid">
+              <div id="w-node-_7e536f29-1967-510c-8bf9-2614cd136ce1-979bd2c3" class="footer_grid-left">
+                <div class="footer_logo-wrapper">
+                  <div class="footer_logo-svg w-embed"><svg width="100%" height="100%" viewbox="0 0 651 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line y1="15.6359" x2="123.024" y2="15.6359" stroke="black" stroke-width="0.942081"></line>
+                      <line y1="118.156" x2="123.024" y2="118.156" stroke="black" stroke-width="0.942081"></line>
+                      <line x1="10.721" y1="1.34375" x2="10.721" y2="133.389" stroke="black" stroke-width="0.942081"></line>
+                      <line x1="113.242" y1="1.34375" x2="113.242" y2="133.389" stroke="black" stroke-width="0.942081"></line>
+                      <path d="M136.728 95.3685C137.643 94.9873 138.233 94.818 138.777 94.2751C139.32 93.7321 139.625 92.9959 139.625 92.2281C139.625 91.4603 139.32 90.724 138.777 90.1811C138.233 89.6382 138.05 89.313 136.728 88.9253C135.406 88.5376 71.1387 66.8112 71.1387 66.8112C70.1131 66.4603 69.0096 66.404 67.9536 66.6486C66.8976 66.8931 65.9314 67.4289 65.1648 68.1948C64.3983 68.9607 63.8622 69.9262 63.6174 70.9814C63.3726 72.0367 63.429 73.1393 63.7802 74.1641C63.7802 74.1641 86.0204 138.882 86.2921 139.762C86.5638 140.642 86.9143 141.266 87.4576 141.809C88.0009 142.352 88.7378 142.656 89.5061 142.656C90.2745 142.656 91.0114 142.352 91.5547 141.809C92.098 141.266 92.2221 140.958 92.6294 139.762C93.0367 138.566 103.991 106.992 103.991 106.992C103.991 106.992 135.814 95.7498 136.728 95.3685Z" fill="black" stroke="black" stroke-width="0.41008" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M135.183 94.5956C136.097 94.2143 136.688 94.045 137.231 93.5021C137.774 92.9592 138.08 92.2229 138.08 91.4551C138.08 90.6874 137.774 89.951 137.231 89.4081C136.688 88.8653 136.504 88.54 135.183 88.1523C133.86 87.7646 69.5928 66.0382 69.5928 66.0382C68.5672 65.6874 67.4637 65.631 66.4077 65.8756C65.3517 66.1202 64.3855 66.6559 63.6189 67.4218C62.8524 68.1878 62.3163 69.1533 62.0715 70.2085C61.8267 71.2637 61.8831 72.3664 62.2343 73.3912C62.2343 73.3912 84.4745 138.109 84.7462 138.989C85.0179 139.869 85.3684 140.493 85.9117 141.036C86.455 141.579 87.1919 141.883 87.9602 141.883C88.7286 141.883 89.4655 141.579 90.0088 141.036C90.5521 140.493 90.6762 140.185 91.0835 138.989C91.4908 137.793 102.446 106.219 102.446 106.219C102.446 106.219 134.268 94.9768 135.183 94.5956Z" fill="#373737" stroke="black" stroke-width="0.41008" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M147.375 65V6.64558H181.14V11.4325H152.703V33.4009H178.49V38.1877H152.703V65H147.375ZM189.575 65V6.64558H208.409C212.55 6.64558 216.007 7.39591 218.781 8.89656C221.573 10.3782 223.672 12.4392 225.078 15.0796C226.502 17.701 227.215 20.7118 227.215 24.112C227.215 27.5122 226.502 30.5135 225.078 33.1159C223.672 35.7183 221.583 37.7508 218.809 39.2135C216.036 40.6762 212.598 41.4075 208.495 41.4075H192.453V36.5351H208.352C211.391 36.5351 213.918 36.0317 215.931 35.025C217.964 34.0182 219.474 32.584 220.462 30.7225C221.469 28.8609 221.972 26.6574 221.972 24.112C221.972 21.5666 221.469 19.3441 220.462 17.4446C219.455 15.526 217.935 14.0444 215.903 12.9996C213.889 11.9548 211.344 11.4325 208.267 11.4325H194.903V65H189.575ZM215.305 38.6721L229.665 65H223.511L209.292 38.6721H215.305ZM235.465 65H229.88L251.108 6.64558H256.806L278.034 65H272.449L254.156 13.5695H253.757L235.465 65ZM239.482 42.6327H268.432V47.4196H239.482V42.6327ZM283.221 6.64558H289.375L310.546 57.4778H311.059L332.229 6.64558H338.384V65H333.369V17.9005H332.913L313.224 65H308.38L288.691 17.9005H288.236V65H283.221V6.64558ZM349.084 65V6.64558H382.934V11.4325H354.413V33.4009H381.139V38.1877H354.413V60.2131H383.504V65H349.084ZM402.055 65L386.07 6.64558H391.484L404.704 56.8224H405.16L418.381 6.64558H424.536L437.757 56.8224H438.213L451.434 6.64558H456.876L440.891 65H435.192L421.658 15.507H421.288L407.753 65H402.055ZM506.79 35.8228C506.79 41.9014 505.707 47.1916 503.542 51.6936C501.376 56.1766 498.394 59.6527 494.595 62.1222C490.815 64.5726 486.465 65.7978 481.545 65.7978C476.625 65.7978 472.266 64.5726 468.467 62.1222C464.687 59.6527 461.714 56.1766 459.548 51.6936C457.402 47.1916 456.328 41.9014 456.328 35.8228C456.328 29.7442 457.402 24.4634 459.548 19.9805C461.714 15.4785 464.696 12.0023 468.495 9.5519C472.294 7.08248 476.644 5.84777 481.545 5.84777C486.465 5.84777 490.815 7.08248 494.595 9.5519C498.394 12.0023 501.376 15.4785 503.542 19.9805C505.707 24.4634 506.79 29.7442 506.79 35.8228ZM501.604 35.8228C501.604 30.599 500.731 26.1256 498.983 22.4024C497.235 18.6603 494.852 15.8015 491.831 13.8259C488.811 11.8504 485.382 10.8626 481.545 10.8626C477.727 10.8626 474.308 11.8504 471.288 13.8259C468.267 15.8015 465.874 18.6508 464.107 22.3739C462.36 26.0971 461.486 30.58 461.486 35.8228C461.486 41.0466 462.36 45.52 464.107 49.2432C465.855 52.9663 468.239 55.8251 471.259 57.8197C474.279 59.7952 477.708 60.783 481.545 60.783C485.382 60.783 488.811 59.7952 491.831 57.8197C494.871 55.8441 497.264 52.9948 499.012 49.2717C500.759 45.5295 501.623 41.0466 501.604 35.8228ZM514.862 65V6.64558H533.696C537.837 6.64558 541.294 7.39591 544.068 8.89656C546.86 10.3782 548.959 12.4392 550.365 15.0796C551.79 17.701 552.502 20.7118 552.502 24.112C552.502 27.5122 551.79 30.5135 550.365 33.1159C548.959 35.7183 546.87 37.7508 544.096 39.2135C541.323 40.6762 537.885 41.4075 533.782 41.4075H517.74V36.5351H533.639C536.679 36.5351 539.205 36.0317 541.218 35.025C543.251 34.0182 544.761 32.584 545.749 30.7225C546.756 28.8609 547.259 26.6574 547.259 24.112C547.259 21.5666 546.756 19.3441 545.749 17.4446C544.742 15.526 543.223 14.0444 541.19 12.9996C539.176 11.9548 536.631 11.4325 533.554 11.4325H520.19V65H514.862ZM540.592 38.6721L554.952 65H548.798L534.58 38.6721H540.592ZM560.666 65V6.64558H565.995V38.0738H566.507L595.001 6.64558H602.01L577.079 33.6288L601.896 65H595.4L573.773 37.3329L565.995 46.0519V65H560.666ZM638.939 21.2342C638.616 17.9859 637.182 15.4025 634.636 13.484C632.091 11.5654 628.89 10.6062 625.034 10.6062C622.318 10.6062 619.924 11.0716 617.854 12.0023C615.802 12.9331 614.188 14.2248 613.01 15.8774C611.851 17.5111 611.272 19.3726 611.272 21.4621C611.272 23.0008 611.604 24.3495 612.269 25.5082C612.934 26.6669 613.827 27.6642 614.947 28.5C616.087 29.3168 617.341 30.0196 618.708 30.6085C620.095 31.1974 621.491 31.6913 622.897 32.0902L629.052 33.8567C630.913 34.3696 632.775 35.025 634.636 35.8228C636.498 36.6206 638.198 37.6274 639.737 38.8431C641.294 40.0398 642.538 41.512 643.469 43.2596C644.419 44.9882 644.894 47.0682 644.894 49.4996C644.894 52.6149 644.087 55.4167 642.472 57.9052C640.857 60.3936 638.54 62.3691 635.52 63.8318C632.499 65.2754 628.881 65.9973 624.664 65.9973C620.694 65.9973 617.246 65.3419 614.32 64.0312C611.395 62.7015 609.097 60.8685 607.425 58.532C605.753 56.1955 604.813 53.4887 604.604 50.4114H610.075C610.265 52.7099 611.025 54.6569 612.354 56.2525C613.684 57.8482 615.413 59.0639 617.54 59.8997C619.668 60.7165 622.042 61.1249 624.664 61.1249C627.57 61.1249 630.153 60.6405 632.414 59.6717C634.693 58.684 636.479 57.3163 637.771 55.5687C639.081 53.8021 639.737 51.7506 639.737 49.4141C639.737 47.4386 639.224 45.786 638.198 44.4563C637.172 43.1076 635.738 41.9774 633.895 41.0656C632.072 40.1538 629.954 39.3465 627.541 38.6436L620.561 36.5921C615.983 35.2244 612.43 33.3344 609.904 30.9219C607.378 28.5095 606.114 25.4322 606.114 21.6901C606.114 18.5558 606.95 15.8015 608.622 13.427C610.312 11.0336 612.592 9.172 615.46 7.8423C618.348 6.49362 621.586 5.81927 625.176 5.81927C628.805 5.81927 632.015 6.48412 634.807 7.81381C637.6 9.1435 639.813 10.9766 641.446 13.313C643.099 15.6305 643.982 18.2709 644.096 21.2342H638.939Z" fill="black"></path>
+                      <path d="M179.06 93.2342C178.737 89.9859 177.303 87.4025 174.757 85.484C172.212 83.5654 169.011 82.6062 165.155 82.6062C162.439 82.6062 160.045 83.0716 157.975 84.0023C155.923 84.9331 154.309 86.2248 153.131 87.8774C151.972 89.5111 151.393 91.3726 151.393 93.4621C151.393 95.0008 151.725 96.3495 152.39 97.5082C153.055 98.6669 153.948 99.6642 155.068 100.5C156.208 101.317 157.462 102.02 158.83 102.609C160.216 103.197 161.612 103.691 163.018 104.09L169.173 105.857C171.034 106.37 172.896 107.025 174.757 107.823C176.619 108.621 178.319 109.627 179.858 110.843C181.415 112.04 182.659 113.512 183.59 115.26C184.54 116.988 185.015 119.068 185.015 121.5C185.015 124.615 184.208 127.417 182.593 129.905C180.978 132.394 178.661 134.369 175.641 135.832C172.62 137.275 169.002 137.997 164.785 137.997C160.815 137.997 157.367 137.342 154.442 136.031C151.516 134.702 149.218 132.868 147.546 130.532C145.875 128.196 144.934 125.489 144.725 122.411H150.196C150.386 124.71 151.146 126.657 152.476 128.253C153.805 129.848 155.534 131.064 157.661 131.9C159.789 132.716 162.163 133.125 164.785 133.125C167.691 133.125 170.274 132.641 172.535 131.672C174.814 130.684 176.6 129.316 177.892 127.569C179.202 125.802 179.858 123.751 179.858 121.414C179.858 119.439 179.345 117.786 178.319 116.456C177.293 115.108 175.859 113.977 174.016 113.066C172.193 112.154 170.075 111.346 167.662 110.644L160.682 108.592C156.104 107.224 152.551 105.334 150.025 102.922C147.499 100.509 146.235 97.4322 146.235 93.6901C146.235 90.5558 147.071 87.8015 148.743 85.427C150.433 83.0336 152.713 81.172 155.581 79.8423C158.469 78.4936 161.707 77.8193 165.298 77.8193C168.926 77.8193 172.136 78.4841 174.928 79.8138C177.721 81.1435 179.934 82.9766 181.567 85.313C183.22 87.6305 184.103 90.2709 184.217 93.2342H179.06ZM189.49 83.4325V78.6456H231.802V83.4325H213.31V137H207.982V83.4325H189.49ZM277.877 78.6456H283.205V117.283C283.205 121.253 282.275 124.805 280.413 127.939C278.551 131.054 275.959 133.514 272.634 135.319C269.329 137.104 265.482 137.997 261.095 137.997C256.726 137.997 252.879 137.095 249.555 135.29C246.23 133.486 243.638 131.026 241.776 127.911C239.914 124.795 238.984 121.253 238.984 117.283V78.6456H244.312V116.912C244.312 120.008 245.005 122.772 246.392 125.204C247.779 127.616 249.726 129.516 252.233 130.902C254.759 132.289 257.713 132.982 261.095 132.982C264.476 132.982 267.43 132.289 269.956 130.902C272.482 129.516 274.429 127.616 275.797 125.204C277.184 122.772 277.877 120.008 277.877 116.912V78.6456ZM310.973 137H293.877V78.6456H311.999C317.565 78.6456 322.323 79.8043 326.274 82.1218C330.244 84.4392 333.284 87.7635 335.392 92.0945C337.501 96.4254 338.555 101.621 338.555 107.68C338.555 113.797 337.472 119.049 335.307 123.437C333.16 127.806 330.026 131.159 325.904 133.495C321.801 135.832 316.824 137 310.973 137ZM299.206 132.213H310.66C315.675 132.213 319.873 131.225 323.254 129.25C326.635 127.274 329.171 124.453 330.862 120.787C332.552 117.121 333.398 112.752 333.398 107.68C333.379 102.646 332.543 98.3155 330.89 94.6874C329.257 91.0592 326.825 88.2763 323.596 86.3388C320.386 84.4012 316.416 83.4325 311.686 83.4325H299.206V132.213ZM351.984 78.6456V137H346.655V78.6456H351.984ZM410.524 107.823C410.524 113.901 409.442 119.192 407.276 123.694C405.111 128.177 402.128 131.653 398.329 134.122C394.549 136.573 390.199 137.798 385.279 137.798C380.359 137.798 376 136.573 372.201 134.122C368.421 131.653 365.448 128.177 363.282 123.694C361.136 119.192 360.063 113.901 360.063 107.823C360.063 101.744 361.136 96.4634 363.282 91.9805C365.448 87.4785 368.43 84.0023 372.229 81.5519C376.028 79.0825 380.378 77.8478 385.279 77.8478C390.199 77.8478 394.549 79.0825 398.329 81.5519C402.128 84.0023 405.111 87.4785 407.276 91.9805C409.442 96.4634 410.524 101.744 410.524 107.823ZM405.338 107.823C405.338 102.599 404.465 98.1256 402.717 94.4024C400.969 90.6603 398.586 87.8015 395.565 85.8259C392.545 83.8504 389.116 82.8626 385.279 82.8626C381.461 82.8626 378.042 83.8504 375.022 85.8259C372.001 87.8015 369.608 90.6508 367.841 94.3739C366.094 98.0971 365.22 102.58 365.22 107.823C365.22 113.047 366.094 117.52 367.841 121.243C369.589 124.966 371.973 127.825 374.993 129.82C378.013 131.795 381.442 132.783 385.279 132.783C389.116 132.783 392.545 131.795 395.565 129.82C398.605 127.844 400.998 124.995 402.746 121.272C404.493 117.53 405.357 113.047 405.338 107.823Z" fill="#373737"></path>
+                    </svg></div>
+                  <p class="text-size-small text-weight-light">Web design, development &amp; site management for growing businesses.</p>
+                </div>
+                <div class="footer_follow-us">
+                  <div class="footer_follow-us-icons">
+                    <div class="icon-1x1-medium w-embed"><svg width="100%" height="100%" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="31" height="31" rx="11.5" stroke="currentColor"></rect>
+                        <path d="M16 9.44578C18.1205 9.44578 18.4096 9.44578 19.2771 9.44578C20.0482 9.44578 20.4337 9.63855 20.7229 9.73494C21.1084 9.92771 21.3976 10.0241 21.6867 10.3133C21.9759 10.6024 22.1687 10.8916 22.2651 11.2771C22.3614 11.5663 22.4578 11.9518 22.5542 12.7229C22.5542 13.5904 22.5542 13.7831 22.5542 16C22.5542 18.2169 22.5542 18.4096 22.5542 19.2771C22.5542 20.0482 22.3614 20.4337 22.2651 20.7229C22.0723 21.1084 21.9759 21.3976 21.6867 21.6867C21.3976 21.9759 21.1084 22.1687 20.7229 22.2651C20.4337 22.3614 20.0482 22.4578 19.2771 22.5542C18.4096 22.5542 18.2169 22.5542 16 22.5542C13.7831 22.5542 13.5904 22.5542 12.7229 22.5542C11.9518 22.5542 11.5663 22.3614 11.2771 22.2651C10.8916 22.0723 10.6024 21.9759 10.3133 21.6867C10.0241 21.3976 9.83133 21.1084 9.73494 20.7229C9.63855 20.4337 9.54217 20.0482 9.44578 19.2771C9.44578 18.4096 9.44578 18.2169 9.44578 16C9.44578 13.7831 9.44578 13.5904 9.44578 12.7229C9.44578 11.9518 9.63855 11.5663 9.73494 11.2771C9.92771 10.8916 10.0241 10.6024 10.3133 10.3133C10.6024 10.0241 10.8916 9.83133 11.2771 9.73494C11.5663 9.63855 11.9518 9.54217 12.7229 9.44578C13.5904 9.44578 13.8795 9.44578 16 9.44578ZM16 8C13.7831 8 13.5904 8 12.7229 8C11.8554 8 11.2771 8.19277 10.7952 8.38554C10.3133 8.57831 9.83133 8.86747 9.3494 9.3494C8.86747 9.83133 8.6747 10.2169 8.38554 10.7952C8.19277 11.2771 8.09639 11.8554 8 12.7229C8 13.5904 8 13.8795 8 16C8 18.2169 8 18.4096 8 19.2771C8 20.1446 8.19277 20.7229 8.38554 21.2048C8.57831 21.6867 8.86747 22.1687 9.3494 22.6506C9.83133 23.1325 10.2169 23.3253 10.7952 23.6145C11.2771 23.8072 11.8554 23.9036 12.7229 24C13.5904 24 13.8795 24 16 24C18.1205 24 18.4096 24 19.2771 24C20.1446 24 20.7229 23.8072 21.2048 23.6145C21.6867 23.4217 22.1687 23.1325 22.6506 22.6506C23.1325 22.1687 23.3253 21.7831 23.6145 21.2048C23.8072 20.7229 23.9036 20.1446 24 19.2771C24 18.4096 24 18.1205 24 16C24 13.8795 24 13.5904 24 12.7229C24 11.8554 23.8072 11.2771 23.6145 10.7952C23.4217 10.3133 23.1325 9.83133 22.6506 9.3494C22.1687 8.86747 21.7831 8.6747 21.2048 8.38554C20.7229 8.19277 20.1446 8.09639 19.2771 8C18.4096 8 18.2169 8 16 8Z" fill="currentColor"></path>
+                        <path d="M16 11.8554C13.6867 11.8554 11.8554 13.6867 11.8554 16C11.8554 18.3133 13.6867 20.1446 16 20.1446C18.3133 20.1446 20.1446 18.3133 20.1446 16C20.1446 13.6867 18.3133 11.8554 16 11.8554ZM16 18.6988C14.5542 18.6988 13.3012 17.5422 13.3012 16C13.3012 14.5542 14.4578 13.3012 16 13.3012C17.4458 13.3012 18.6988 14.4578 18.6988 16C18.6988 17.4458 17.4458 18.6988 16 18.6988Z" fill="currentColor"></path>
+                        <path d="M20.241 12.7229C20.7733 12.7229 21.2048 12.2914 21.2048 11.759C21.2048 11.2267 20.7733 10.7952 20.241 10.7952C19.7086 10.7952 19.2771 11.2267 19.2771 11.759C19.2771 12.2914 19.7086 12.7229 20.241 12.7229Z" fill="currentColor"></path>
+                      </svg></div>
+                    <div class="icon-1x1-medium w-embed"><svg width="100%" height="100%" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="31" height="31" rx="11.5" stroke="currentColor"></rect>
+                        <g clip-path="url(#clip0_20_824)">
+                          <path d="M8 9.146C8 8.513 8.526 8 9.175 8H22.825C23.474 8 24 8.513 24 9.146V22.854C24 23.487 23.474 24 22.825 24H9.175C8.526 24 8 23.487 8 22.854V9.146ZM12.943 21.394V14.169H10.542V21.394H12.943ZM11.743 13.182C12.58 13.182 13.101 12.628 13.101 11.934C13.086 11.225 12.581 10.686 11.759 10.686C10.937 10.686 10.4 11.226 10.4 11.934C10.4 12.628 10.921 13.182 11.727 13.182H11.743ZM16.651 21.394V17.359C16.651 17.143 16.667 16.927 16.731 16.773C16.904 16.342 17.299 15.895 17.963 15.895C18.832 15.895 19.179 16.557 19.179 17.529V21.394H21.58V17.25C21.58 15.03 20.396 13.998 18.816 13.998C17.542 13.998 16.971 14.698 16.651 15.191V15.216H16.635L16.651 15.191V14.169H14.251C14.281 14.847 14.251 21.394 14.251 21.394H16.651Z" fill="currentColor"></path>
+                        </g>
+                        <defs>
+                          <clippath id="clip0_20_824">
+                            <rect width="16" height="16" fill="white" transform="translate(8 8)"></rect>
+                          </clippath>
+                        </defs>
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <div id="w-node-_18f5de38-4024-5e14-5513-12acdb2caee7-979bd2c3" class="footer_grid-right">
+                <div class="footer_column">
+                  <div>Studio</div>
+                  <a href="#" class="footer-link">Home</a>
+                  <a href="#" class="footer-link">About Us</a>
+                  <a href="#" class="footer-link">Projects</a>
+                  <a href="#" class="footer-link">Contact</a>
+                </div>
+                <div class="footer_column">
+                  <div>Platforms</div>
+                  <a href="#" class="footer-link">Webflow</a>
+                  <a href="#" class="footer-link">WordPress</a>
+                  <a href="#" class="footer-link">Shopify</a>
+                  <a href="#" class="footer-link">Framer</a>
+                </div>
+                <div class="footer_column">
+                  <div>Services</div>
+                  <a href="#" class="footer-link">Site Management</a>
+                  <a href="#" class="footer-link">Web Design &amp; Development</a>
+                  <a href="#" class="footer-link">Projects</a>
+                  <a href="#" class="footer-link">Pricing</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer_bottom-wrapper">
+              <div class="divider"></div>
+              <div class="bottom-text">
+                <p class="text-size-small text-weight-light">© <span id="current-year" class="current-year">2025 </span>Frameworks Studio. All rights reserved.</p>
+                <div class="bottom-links">
+                  <a href="#" class="text-size-small text-weight-light no-line">Privacy</a>
+                  <a href="#" class="text-size-small text-weight-light no-line">Terms</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69c1c7e830e725df979bd2ca" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.14.2/ScrollTrigger.min.js" type="text/javascript"></script>
+  <script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+  <style>
+/* =========================
+   MOBILE SITE MANAGEMENT
+========================= */
+.site-management-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.dropdown-mobile {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: max-height 0.3s ease, opacity 0.25s ease, margin-top 0.3s ease;
+  margin-top: 0;
+}
+.dropdown-arrow-mobile {
+  transition: transform 0.25s ease;
+  transform-origin: center;
+}
+/* =========================
+   DESKTOP DROPDOWN
+========================= */
+.dropdown-parent {
+  position: relative;
+}
+.nav-dropdown {
+  display: block !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 999;
+}
+.dropdown-parent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 16px;
+}
+.dropdown-arrow {
+  transition: transform 0.2s ease;
+}
+/* =========================
+   NAVBAR SCROLL BACKGROUND
+========================= */
+.nav_component {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.nav_component.is-scrolled {
+  background-color: #FFFDF7;
+}
+</style>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  /* =========================
+     MOBILE SITE MANAGEMENT
+  ========================= */
+  const mobileToggle = document.querySelector(".site-management-toggle");
+  const mobileDropdown = document.querySelector(".dropdown-mobile");
+  const mobileArrow = document.querySelector(".dropdown-arrow-mobile");
+  if (mobileToggle && mobileDropdown) {
+    let isMobileOpen = false;
+    function openMobileDropdown() {
+      mobileDropdown.style.visibility = "visible";
+      mobileDropdown.style.pointerEvents = "auto";
+      mobileDropdown.style.opacity = "1";
+      mobileDropdown.style.marginTop = "12px";
+      mobileDropdown.style.maxHeight = mobileDropdown.scrollHeight + "px";
+      if (mobileArrow) {
+        mobileArrow.style.transform = "rotate(180deg)";
+      }
+      isMobileOpen = true;
+    }
+    function closeMobileDropdown() {
+      mobileDropdown.style.maxHeight = "0px";
+      mobileDropdown.style.opacity = "0";
+      mobileDropdown.style.marginTop = "0px";
+      mobileDropdown.style.pointerEvents = "none";
+      if (mobileArrow) {
+        mobileArrow.style.transform = "rotate(0deg)";
+      }
+      isMobileOpen = false;
+      setTimeout(() => {
+        if (!isMobileOpen) {
+          mobileDropdown.style.visibility = "hidden";
+        }
+      }, 300);
+    }
+    mobileToggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (isMobileOpen) {
+        closeMobileDropdown();
+      } else {
+        openMobileDropdown();
+      }
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 991) {
+        mobileDropdown.style.maxHeight = "";
+        mobileDropdown.style.opacity = "";
+        mobileDropdown.style.visibility = "";
+        mobileDropdown.style.pointerEvents = "";
+        mobileDropdown.style.marginTop = "";
+        if (mobileArrow) mobileArrow.style.transform = "";
+        isMobileOpen = false;
+        return;
+      }
+      if (isMobileOpen) {
+        mobileDropdown.style.maxHeight = mobileDropdown.scrollHeight + "px";
+      }
+    });
+  }
+  /* =========================
+     DESKTOP DROPDOWN
+  ========================= */
+  const desktopParent = document.querySelector(".dropdown-parent");
+  const desktopDropdown = document.querySelector(".nav-dropdown");
+  const desktopArrow = document.querySelector(".dropdown-arrow");
+  if (desktopParent && desktopDropdown) {
+    let closeTimeout;
+    function openDesktopDropdown() {
+      clearTimeout(closeTimeout);
+      desktopDropdown.style.opacity = "1";
+      desktopDropdown.style.visibility = "visible";
+      desktopDropdown.style.pointerEvents = "auto";
+      desktopDropdown.style.transform = "translateY(0)";
+      if (desktopArrow) desktopArrow.style.transform = "rotate(180deg)";
+    }
+    function closeDesktopDropdown() {
+      clearTimeout(closeTimeout);
+      closeTimeout = setTimeout(() => {
+        desktopDropdown.style.opacity = "0";
+        desktopDropdown.style.visibility = "hidden";
+        desktopDropdown.style.pointerEvents = "none";
+        desktopDropdown.style.transform = "translateY(8px)";
+        if (desktopArrow) desktopArrow.style.transform = "rotate(0deg)";
+      }, 220);
+    }
+    desktopParent.addEventListener("mouseenter", openDesktopDropdown);
+    desktopParent.addEventListener("mouseleave", closeDesktopDropdown);
+    desktopDropdown.addEventListener("mouseenter", openDesktopDropdown);
+    desktopDropdown.addEventListener("mouseleave", closeDesktopDropdown);
+  }
+  /* =========================
+     NAVBAR SCROLL BACKGROUND
+  ========================= */
+  const navbars = document.querySelectorAll(".nav_component");
+  function updateNavbars() {
+    const trigger = window.innerHeight * 0.02;
+    const shouldBeScrolled = window.scrollY > trigger;
+    navbars.forEach((navbar) => {
+      navbar.classList.toggle("is-scrolled", shouldBeScrolled);
+    });
+  }
+  if (navbars.length) {
+    updateNavbars();
+    window.addEventListener("scroll", updateNavbars);
+    window.addEventListener("resize", updateNavbars);
+  }
+});
+</script>
+</body>
+</html>

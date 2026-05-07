@@ -1,0 +1,109 @@
+{
+  "projects": [
+    {
+      "id": "okiemint",
+      "title": "Okiemint",
+      "slug": "okiemint",
+      "categories": ["web-design", "e-commerce"],
+      "tags": ["E-commerce", "Web Design"],
+      "cardImage": "images/okiemint_1okiemint.avif",
+      "cardImageAlt": "Okiemint project screenshot",
+      "cardDescription": "A clean, conversion-focused e-commerce build for a modern consumer brand — designed to sell.",
+      "summary": "A lean e-commerce experience for a modern consumer brand, shaped to feel premium without adding friction to the buying journey.",
+      "detailText": "The focus was clarity: stronger product presentation, cleaner navigation, and a storefront that keeps attention on conversion.",
+      "highlights": [
+        "Scope: Web design and conversion-focused e-commerce build.",
+        "Challenge: Keep the brand polished while making shopping feel simple and immediate.",
+        "Outcome: A cleaner path to purchase with a sharper, more sales-ready presentation."
+      ],
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Start a similar project",
+      "featured": true,
+      "sortOrder": 10
+    },
+    {
+      "id": "arewa-clinic",
+      "title": "Arewa Clinic",
+      "slug": "arewa-clinic",
+      "categories": ["web-design", "branding"],
+      "tags": ["Web Design", "Branding"],
+      "cardImage": "images/arewa-clinic_1arewa-clinic.avif",
+      "cardImageAlt": "Arewa Clinic project screenshot",
+      "cardDescription": "A professional healthcare website built to build trust, communicate services, and convert enquiries.",
+      "summary": "A healthcare website designed to feel calm, credible, and easy to trust from the first interaction.",
+      "detailText": "We kept the experience straightforward so visitors can understand services quickly and move toward enquiry without confusion.",
+      "highlights": [
+        "Scope: Website design with supporting brand direction.",
+        "Challenge: Balance professionalism, warmth, and clarity for a healthcare audience.",
+        "Outcome: A more trustworthy digital presence built around service communication and enquiries."
+      ],
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Discuss your clinic website",
+      "featured": true,
+      "sortOrder": 20
+    },
+    {
+      "id": "ace-accountants",
+      "title": "Ace Accountants",
+      "slug": "ace-accountants",
+      "categories": ["branding", "web-design"],
+      "tags": ["Branding", "Web Design"],
+      "cardImage": "images/ace-accountants_1ace-accountants.avif",
+      "cardImageAlt": "Ace Accountants project screenshot",
+      "cardDescription": "Brand identity and website for a growing accountancy firm — clear, credible, and built to generate leads.",
+      "summary": "A brand and website refresh for an accountancy firm that needed to look established, clear, and commercially credible.",
+      "detailText": "The work centred on simplifying the message and giving the business a more confident visual presence for lead generation.",
+      "highlights": [
+        "Scope: Brand identity and lead-focused website design.",
+        "Challenge: Make a growing firm feel both approachable and authoritative.",
+        "Outcome: A clearer positioning system with a cleaner client acquisition experience."
+      ],
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Build a lead-ready site",
+      "featured": true,
+      "sortOrder": 30
+    },
+    {
+      "id": "office-fitout-co",
+      "title": "Office Fitout Co.",
+      "slug": "office-fitout-co",
+      "categories": ["web-design"],
+      "tags": ["Web Design"],
+      "cardImage": "images/offic-fitout_1offic-fitout.avif",
+      "cardImageAlt": "Office Fitout project screenshot",
+      "cardDescription": "A bold, project-led website for a commercial interior fit-out business, showcasing their portfolio with impact.",
+      "summary": "A portfolio-led site for a commercial interiors company that needed stronger project presentation and more visual impact.",
+      "detailText": "The design was structured to let the work speak first, while still making the business feel organised and conversion-aware.",
+      "highlights": [
+        "Scope: Project-focused website design.",
+        "Challenge: Showcase large visual work without making the experience feel heavy.",
+        "Outcome: A bolder, cleaner portfolio presence built to support credibility and enquiries."
+      ],
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Plan your project site",
+      "featured": true,
+      "sortOrder": 40
+    },
+    {
+      "id": "seedrock-consulting",
+      "title": "Seedrock Consulting",
+      "slug": "seedrock-consulting",
+      "categories": ["branding", "web-design"],
+      "tags": ["Branding", "Web Design"],
+      "cardImage": "images/seedrock-consulting_1seedrock-consulting.avif",
+      "cardImageAlt": "Seedrock Consulting project screenshot",
+      "cardDescription": "Strategy consultancy brand and website — positioned for credibility and designed to attract high-value clients.",
+      "summary": "A consultancy brand and website positioned to feel strategic, composed, and credible to higher-value clients.",
+      "detailText": "The output focused on sharpening the firm’s presentation so the business reads clearly and confidently at first glance.",
+      "highlights": [
+        "Scope: Brand direction and website design.",
+        "Challenge: Communicate expertise without relying on dense or overly corporate messaging.",
+        "Outcome: A more refined digital presence that supports premium positioning."
+      ],
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Position your business better",
+      "featured": true,
+      "sortOrder": 50
+    }
+  ]
+}

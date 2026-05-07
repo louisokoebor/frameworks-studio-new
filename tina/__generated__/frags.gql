@@ -1,0 +1,21 @@
+fragment ProjectsParts on Projects {
+  __typename
+  projects {
+    __typename
+    id
+    title
+    slug
+    categories
+    tags
+    cardImage
+    cardImageAlt
+    cardDescription
+    summary
+    detailText
+    highlights
+    ctaHref
+    ctaLabel
+    featured
+    sortOrder
+  }
+}

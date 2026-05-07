@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(sed -n '590,620p' /Users/louisokoebor/Downloads/frameworks-studio-df4a29-20c203300f2798.webflow/css/frameworks-studio-df4a29-20c203300f2798.webflow.css)",
+      "Bash(sed -n '930,960p' /Users/louisokoebor/Downloads/frameworks-studio-df4a29-20c203300f2798.webflow/css/frameworks-studio-df4a29-20c203300f2798.webflow.css)",
+      "Bash(sed -n '1440,1545p' /Users/louisokoebor/Downloads/frameworks-studio-df4a29-20c203300f2798.webflow/css/frameworks-studio-df4a29-20c203300f2798.webflow.css)",
+      "Bash(sed -n '2520,2545p' /Users/louisokoebor/Downloads/frameworks-studio-df4a29-20c203300f2798.webflow/css/frameworks-studio-df4a29-20c203300f2798.webflow.css)",
+      "Bash(sed -n '2660,2800p' /Users/louisokoebor/Downloads/frameworks-studio-df4a29-20c203300f2798.webflow/css/frameworks-studio-df4a29-20c203300f2798.webflow.css)",
+      "Bash(sed -n '700,720p' /Users/louisokoebor/Downloads/frameworks-studio-df4a29-20c203300f2798.webflow/css/frameworks-studio-df4a29-20c203300f2798.webflow.css)",
+      "Bash(sed -n '1005,1060p' /Users/louisokoebor/Downloads/frameworks-studio-df4a29-20c203300f2798.webflow/css/frameworks-studio-df4a29-20c203300f2798.webflow.css)",
+      "Bash(sed -n '895,940p' /Users/louisokoebor/Downloads/frameworks-studio-df4a29-20c203300f2798.webflow/css/frameworks-studio-df4a29-20c203300f2798.webflow.css)"
+    ]
+  }
+}
