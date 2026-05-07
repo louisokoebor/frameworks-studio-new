@@ -27,9 +27,9 @@ function collectHtmlInputs(dir, rootDir, inputs = {}) {
 const rootDir = path.resolve('.')
 const htmlInputs = collectHtmlInputs(rootDir, rootDir)
 
-function copyStaticJsPlugin() {
+function copyStaticAssetsPlugin() {
   return {
-    name: 'copy-static-js',
+    name: 'copy-static-assets',
     closeBundle() {
       const sourceDir = path.join(rootDir, 'js')
       const targetDir = path.join(rootDir, 'dist', 'js')
@@ -41,6 +41,15 @@ function copyStaticJsPlugin() {
         path.join(sourceDir, 'webflow.js'),
         path.join(targetDir, 'webflow.js')
       )
+
+      ;['robots.txt', 'sitemap.xml'].forEach((filename) => {
+        const sourceFile = path.join(rootDir, filename)
+        const targetFile = path.join(rootDir, 'dist', filename)
+
+        if (fs.existsSync(sourceFile)) {
+          fs.copyFileSync(sourceFile, targetFile)
+        }
+      })
     },
   }
 }
@@ -52,7 +61,7 @@ export default defineConfig({
       input: htmlInputs,
     },
   },
-  plugins: [copyStaticJsPlugin()],
+  plugins: [copyStaticAssetsPlugin()],
   server: {
     port: 3000,
     open: true,
