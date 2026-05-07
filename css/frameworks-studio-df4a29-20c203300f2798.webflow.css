@@ -5279,4 +5279,62 @@ figcaption {
   grid-area: 1 / 10 / 2 / 13;
 }
 
+:root {
+  --motion-duration-short: 520ms;
+  --motion-duration-base: 620ms;
+  --motion-duration-slow: 720ms;
+  --motion-ease-standard: cubic-bezier(.22, 1, .36, 1);
+  --motion-distance-sm: 18px;
+  --motion-distance-md: 24px;
+}
+
+.has-site-motion .motion-reveal {
+  opacity: 0;
+  transform: translate3d(0, var(--motion-distance-md), 0);
+  transition-property: opacity, transform;
+  transition-duration: var(--motion-duration-base);
+  transition-timing-function: var(--motion-ease-standard);
+  transition-delay: var(--motion-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.has-site-motion .motion-reveal.motion-fade {
+  transform: none;
+}
+
+.has-site-motion .motion-reveal.motion-slide-left {
+  transform: translate3d(calc(var(--motion-distance-md) * -1), 0, 0);
+}
+
+.has-site-motion .motion-reveal.motion-slide-right {
+  transform: translate3d(var(--motion-distance-md), 0, 0);
+}
+
+.has-site-motion .motion-reveal[data-motion-distance="sm"] {
+  transform: translate3d(0, var(--motion-distance-sm), 0);
+}
+
+.has-site-motion .motion-reveal.motion-slide-left[data-motion-distance="sm"] {
+  transform: translate3d(calc(var(--motion-distance-sm) * -1), 0, 0);
+}
+
+.has-site-motion .motion-reveal.motion-slide-right[data-motion-distance="sm"] {
+  transform: translate3d(var(--motion-distance-sm), 0, 0);
+}
+
+.has-site-motion .motion-reveal.is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .has-site-motion .motion-reveal,
+  .has-site-motion .motion-reveal.is-revealed {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+}
 

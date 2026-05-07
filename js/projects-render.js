@@ -20,7 +20,7 @@ function renderProjectCard(project) {
     .join("");
 
   return `
-    <a href="#" class="project-card" data-categories="${escapeHtml(categories)}" data-project="${escapeHtml(project.id)}" aria-haspopup="dialog">
+    <a href="#" class="project-card motion-stagger-item" data-categories="${escapeHtml(categories)}" data-project="${escapeHtml(project.id)}" aria-haspopup="dialog">
       <div class="project-card_image-wrap">
         <img src="${escapeHtml(project.cardImage)}" alt="${escapeHtml(project.cardImageAlt)}" class="project-card_image" loading="lazy">
       </div>
