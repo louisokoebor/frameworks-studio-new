@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.env
+.tina/__generated__/
