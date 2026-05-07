@@ -4,8 +4,15 @@
       "id": "okiemint",
       "title": "Okiemint",
       "slug": "okiemint",
-      "categories": ["web-design", "e-commerce"],
-      "tags": ["E-commerce", "Web Design"],
+      "categories": [
+        "web-design",
+        "e-commerce"
+      ],
+      "tags": [
+        "E-commerce",
+        "Web Design",
+        "IT"
+      ],
       "cardImage": "images/okiemint_1okiemint.avif",
       "cardImageAlt": "Okiemint project screenshot",
       "cardDescription": "A clean, conversion-focused e-commerce build for a modern consumer brand — designed to sell.",
@@ -25,8 +32,14 @@
       "id": "arewa-clinic",
       "title": "Arewa Clinic",
       "slug": "arewa-clinic",
-      "categories": ["web-design", "branding"],
-      "tags": ["Web Design", "Branding"],
+      "categories": [
+        "web-design",
+        "branding"
+      ],
+      "tags": [
+        "Web Design",
+        "Branding"
+      ],
       "cardImage": "images/arewa-clinic_1arewa-clinic.avif",
       "cardImageAlt": "Arewa Clinic project screenshot",
       "cardDescription": "A professional healthcare website built to build trust, communicate services, and convert enquiries.",
@@ -46,8 +59,14 @@
       "id": "ace-accountants",
       "title": "Ace Accountants",
       "slug": "ace-accountants",
-      "categories": ["branding", "web-design"],
-      "tags": ["Branding", "Web Design"],
+      "categories": [
+        "branding",
+        "web-design"
+      ],
+      "tags": [
+        "Branding",
+        "Web Design"
+      ],
       "cardImage": "images/ace-accountants_1ace-accountants.avif",
       "cardImageAlt": "Ace Accountants project screenshot",
       "cardDescription": "Brand identity and website for a growing accountancy firm — clear, credible, and built to generate leads.",
@@ -67,8 +86,12 @@
       "id": "office-fitout-co",
       "title": "Office Fitout Co.",
       "slug": "office-fitout-co",
-      "categories": ["web-design"],
-      "tags": ["Web Design"],
+      "categories": [
+        "web-design"
+      ],
+      "tags": [
+        "Web Design"
+      ],
       "cardImage": "images/offic-fitout_1offic-fitout.avif",
       "cardImageAlt": "Office Fitout project screenshot",
       "cardDescription": "A bold, project-led website for a commercial interior fit-out business, showcasing their portfolio with impact.",
@@ -88,8 +111,14 @@
       "id": "seedrock-consulting",
       "title": "Seedrock Consulting",
       "slug": "seedrock-consulting",
-      "categories": ["branding", "web-design"],
-      "tags": ["Branding", "Web Design"],
+      "categories": [
+        "branding",
+        "web-design"
+      ],
+      "tags": [
+        "Branding",
+        "Web Design"
+      ],
       "cardImage": "images/seedrock-consulting_1seedrock-consulting.avif",
       "cardImageAlt": "Seedrock Consulting project screenshot",
       "cardDescription": "Strategy consultancy brand and website — positioned for credibility and designed to attract high-value clients.",
