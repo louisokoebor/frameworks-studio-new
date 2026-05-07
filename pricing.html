@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html data-wf-page="projects" data-wf-site="69c1c7e830e725df979bd2ca">
+<html data-wf-page="pricing" data-wf-site="69c1c7e830e725df979bd2ca">
 <head>
   <meta charset="utf-8">
-  <title>Projects | Frameworks Studio</title>
-  <meta content="A showcase of websites and digital experiences we've designed, built, and launched for clients across Webflow, WordPress, Shopify and Framer." name="description">
+  <title>Pricing | Frameworks Studio</title>
+  <meta content="Explore unified site management pricing, compare support plans, and view build-from-scratch and custom website pricing for Frameworks Studio." name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
@@ -16,33 +16,32 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <style>
-    /* ── Projects page styles ── */
-    .section_projects-hero {
-      background-image: url('images/hero-image.avif');
+    .section_pricing-hero {
+      background-image: linear-gradient(rgba(255, 253, 247, 0.82), rgba(255, 253, 247, 0.92)), url('images/hero-image.avif');
       background-position: 50%;
       background-size: cover;
       border-bottom: 0.25px solid var(--border-color--border-primary);
       position: relative;
     }
-    .projects-hero_content {
+    .pricing-hero_content {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       gap: 1.25rem;
-      max-width: 48rem;
+      max-width: 50rem;
       margin: 0 auto;
       position: relative;
       z-index: 1;
     }
-    .projects-hero_eyebrow {
+    .pricing-hero_eyebrow {
       letter-spacing: 0.1em;
       font-size: 0.75rem;
       font-weight: 500;
       text-transform: uppercase;
       color: var(--text-color--text-secondary);
     }
-    .projects-hero_heading {
+    .pricing-hero_heading {
       font-family: Inter, sans-serif;
       font-size: clamp(2.5rem, 5vw, 4rem);
       font-weight: 500;
@@ -50,318 +49,247 @@
       letter-spacing: -0.09rem;
       margin: 0;
     }
-    .projects-hero_sub {
+    .pricing-hero_sub {
       font-size: 1.125rem;
       font-weight: 300;
       color: var(--text-color--text-secondary);
-      max-width: 36rem;
+      max-width: 38rem;
       line-height: 1.6;
       margin: 0;
     }
-
-    /* ── Filter bar ── */
-    .projects_filter-bar {
+    .pricing-toolbar {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 3rem;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
     }
-    .filter-btn {
-      border: 0.25px solid var(--border-color--border-primary);
-      background-color: transparent;
-      color: var(--text-color--text-secondary);
-      border-radius: 0.75rem;
-      padding: 0.5rem 1.25rem;
-      font-family: Inter, sans-serif;
-      font-size: 0.875rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background-color 0.15s ease, box-shadow 0.15s ease;
-      line-height: 1;
-    }
-    .filter-btn:hover {
-      box-shadow: 3px 3px rgba(0,0,0,0.15);
-    }
-    .filter-btn.is-active {
-      background-color: var(--base-color-brand--brand-gold);
-      border-color: var(--base-color-brand--brand-gold);
-      color: var(--text-color--text-secondary);
-    }
-
-    /* ── Projects grid ── */
-    .projects_grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-    @media screen and (max-width: 991px) {
-      .projects_grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media screen and (max-width: 479px) {
-      .projects_grid { grid-template-columns: 1fr; }
-      .projects-hero_heading { font-size: 2.25rem; }
-      .projects_filter-bar { gap: 0.375rem; }
-    }
-
-    .project-card {
-      border: 0.25px solid var(--border-color--border-primary);
-      background-color: var(--background-color--background-secondary);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      transition: box-shadow 0.2s cubic-bezier(.77,0,.175,1);
-    }
-    .project-card:hover {
-      box-shadow: 5px 5px rgba(0,0,0,0.18);
-    }
-    .project-card.is-hidden {
-      display: none;
-    }
-    .project-card_image-wrap {
-      overflow: hidden;
-      aspect-ratio: 16 / 10;
-      background-color: var(--background-color--background-primary);
-    }
-    .project-card_image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.4s ease;
-    }
-    .project-card:hover .project-card_image {
-      transform: scale(1.03);
-    }
-    .project-card_body {
-      padding: 1.5rem;
+    .pricing-toolbar_copy {
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
-      flex: 1;
+      max-width: 36rem;
     }
-    .project-card_tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.375rem;
-    }
-    .project-card_tag {
+    .pricing-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.35rem;
       border: 0.25px solid var(--border-color--border-primary);
-      border-radius: 0.5rem;
-      padding: 0.2rem 0.6rem;
-      font-size: 0.75rem;
-      font-weight: 500;
+      border-radius: 999px;
+      background-color: var(--background-color--background-secondary);
+      box-shadow: 4px 4px rgba(0, 0, 0, 0.08);
+    }
+    .pricing-toggle_button {
+      border: 0;
+      background: transparent;
       color: var(--text-color--text-secondary);
-      letter-spacing: 0.02em;
-    }
-    .project-card_tag.is-gold {
-      background-color: var(--base-color-brand--brand-gold);
-      border-color: var(--base-color-brand--brand-gold);
-    }
-    .project-card_title {
+      border-radius: 999px;
+      padding: 0.65rem 1rem;
       font-family: Inter, sans-serif;
-      font-size: 1.375rem;
+      font-size: 0.8125rem;
       font-weight: 500;
-      line-height: 1.2;
-      letter-spacing: -0.03em;
-      color: var(--text-color--text-primary);
-      margin: 0;
+      cursor: pointer;
+      transition: background-color 0.18s ease, color 0.18s ease;
     }
-    .project-card_desc {
+    .pricing-toggle_button.is-active {
+      background-color: var(--base-color-brand--brand-gold);
+      color: var(--text-color--text-primary);
+    }
+    .pricing_grid.pricing-page_grid {
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+    .pricing-page_grid .pricing_card {
+      flex: 1 1 18rem;
+      min-width: 0;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .pricing-page_grid .pricing_card:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 6px 6px rgba(0, 0, 0, 0.12);
+    }
+    .pricing_card-summary {
+      color: var(--text-color--text-secondary);
+      line-height: 1.55;
+    }
+    .pricing_card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-color--text-secondary);
+    }
+    .pricing-section_note {
+      margin-top: 1rem;
+      color: var(--text-color--text-secondary);
+    }
+    .pricing-comparison_header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 42rem;
+      margin-bottom: 2rem;
+    }
+    .pricing-comparison_wrap {
+      border: 0.25px solid var(--border-color--border-primary);
+      border-radius: 1rem;
+      overflow: auto;
+      background-color: var(--background-color--background-secondary);
+      box-shadow: 6px 6px rgba(0, 0, 0, 0.08);
+    }
+    .pricing-comparison_table {
+      width: 100%;
+      min-width: 46rem;
+      border-collapse: collapse;
+    }
+    .pricing-comparison_table th,
+    .pricing-comparison_table td {
+      padding: 1rem 1.1rem;
+      border-bottom: 0.25px solid var(--border-color--border-primary);
+      text-align: left;
+      vertical-align: middle;
+    }
+    .pricing-comparison_table th {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-color--text-primary);
+      background-color: rgba(253, 196, 72, 0.08);
+    }
+    .pricing-comparison_table td {
       font-size: 0.9375rem;
       font-weight: 300;
       color: var(--text-color--text-secondary);
       line-height: 1.5;
-      margin: 0;
     }
-    .project-card_link {
-      margin-top: auto;
-      padding-top: 0.5rem;
+    .pricing-comparison_table tbody tr:last-child td {
+      border-bottom: 0;
+    }
+    .pricing-comparison_label {
+      min-width: 16rem;
+      font-weight: 400;
+      color: var(--text-color--text-primary);
+    }
+    .comparison-pill {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      font-size: 0.875rem;
+      justify-content: center;
+      min-width: 2.25rem;
+      border-radius: 999px;
+      border: 0.25px solid var(--border-color--border-primary);
+      padding: 0.2rem 0.7rem;
+      background-color: rgba(253, 196, 72, 0.1);
+      color: var(--text-color--text-primary);
+      font-size: 0.8125rem;
       font-weight: 500;
-      color: var(--text-color--text-primary);
-      text-decoration: none;
-      border-bottom: 0.25px solid var(--border-color--border-primary);
-      padding-bottom: 0.125rem;
-      width: fit-content;
-      transition: gap 0.15s ease;
+      white-space: nowrap;
     }
-    .project-card_link:hover { gap: 0.65rem; }
-
-    /* ── No-results message ── */
-    .projects_no-results {
-      display: none;
-      text-align: center;
-      padding: 4rem 0;
+    .comparison-pill.is-muted {
+      background-color: transparent;
       color: var(--text-color--text-secondary);
-      font-size: 1rem;
-      font-weight: 300;
-      grid-column: 1 / -1;
     }
-    .projects_no-results.is-visible { display: block; }
-
-    /* ── Project modal ── */
-    body.projects-modal-open {
-      overflow: hidden;
-    }
-    .project-modal {
-      position: fixed;
-      inset: 0;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transition: opacity 0.2s ease, visibility 0.2s ease;
-    }
-    .project-modal.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-    .project-modal_backdrop {
-      position: absolute;
-      inset: 0;
-      background-color: rgba(17, 17, 17, 0.52);
-    }
-    .project-modal_dialog {
-      position: relative;
-      z-index: 1;
-      width: min(100%, 46rem);
-      max-height: calc(100vh - 3rem);
-      overflow-y: auto;
-      border: 0.25px solid var(--border-color--border-primary);
-      background-color: var(--background-color--background-secondary);
-      box-shadow: 7px 7px rgba(0,0,0,0.18);
-      transform: translateY(20px);
-      transition: transform 0.2s ease;
-    }
-    .project-modal.is-open .project-modal_dialog {
-      transform: translateY(0);
-    }
-    .project-modal_close {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      width: 2.75rem;
-      height: 2.75rem;
-      border: 0.25px solid var(--border-color--border-primary);
-      background-color: rgba(255, 253, 247, 0.96);
-      color: var(--text-color--text-primary);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: box-shadow 0.15s ease, transform 0.15s ease;
-    }
-    .project-modal_close:hover {
-      box-shadow: 3px 3px rgba(0,0,0,0.15);
-      transform: translate(-1px, -1px);
-    }
-    .project-modal_image-wrap {
-      aspect-ratio: 16 / 10;
-      overflow: hidden;
-      background-color: var(--background-color--background-primary);
-    }
-    .project-modal_image {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .project-modal_content {
+    .pricing-build_header {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      padding: 1.75rem;
+      max-width: 38rem;
+      margin-bottom: 2rem;
     }
-    .project-modal_tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.375rem;
-      padding-right: 3.5rem;
-    }
-    .project-modal_title {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      font-size: clamp(1.75rem, 3vw, 2.35rem);
-      font-weight: 500;
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-      color: var(--text-color--text-primary);
-    }
-    .project-modal_text {
-      margin: 0;
-      font-size: 1rem;
-      font-weight: 300;
-      line-height: 1.65;
-      color: var(--text-color--text-secondary);
-    }
-    .project-modal_highlights {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+    .pricing-build_grid {
       display: grid;
-      gap: 0.75rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
     }
-    .project-modal_highlight {
-      display: flex;
+    .pricing-build_card {
+      max-width: none;
+      width: 100%;
+      border: 0.25px solid var(--border-color--border-primary);
+      border-radius: 1rem;
       align-items: flex-start;
-      gap: 0.75rem;
-      font-size: 0.9375rem;
-      font-weight: 300;
-      line-height: 1.55;
+      text-align: left;
+      gap: 1rem;
+      box-shadow: 6px 6px rgba(0, 0, 0, 0.08);
+    }
+    .pricing-build_card.is-featured {
+      background-color: var(--base-color-brand--peach-accent);
+    }
+    .pricing-build_price {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: Inter, sans-serif;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      color: var(--text-color--text-primary);
+      margin: 0;
+    }
+    .pricing-build_label {
       color: var(--text-color--text-secondary);
+      line-height: 1.55;
+      margin: 0;
     }
-    .project-modal_highlight::before {
-      content: "";
-      width: 0.55rem;
-      height: 0.55rem;
-      flex: 0 0 0.55rem;
-      border-radius: 999px;
-      margin-top: 0.42rem;
-      background-color: var(--base-color-brand--brand-gold);
-    }
-    .project-modal_actions {
+    .pricing-build_actions {
       display: flex;
       flex-wrap: wrap;
       gap: 0.75rem;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 0.5rem;
-      border-top: 0.25px solid var(--border-color--border-primary);
+      width: 100%;
+      margin-top: auto;
     }
-    .project-modal_secondary {
-      border: 0;
-      background: transparent;
-      padding: 0;
+    .pricing-build_badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.7rem;
+      border: 0.25px solid var(--border-color--border-primary);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       color: var(--text-color--text-secondary);
-      font-size: 0.9375rem;
-      font-weight: 400;
-      cursor: pointer;
+    }
+    @media screen and (max-width: 991px) {
+      .pricing-page_grid .pricing_card {
+        flex-basis: calc(50% - 0.5rem);
+      }
+      .pricing-build_grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media screen and (max-width: 767px) {
-      .project-modal {
-        padding: 1rem;
-      }
-      .project-modal_dialog {
-        max-height: calc(100vh - 2rem);
-      }
-      .project-modal_content {
-        padding: 1.25rem;
-      }
-      .project-modal_tags {
-        padding-right: 3rem;
-      }
-      .project-modal_actions {
+      .pricing-toolbar {
         align-items: stretch;
+      }
+      .pricing-toggle {
+        width: fit-content;
+      }
+      .pricing-page_grid .pricing_card {
+        flex-basis: 100%;
+      }
+      .pricing-comparison_table {
+        min-width: 40rem;
+      }
+    }
+    @media screen and (max-width: 479px) {
+      .pricing-hero_heading {
+        font-size: 2.25rem;
+      }
+      .pricing-hero_sub {
+        font-size: 1rem;
+      }
+      .pricing-toggle_button {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+      .pricing-comparison_table {
+        min-width: 36rem;
+      }
+      .pricing-comparison_table th,
+      .pricing-comparison_table td {
+        padding: 0.85rem;
       }
     }
   </style>
@@ -442,10 +370,10 @@ body {
                       <a href="services/web-design-development-frameworks-studio.html" class="brix---header-nav-link w-nav-link">Design &amp; Development</a>
                     </li>
                     <li class="brix---header-nav-list-item-middle">
-                      <a href="projects.html" aria-current="page" class="brix---header-nav-link w-nav-link w--current">Projects</a>
+                      <a href="projects.html" class="brix---header-nav-link w-nav-link">Projects</a>
                     </li>
                     <li class="brix---header-nav-list-item-middle">
-                      <a href="pricing.html" class="brix---header-nav-link w-nav-link">Pricing</a>
+                      <a href="pricing.html" aria-current="page" class="brix---header-nav-link w-nav-link w--current">Pricing</a>
                     </li>
                     <li class="brix---header-nav-list-item-show-in-mbl">
                       <a href="contact-us.html" class="button w-button">Get in touch</a>
@@ -480,57 +408,210 @@ body {
 
     <main class="main-wrapper">
 
-      <!-- ── Page hero ── -->
-      <section class="section_projects-hero">
+      <section class="section_pricing-hero">
         <div class="padding-global padding-section-large">
           <div class="container-large">
-            <div class="projects-hero_content">
-              <p class="projects-hero_eyebrow">Projects</p>
-              <h1 class="projects-hero_heading">Work that speaks <span class="emphasis">for itself.</span></h1>
-              <p class="projects-hero_sub">A selection of websites and digital experiences we've designed, built, and launched — each one built to perform.</p>
+            <div class="pricing-hero_content">
+              <p class="pricing-hero_eyebrow">Pricing</p>
+              <h1 class="pricing-hero_heading">Straightforward support plans and build pricing <span class="emphasis">without the guesswork.</span></h1>
+              <p class="pricing-hero_sub">Our monthly management pricing is consistent across Webflow, WordPress, Shopify, and Framer. If you need a fresh build or a more complex setup, you can compare that here too.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ── Projects grid ── -->
-      <section class="section_projects background-color-secondary">
+      <section class="section_pricing background-color-secondary">
         <div class="padding-global padding-section-medium">
           <div class="container-large">
-
-            <!-- Filter bar -->
-            <div class="projects_filter-bar" role="group" aria-label="Filter projects">
-              <button class="filter-btn is-active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="web-design">Web Design</button>
-              <button class="filter-btn" data-filter="branding">Branding</button>
-              <button class="filter-btn" data-filter="e-commerce">E-commerce</button>
+            <div class="pricing-toolbar">
+              <div class="pricing-toolbar_copy">
+                <h2 class="heading-style-h2">Management plans.</h2>
+                <p class="text-size-regular text-weight-light">Choose the support level that fits the way your site is used. Every plan includes a dedicated point of contact, clear communication, and a reliable request flow.</p>
+              </div>
+              <div class="pricing-toggle" role="group" aria-label="Toggle currency">
+                <button type="button" class="pricing-toggle_button is-active" data-currency-toggle="GBP" aria-pressed="true">GBP</button>
+                <button type="button" class="pricing-toggle_button" data-currency-toggle="USD" aria-pressed="false">USD</button>
+              </div>
             </div>
+            <div class="pricing_grid pricing-page_grid">
+              <div class="pricing_card">
+                <div class="pricing_card-inner">
+                  <p class="text-size-small text-style-allcaps">Essential</p>
+                  <div class="pricing_card-price-wrap">
+                    <div class="pricing_currency-wrap">
+                      <p class="text-size-regular" data-price-symbol="essential">£</p>
+                      <p class="heading-style-h2" data-price-amount="essential">199</p>
+                    </div>
+                    <p class="text-size-tiny">/month</p>
+                  </div>
+                  <div class="pricing_divider"></div>
+                  <p class="text-size-regular text-weight-light pricing_card-summary">Reliable support for businesses that need their website looked after and kept in good shape.</p>
+                  <div class="pricing_divider"></div>
+                  <div class="pricing_feature-list">
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Monthly support hours</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Minor edits and content changes</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Bug investigation and fixes</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Routine technical checks</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">CMS assistance</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Email support</p></div>
+                  </div>
+                </div>
+                <a href="contact-us.html" class="button-2 is-secondary-2 w-button">Book a free site audit</a>
+              </div>
 
-            <!-- Grid -->
-            <div class="projects_grid" id="projects-grid">
-              <!-- No-results placeholder (shown by JS) -->
-              <p class="projects_no-results" id="no-results">No projects found in this category.</p>
+              <div class="pricing_card background-color-secondary">
+                <div class="pricing_card-badge background-color-tertiary">
+                  <p class="text-size-tiny text-style-allcaps">Most popular</p>
+                </div>
+                <div class="pricing_card-inner">
+                  <p class="text-size-small text-style-allcaps">Growth</p>
+                  <div class="pricing_card-price-wrap">
+                    <div class="pricing_currency-wrap">
+                      <p class="text-size-regular" data-price-symbol="growth">£</p>
+                      <p class="heading-style-h2" data-price-amount="growth">499</p>
+                    </div>
+                    <p class="text-size-tiny">/month</p>
+                  </div>
+                  <div class="pricing_divider"></div>
+                  <p class="text-size-regular text-weight-light pricing_card-summary">For businesses that want their website actively improving, not just maintained.</p>
+                  <div class="pricing_divider"></div>
+                  <div class="pricing_feature-list">
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Everything in Essential</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">SEO improvements</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Performance monitoring</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">CMS management and support</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Monthly reporting</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Priority email and video support</p></div>
+                  </div>
+                </div>
+                <a href="contact-us.html" class="button-2 is-icon w-inline-block">
+                  <div>Book a free site audit</div>
+                  <div class="icon-1x1-small w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="currentColor"></rect><path d="M8 13.5L11.5 10L8.5 7L8 6.5" stroke="currentColor" stroke-linecap="round"></path></svg></div>
+                </a>
+              </div>
 
+              <div class="pricing_card">
+                <div class="pricing_card-inner">
+                  <p class="text-size-small text-style-allcaps">Pro</p>
+                  <div class="pricing_card-price-wrap">
+                    <div class="pricing_currency-wrap">
+                      <p class="text-size-regular" data-price-symbol="pro">£</p>
+                      <p class="heading-style-h2" data-price-amount="pro">1199</p>
+                    </div>
+                    <p class="text-size-tiny">/month</p>
+                  </div>
+                  <div class="pricing_divider"></div>
+                  <p class="text-size-regular text-weight-light pricing_card-summary">For teams treating their site as a serious growth channel, not just a brochure.</p>
+                  <div class="pricing_divider"></div>
+                  <div class="pricing_feature-list">
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Everything in Growth</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">4 hour response time</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Conversion and UX improvements</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Advanced integrations</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Quarterly strategy reviews</p></div>
+                    <div class="pricing_feature-item"><div class="pricing_check-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" rx="8" fill="#FDC448" fill-opacity="0.1"></rect><rect x="0.5" y="0.5" width="17" height="17" rx="7.5" stroke="#FDC448" stroke-opacity="0.28"></rect><path d="M6 9.2L8.2 11.5L12 7" stroke="#FDC448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="text-size-regular text-weight-light">Dedicated Slack or Teams channel</p></div>
+                  </div>
+                </div>
+                <a href="contact-us.html" class="button-2 is-secondary-2 w-button">Book a free site audit</a>
+              </div>
+            </div>
+            <p class="text-size-small text-weight-light pricing-section_note">USD pricing updates automatically when a live GBP to USD rate is available. If not, we use preset dollar pricing so the page still works cleanly.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_build">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="pricing-comparison_header">
+              <h2 class="heading-style-h2">Compare what each management plan includes.</h2>
+              <p class="text-size-regular text-weight-light">This is the fastest way to see how support depth, responsiveness, and improvement work change as you move up the plans.</p>
+            </div>
+            <div class="pricing-comparison_wrap">
+              <table class="pricing-comparison_table">
+                <thead>
+                  <tr>
+                    <th scope="col">Feature</th>
+                    <th scope="col">Essential</th>
+                    <th scope="col">Growth</th>
+                    <th scope="col">Pro</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="pricing-comparison_label">Monthly support hours</td><td><span class="comparison-pill">3 hrs</span></td><td><span class="comparison-pill">8 hrs</span></td><td><span class="comparison-pill">20 hrs</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Minor edits and content changes</td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Bug investigation and fixes</td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Routine technical checks</td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                  <tr><td class="pricing-comparison_label">CMS assistance</td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Expanded</span></td><td><span class="comparison-pill">Priority</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Email support</td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Priority</span></td><td><span class="comparison-pill">Priority</span></td></tr>
+                  <tr><td class="pricing-comparison_label">SEO improvements</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Advanced</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Performance monitoring</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Enhanced</span></td></tr>
+                  <tr><td class="pricing-comparison_label">CMS management and support</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Monthly reporting</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Detailed</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Priority email and video support</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Response time</td><td><span class="comparison-pill">1 business day</span></td><td><span class="comparison-pill">Same day</span></td><td><span class="comparison-pill">4 hours</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Conversion and UX improvements</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Advanced integrations</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Quarterly strategy reviews</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                  <tr><td class="pricing-comparison_label">Dedicated Slack or Teams channel</td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill is-muted">-</span></td><td><span class="comparison-pill">Yes</span></td></tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ── CTA ── -->
+      <section class="section_build background-color-secondary">
+        <div class="padding-global padding-section-medium">
+          <div class="container-large">
+            <div class="pricing-build_header">
+              <h2 class="heading-style-h2">Need a new site, not just support?</h2>
+              <p class="text-size-regular text-weight-light">If you are starting from scratch or planning something more bespoke, these two routes cover the most common build engagements.</p>
+            </div>
+            <div class="pricing-build_grid">
+              <div class="build_card pricing-build_card is-featured">
+                <div class="pricing-build_badge">From scratch</div>
+                <h3>Website Design &amp; Build</h3>
+                <p class="pricing-build_price"><span>From</span> <span data-build-price-symbol="starter">£</span><span data-build-price-amount="starter">1000</span></p>
+                <p class="pricing-build_label">A clean, professional site designed and built from the ground up for businesses that need a strong starting point without overcomplicating the scope.</p>
+                <div class="pricing-build_actions">
+                  <a href="contact-us.html" class="button-2 is-icon w-inline-block">
+                    <div>Start a project</div>
+                    <div class="icon-1x1-small w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="currentColor"></rect><path d="M8 13.5L11.5 10L8.5 7L8 6.5" stroke="currentColor" stroke-linecap="round"></path></svg></div>
+                  </a>
+                </div>
+              </div>
+              <div class="build_card pricing-build_card">
+                <div class="pricing-build_badge">Custom scope</div>
+                <h3>Custom Build</h3>
+                <p class="pricing-build_price">Contact for quote</p>
+                <p class="pricing-build_label">For larger websites, custom UX, deeper integrations, or projects where the structure, content model, and rollout need to be scoped properly first.</p>
+                <div class="pricing-build_actions">
+                  <a href="contact-us.html" class="button-2 is-icon w-inline-block">
+                    <div>Get a custom quote</div>
+                    <div class="icon-1x1-small w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="currentColor"></rect><path d="M8 13.5L11.5 10L8.5 7L8 6.5" stroke="currentColor" stroke-linecap="round"></path></svg></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section_cta">
         <div class="padding-global padding-section-medium">
           <div class="container-large">
             <div class="cta_component">
               <div class="cta_content">
                 <div class="cta_heading-wrap">
-                  <h2 class="heading-style-h2">Ready to build something <span class="emphasis">worth showcasing?</span></h2>
+                  <h2 class="heading-style-h2">Need help choosing the right route <span class="emphasis">for your website?</span></h2>
                 </div>
-                <p class="text-size-regular text-weight-light">Book a free site audit and find out exactly where your website stands and what we can do about it.</p>
+                <p class="text-size-regular text-weight-light">If you are not sure whether you need a support plan, a fresh build, or something custom, we can point you in the right direction quickly.</p>
               </div>
               <div class="cta_actions">
                 <a href="contact-us.html" class="button-2 is-icon w-inline-block">
-                  <div>Start a project</div>
-                  <div class="icon-1x1-small w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="currentColor"></rect><path d="M8 13.5L11.5 10L8.5 7L8 6.5" stroke="currentColor" stroke-linecap="round"></path></svg></div>
+                  <div>Book a free site audit</div>
+                  <div class="icon-1x1-small w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="currentColor"></rect><path d="M8 13.5L11.5 10L8.5 7L8 6.5" stroke="currentColor" stroke-linecap="round"></path></svg></div>
                 </a>
                 <a href="contact-us.html" class="button w-button">Get in touch</a>
               </div>
@@ -538,32 +619,6 @@ body {
           </div>
         </div>
       </section>
-
-      <div class="project-modal" id="project-modal" aria-hidden="true">
-        <div class="project-modal_backdrop" data-modal-close="true"></div>
-        <div class="project-modal_dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" tabindex="-1">
-          <button type="button" class="project-modal_close" id="project-modal-close" aria-label="Close project details">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4.5 4.5L13.5 13.5M13.5 4.5L4.5 13.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-          </button>
-          <div class="project-modal_image-wrap">
-            <img src="" alt="" class="project-modal_image" id="project-modal-image">
-          </div>
-          <div class="project-modal_content">
-            <div class="project-modal_tags" id="project-modal-tags"></div>
-            <h2 class="project-modal_title" id="project-modal-title"></h2>
-            <p class="project-modal_text" id="project-modal-summary"></p>
-            <p class="project-modal_text" id="project-modal-detail"></p>
-            <ul class="project-modal_highlights" id="project-modal-highlights"></ul>
-            <div class="project-modal_actions">
-              <a href="contact-us.html" class="button-2 is-icon w-inline-block" id="project-modal-cta">
-                <div id="project-modal-cta-label">Start a project</div>
-                <div class="icon-1x1-small w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="currentColor"></rect><path d="M8 13.5L11.5 10L8.5 7L8 6.5" stroke="currentColor" stroke-linecap="round"></path></svg></div>
-              </a>
-              <button type="button" class="project-modal_secondary" data-modal-close="true">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
     </main>
 
@@ -613,6 +668,7 @@ body {
                   <a href="services/untitled/website-management-services-frameworks-studio.html" class="footer-link">Site Management</a>
                   <a href="services/web-design-development-frameworks-studio.html" class="footer-link">Web Design &amp; Development</a>
                   <a href="projects.html" class="footer-link">Projects</a>
+                  <a href="pricing.html" aria-current="page" class="footer-link w--current">Pricing</a>
                 </div>
               </div>
             </div>
@@ -741,6 +797,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
   </script>
-  <script type="module" src="js/projects-render.js"></script>
+  <script type="module" src="js/pricing-page.js"></script>
 </body>
 </html>
