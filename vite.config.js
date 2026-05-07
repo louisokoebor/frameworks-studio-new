@@ -27,6 +27,24 @@ function collectHtmlInputs(dir, rootDir, inputs = {}) {
 const rootDir = path.resolve('.')
 const htmlInputs = collectHtmlInputs(rootDir, rootDir)
 
+function copyStaticJsPlugin() {
+  return {
+    name: 'copy-static-js',
+    closeBundle() {
+      const sourceDir = path.join(rootDir, 'js')
+      const targetDir = path.join(rootDir, 'dist', 'js')
+
+      if (!fs.existsSync(sourceDir)) return
+
+      fs.mkdirSync(targetDir, { recursive: true })
+      fs.copyFileSync(
+        path.join(sourceDir, 'webflow.js'),
+        path.join(targetDir, 'webflow.js')
+      )
+    },
+  }
+}
+
 export default defineConfig({
   root: '.',
   build: {
@@ -34,6 +52,7 @@ export default defineConfig({
       input: htmlInputs,
     },
   },
+  plugins: [copyStaticJsPlugin()],
   server: {
     port: 3000,
     open: true,
