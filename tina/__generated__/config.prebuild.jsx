@@ -109,6 +109,16 @@ var config_default = defineConfig({
               },
               {
                 type: "string",
+                label: "Live Site URL",
+                name: "liveUrl"
+              },
+              {
+                type: "boolean",
+                label: "Work In Progress",
+                name: "inProgress"
+              },
+              {
+                type: "string",
                 label: "CTA Href",
                 name: "ctaHref",
                 required: true

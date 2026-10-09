@@ -58,7 +58,7 @@ function renderPrices(currency) {
   priceAmountEls.forEach((element) => {
     const key = element.dataset.priceAmount || element.dataset.buildPriceAmount;
     if (!key || !(key in prices)) return;
-    element.textContent = String(prices[key]);
+    element.textContent = prices[key].toLocaleString("en-GB");
   });
 
   priceSymbolEls.forEach((element) => {

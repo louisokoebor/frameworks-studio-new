@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="69c1c7e830e725df979bd2c7" data-wf-site="69c1c7e830e725df979bd2ca">
+<html lang="en-GB" data-wf-page="69c1c7e830e725df979bd2c7" data-wf-site="69c1c7e830e725df979bd2ca">
 <head>
   <meta charset="utf-8">
   <title>Contact Us | Frameworks Studio</title>
@@ -58,8 +58,8 @@
 }
 </script>
   <style>
-  .form_input::placeholder {
-    color: #A3A3A3; /* your placeholder color */
+  .contact-form-block .form_input::placeholder {
+    color: #8A8A8A; /* matches the select placeholder */
     opacity: 1; /* ensures the color shows fully */
   }
   .contact-form_honeypot {
@@ -262,7 +262,7 @@ margin: 0rem !important;
                           <p class="text-size-small">Webflow</p>
                         </a>
                         <a href="services/untitled/wordpress-website-management-maintenance-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="images/Wordpress-Logo-1.png" loading="lazy" alt="" class="nav-item_icon">
-                          <p class="text-size-small">Wordpress</p>
+                          <p class="text-size-small">WordPress</p>
                         </a>
                         <a href="services/untitled/shopify-store-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="images/shopify-logo.png" loading="lazy" alt="" class="nav-item_icon">
                           <p class="text-size-small">Shopify</p>
@@ -285,7 +285,7 @@ margin: 0rem !important;
                           <p class="text-size-medium text-weight-light">Webflow</p>
                         </a>
                         <a href="services/untitled/wordpress-website-management-maintenance-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="images/Wordpress-Logo-1.png" loading="lazy" alt="" class="nav-item_icon">
-                          <p class="text-size-medium text-weight-light">Wordpress</p>
+                          <p class="text-size-medium text-weight-light">WordPress</p>
                         </a>
                         <a href="services/untitled/shopify-store-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="images/shopify-logo.png" loading="lazy" alt="" class="nav-item_icon">
                           <p class="text-size-medium text-weight-light">Shopify</p>
@@ -308,7 +308,7 @@ margin: 0rem !important;
                       <a href="contact-us.html" aria-current="page" class="button w-button w--current">Get in touch</a>
                     </li>
                     <li class="brix---header-nav-list-item-show-in-mbl">
-                      <a href="audit.html" class="button-2 w-button">Book Free audit</a>
+                      <a href="audit.html" class="button-2 w-button">Book free audit</a>
                     </li>
                   </ul>
                   <div class="nav-dropdown background-color-secondary">
@@ -316,7 +316,7 @@ margin: 0rem !important;
                       <p class="text-size-small">Webflow</p>
                     </a>
                     <a href="services/untitled/wordpress-website-management-maintenance-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="images/Wordpress-Logo-1.png" loading="lazy" alt="" class="nav-item_icon">
-                      <p class="text-size-small">Wordpress</p>
+                      <p class="text-size-small">WordPress</p>
                     </a>
                     <a href="services/untitled/shopify-store-management-support-frameworks-studio.html" class="nav-dropdown-item w-inline-block"><img src="images/shopify-logo.png" loading="lazy" alt="" class="nav-item_icon">
                       <p class="text-size-small">Shopify</p>
@@ -328,13 +328,13 @@ margin: 0rem !important;
                 </nav>
               </div>
               <div class="header-right-col">
-                <div data-w-id="e7c21ceb-ba1d-18b1-d70b-0e3dc12d9cc0" class="hamburger-menu-wrapper w-nav-button">
+                <div data-w-id="e7c21ceb-ba1d-18b1-d70b-0e3dc12d9cc0" class="hamburger-menu-wrapper w-nav-button" aria-label="Open menu">
                   <div class="brix---hamburger-menu-bar-top"></div>
                   <div class="brix---hamburger-menu-bar-bottom"></div>
                 </div>
                 <div class="header-hidden-on-mbl">
                   <a href="contact-us.html" aria-current="page" class="button is-small w-button w--current">Get in touch</a>
-                  <a href="audit.html" class="button-2 is-small w-button">Book Free audit</a>
+                  <a href="audit.html" class="button-2 is-small w-button">Book free audit</a>
                 </div>
               </div>
             </div>
@@ -372,7 +372,8 @@ margin: 0rem !important;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: transparent;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M3 6l5 5 5-5' fill='none' stroke='%23373737' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 1rem center;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
   color: #8A8A8A; /* placeholder color */
 }
 .contact-select.has-value {
@@ -401,7 +402,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <option value="Website management">Website management</option>
                     <option value="Both">Both</option>
                     <option value="Not sure yet">Not sure yet</option>
-                  </select><label for="Project-information" class="hide">Tell us about your project</label><input class="form_input is-text-area w-input" maxlength="2000" name="project_information" data-name="Project information" placeholder="Tell us about your project" type="text" id="Project-information" required><label for="contact-gotcha" class="contact-form_honeypot" aria-hidden="true">Leave this field empty</label><input class="contact-form_honeypot" tabindex="-1" autocomplete="off" name="_gotcha" type="text" id="contact-gotcha"><input type="submit" data-wait="Please wait..." class="button-2 white w-button" value="Send your message">
+                  </select><label for="Project-information" class="hide">Tell us about your project</label><textarea class="form_input is-text-area w-input" maxlength="2000" name="project_information" data-name="Project information" placeholder="Tell us about your project" id="Project-information" required></textarea><label for="contact-gotcha" class="contact-form_honeypot" aria-hidden="true">Leave this field empty</label><input class="contact-form_honeypot" tabindex="-1" autocomplete="off" name="_gotcha" type="text" id="contact-gotcha"><input type="submit" data-wait="Please wait..." class="button-2 w-button" value="Send your message">
                 </form>
                 <div class="w-form-done" aria-live="polite">
                   <div>Thank you! Your submission has been received!</div>
@@ -434,13 +435,13 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </section>
       <section class="section_contact-us_cta background-color-secondary">
-        <div class="padding-global padding-section-medium">
+        <div class="padding-global padding-section-medium" style="padding-top: 0">
           <div class="container-large">
             <div data-w-id="089fb5f9-e2d0-c01c-fa2c-03dcb9a6eb29" style="opacity:0" class="section-heading text-align-center">
               <h2 class="heading-style-h2">Prefer to book a call?</h2>
-              <p class="text-size-large text-weight-light">Use the link below to schedule a free 15-minute chat.</p>
+              <p class="text-size-large text-weight-light">Use the link below to book a free 30-minute call.</p>
               <div class="cta-wrapper">
-                <a href="/#projects" class="button-2 w-button">Book a call</a>
+                <a href="audit.html" class="button-2 w-button">Book a call</a>
               </div>
             </div>
           </div>
@@ -492,7 +493,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="footer_column">
                   <div>Studio</div>
                   <a href="index.html" class="footer-link">Home</a>
-                  <a href="index.html" class="footer-link">About Us</a>
+                  <a href="about.html" class="footer-link">About Us</a>
                   <a href="projects.html" class="footer-link">Projects</a>
                   <a href="contact-us.html" class="footer-link">Contact</a>
                 </div>
@@ -515,7 +516,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer_bottom-wrapper">
               <div class="divider"></div>
               <div class="bottom-text">
-                <p class="text-size-small text-weight-light">© <span id="current-year" class="current-year">2025 </span>Frameworks Studio. All rights reserved.</p>
+                <p class="text-size-small text-weight-light">© <span id="current-year" class="current-year">2025</span> Frameworks Studio. All rights reserved.</p>
                 <div class="bottom-links">
                   <a href="privacy.html" class="text-size-small text-weight-light no-line">Privacy</a>
                   <a href="terms.html" class="text-size-small text-weight-light no-line">Terms</a>

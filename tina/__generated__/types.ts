@@ -178,6 +178,8 @@ export type ProjectsProjects = {
   summary: Scalars['String']['output'];
   detailText: Scalars['String']['output'];
   highlights: Array<Scalars['String']['output']>;
+  liveUrl?: Maybe<Scalars['String']['output']>;
+  inProgress?: Maybe<Scalars['Boolean']['output']>;
   ctaHref: Scalars['String']['output'];
   ctaLabel: Scalars['String']['output'];
   featured?: Maybe<Scalars['Boolean']['output']>;
@@ -233,6 +235,8 @@ export type ProjectsProjectsFilter = {
   summary?: InputMaybe<StringFilter>;
   detailText?: InputMaybe<StringFilter>;
   highlights?: InputMaybe<StringFilter>;
+  liveUrl?: InputMaybe<StringFilter>;
+  inProgress?: InputMaybe<BooleanFilter>;
   ctaHref?: InputMaybe<StringFilter>;
   ctaLabel?: InputMaybe<StringFilter>;
   featured?: InputMaybe<BooleanFilter>;
@@ -333,6 +337,8 @@ export type ProjectsProjectsMutation = {
   summary?: InputMaybe<Scalars['String']['input']>;
   detailText?: InputMaybe<Scalars['String']['input']>;
   highlights?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  liveUrl?: InputMaybe<Scalars['String']['input']>;
+  inProgress?: InputMaybe<Scalars['Boolean']['input']>;
   ctaHref?: InputMaybe<Scalars['String']['input']>;
   ctaLabel?: InputMaybe<Scalars['String']['input']>;
   featured?: InputMaybe<Scalars['Boolean']['input']>;
@@ -343,14 +349,14 @@ export type ProjectsMutation = {
   projects?: InputMaybe<Array<InputMaybe<ProjectsProjectsMutation>>>;
 };
 
-export type ProjectsPartsFragment = { __typename: 'Projects', projects?: Array<{ __typename: 'ProjectsProjects', id: string, title: string, slug: string, categories: Array<string>, tags: Array<string>, cardImage: string, cardImageAlt: string, cardDescription: string, summary: string, detailText: string, highlights: Array<string>, ctaHref: string, ctaLabel: string, featured?: boolean | null, sortOrder: number } | null> | null };
+export type ProjectsPartsFragment = { __typename: 'Projects', projects?: Array<{ __typename: 'ProjectsProjects', id: string, title: string, slug: string, categories: Array<string>, tags: Array<string>, cardImage: string, cardImageAlt: string, cardDescription: string, summary: string, detailText: string, highlights: Array<string>, liveUrl?: string | null, inProgress?: boolean | null, ctaHref: string, ctaLabel: string, featured?: boolean | null, sortOrder: number } | null> | null };
 
 export type ProjectsQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
 }>;
 
 
-export type ProjectsQuery = { __typename?: 'Query', projects: { __typename: 'Projects', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, projects?: Array<{ __typename: 'ProjectsProjects', id: string, title: string, slug: string, categories: Array<string>, tags: Array<string>, cardImage: string, cardImageAlt: string, cardDescription: string, summary: string, detailText: string, highlights: Array<string>, ctaHref: string, ctaLabel: string, featured?: boolean | null, sortOrder: number } | null> | null } };
+export type ProjectsQuery = { __typename?: 'Query', projects: { __typename: 'Projects', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, projects?: Array<{ __typename: 'ProjectsProjects', id: string, title: string, slug: string, categories: Array<string>, tags: Array<string>, cardImage: string, cardImageAlt: string, cardDescription: string, summary: string, detailText: string, highlights: Array<string>, liveUrl?: string | null, inProgress?: boolean | null, ctaHref: string, ctaLabel: string, featured?: boolean | null, sortOrder: number } | null> | null } };
 
 export type ProjectsConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -362,7 +368,7 @@ export type ProjectsConnectionQueryVariables = Exact<{
 }>;
 
 
-export type ProjectsConnectionQuery = { __typename?: 'Query', projectsConnection: { __typename?: 'ProjectsConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ProjectsConnectionEdges', cursor: string, node?: { __typename: 'Projects', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, projects?: Array<{ __typename: 'ProjectsProjects', id: string, title: string, slug: string, categories: Array<string>, tags: Array<string>, cardImage: string, cardImageAlt: string, cardDescription: string, summary: string, detailText: string, highlights: Array<string>, ctaHref: string, ctaLabel: string, featured?: boolean | null, sortOrder: number } | null> | null } | null } | null> | null } };
+export type ProjectsConnectionQuery = { __typename?: 'Query', projectsConnection: { __typename?: 'ProjectsConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ProjectsConnectionEdges', cursor: string, node?: { __typename: 'Projects', id: string, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, projects?: Array<{ __typename: 'ProjectsProjects', id: string, title: string, slug: string, categories: Array<string>, tags: Array<string>, cardImage: string, cardImageAlt: string, cardDescription: string, summary: string, detailText: string, highlights: Array<string>, liveUrl?: string | null, inProgress?: boolean | null, ctaHref: string, ctaLabel: string, featured?: boolean | null, sortOrder: number } | null> | null } | null } | null> | null } };
 
 export const ProjectsPartsFragmentDoc = gql`
     fragment ProjectsParts on Projects {
@@ -380,6 +386,8 @@ export const ProjectsPartsFragmentDoc = gql`
     summary
     detailText
     highlights
+    liveUrl
+    inProgress
     ctaHref
     ctaLabel
     featured

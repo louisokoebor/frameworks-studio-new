@@ -1,111 +1,200 @@
 {
   "projects": [
     {
-      "id": "okiemint",
-      "title": "Okiemint",
-      "slug": "okiemint",
+      "id": "adaugo-louis",
+      "title": "Adaugo & Louis",
+      "slug": "adaugo-louis",
       "categories": [
-        "web-design",
-        "e-commerce"
+        "web-design"
       ],
       "tags": [
-        "E-commerce",
         "Web Design",
-        "IT"
+        "Wedding"
       ],
-      "cardImage": "images/okiemint_1okiemint.avif",
-      "cardImageAlt": "Okiemint project screenshot",
-      "cardDescription": "A clean, conversion-focused e-commerce build for a modern consumer brand — designed to sell.",
-      "summary": "A lean e-commerce experience for a modern consumer brand, shaped to feel premium without adding friction to the buying journey.",
-      "detailText": "The focus was clarity: stronger product presentation, cleaner navigation, and a storefront that keeps attention on conversion.",
+      "cardImage": "images/adaugo-louis_1adaugo-louis.avif",
+      "cardImageAlt": "Adaugo & Louis wedding website homepage with handwritten names and a polaroid photo of calla lilies",
+      "cardDescription": "A handwritten, keepsake-style wedding website — designed to feel like a personal invitation.",
+      "summary": "A wedding website for Adaugo & Louis, designed to feel like a handwritten invitation from the couple to their guests.",
+      "detailText": "Notebook paper, script lettering and polaroid-style photos give the site a warm, personal feel, with sections for the couple's story, the celebration and guest notes as the details come together.",
       "highlights": [
-        "Scope: Web design and conversion-focused e-commerce build.",
-        "Challenge: Keep the brand polished while making shopping feel simple and immediate.",
-        "Outcome: A cleaner path to purchase with a sharper, more sales-ready presentation."
+        "Scope: Wedding website design and build covering our story, the celebration, guest notes and updates.",
+        "Challenge: Make a website feel as personal and tactile as a paper invitation.",
+        "Status: Work in progress — details are still being added ahead of the big day."
       ],
+      "liveUrl": "https://spin-plasma-80316172.figma.site/",
+      "inProgress": true,
       "ctaHref": "contact-us.html",
       "ctaLabel": "Start a similar project",
       "featured": true,
-      "sortOrder": 10
+      "sortOrder": 1
     },
     {
-      "id": "arewa-clinic",
-      "title": "Arewa Clinic",
-      "slug": "arewa-clinic",
+      "id": "jerome-nnodum",
+      "title": "Jerome Nnodum",
+      "slug": "jerome-nnodum",
       "categories": [
-        "web-design",
-        "branding"
+        "web-design"
       ],
       "tags": [
         "Web Design",
-        "Branding"
+        "Personal Brand"
       ],
-      "cardImage": "images/arewa-clinic_1arewa-clinic.avif",
-      "cardImageAlt": "Arewa Clinic project screenshot",
-      "cardDescription": "A professional healthcare website built to build trust, communicate services, and convert enquiries.",
-      "summary": "A healthcare website designed to feel calm, credible, and easy to trust from the first interaction.",
-      "detailText": "We kept the experience straightforward so visitors can understand services quickly and move toward enquiry without confusion.",
+      "cardImage": "images/jerome-nnodum_1jerome-nnodum.avif",
+      "cardImageAlt": "Jerome Nnodum portfolio website homepage with headshot and the headline 'I'm Jerome. A Business Analyst based in London.'",
+      "cardDescription": "A bold personal portfolio for a London-based business analyst — built to make a strong first impression on recruiters and clients.",
+      "summary": "A personal brand and portfolio website for Jerome Nnodum, a London-based business analyst.",
+      "detailText": "The site brings his experience, skills, case studies, testimonials and qualifications together in one confident, easy-to-scan page — with a downloadable CV and LinkedIn link to turn interest into conversations.",
       "highlights": [
-        "Scope: Website design with supporting brand direction.",
-        "Challenge: Balance professionalism, warmth, and clarity for a healthcare audience.",
-        "Outcome: A more trustworthy digital presence built around service communication and enquiries."
+        "Scope: Portfolio website design and build covering experience, skills, case studies, testimonials, education and contact.",
+        "Challenge: Present a career's worth of experience and certifications without overwhelming busy recruiters.",
+        "Outcome: A striking, memorable personal brand that makes his expertise clear at a glance."
       ],
+      "liveUrl": "https://jeromennodum.com/",
       "ctaHref": "contact-us.html",
-      "ctaLabel": "Discuss your clinic website",
+      "ctaLabel": "Start a similar project",
       "featured": true,
-      "sortOrder": 20
+      "sortOrder": 6
     },
     {
-      "id": "ace-accountants",
-      "title": "Ace Accountants",
-      "slug": "ace-accountants",
+      "id": "scent-oud",
+      "title": "Scent Oud",
+      "slug": "scent-oud",
       "categories": [
-        "branding",
+        "e-commerce",
         "web-design"
       ],
       "tags": [
-        "Branding",
+        "E-commerce",
+        "Shopify",
         "Web Design"
       ],
-      "cardImage": "images/ace-accountants_1ace-accountants.avif",
-      "cardImageAlt": "Ace Accountants project screenshot",
-      "cardDescription": "Brand identity and website for a growing accountancy firm — clear, credible, and built to generate leads.",
-      "summary": "A brand and website refresh for an accountancy firm that needed to look established, clear, and commercially credible.",
-      "detailText": "The work centred on simplifying the message and giving the business a more confident visual presence for lead generation.",
+      "cardImage": "images/scent-oud_1scent-oud.avif",
+      "cardImageAlt": "Scent Oud Shopify storefront showing a row of fragrance bottles",
+      "cardDescription": "A luxury Shopify storefront for a UK fragrance house — designed to make high-concentration scents feel premium and easy to buy.",
+      "summary": "A Shopify storefront for Scent Oud, a UK fragrance brand selling unisex extrait de parfum, fragrance oils and gift bundles.",
+      "detailText": "The store pairs bold, product-led imagery with clean navigation by collection, so shoppers can move quickly from discovering a scent to choosing a size or bundle and checking out.",
       "highlights": [
-        "Scope: Brand identity and lead-focused website design.",
-        "Challenge: Make a growing firm feel both approachable and authoritative.",
-        "Outcome: A clearer positioning system with a cleaner client acquisition experience."
+        "Scope: Shopify storefront design and build covering collections, product pages, bundles, wishlist and multi-currency checkout.",
+        "Challenge: Convey a luxury, layered-fragrance positioning online, where customers can't smell the product.",
+        "Outcome: A premium, conversion-ready store with collection-led browsing, bundles and flexible payment options."
       ],
+      "liveUrl": "https://scentoud.store/",
       "ctaHref": "contact-us.html",
-      "ctaLabel": "Build a lead-ready site",
+      "ctaLabel": "Start a similar project",
       "featured": true,
-      "sortOrder": 30
+      "sortOrder": 4
     },
     {
-      "id": "office-fitout-co",
-      "title": "Office Fitout Co.",
-      "slug": "office-fitout-co",
+      "id": "bilgs-studio",
+      "title": "Bilgs Studio",
+      "slug": "bilgs-studio",
+      "categories": [
+        "e-commerce",
+        "web-design"
+      ],
+      "tags": [
+        "E-commerce",
+        "Shopify",
+        "Web Design"
+      ],
+      "cardImage": "images/bilgs-studio_1bilgs-studio.avif",
+      "cardImageAlt": "Bilgs Studio Shopify storefront showing a 3D-printed marathon route medal frame",
+      "cardDescription": "A Shopify storefront for a UK studio making personalised 3D-printed race keepsakes — built to turn finish lines into orders.",
+      "summary": "A Shopify storefront for Bilgs Studio, a UK maker of handmade, 3D-printed medal frames and route keepsakes for runners, triathletes, hikers and cyclists.",
+      "detailText": "The store leads with the product and the story behind every race, then makes personalisation simple — from picking a frame to sending race details or a custom route — with a launch discount and reviews to build confidence.",
+      "highlights": [
+        "Scope: Shopify storefront design and build covering the shop, custom orders, gallery, about and FAQ.",
+        "Challenge: Sell a made-to-order, personalised product online without making ordering feel complicated.",
+        "Outcome: A warm, product-led store with clear paths to order and built-in email capture for launch."
+      ],
+      "liveUrl": "https://bilgsstudio.com/",
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Start a similar project",
+      "featured": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "scaza",
+      "title": "Scaza",
+      "slug": "scaza",
       "categories": [
         "web-design"
       ],
       "tags": [
-        "Web Design"
+        "Web Design",
+        "Fintech"
       ],
-      "cardImage": "images/offic-fitout_1offic-fitout.avif",
-      "cardImageAlt": "Office Fitout project screenshot",
-      "cardDescription": "A bold, project-led website for a commercial interior fit-out business, showcasing their portfolio with impact.",
-      "summary": "A portfolio-led site for a commercial interiors company that needed stronger project presentation and more visual impact.",
-      "detailText": "The design was structured to let the work speak first, while still making the business feel organised and conversion-aware.",
+      "cardImage": "images/scaza_1scaza.avif",
+      "cardImageAlt": "Scaza website homepage with the headline 'Your supplier in China is waiting.'",
+      "cardDescription": "A clear, confident website for a cross-border payments platform helping African businesses pay suppliers in China.",
+      "summary": "A website for Scaza, a cross-border payments platform that helps African businesses pay suppliers in China with clarity, speed and full control.",
+      "detailText": "The site turns a complex financial process into a simple story — from invoice to payment — with live exchange rates, a currency converter and clear trust signals to reassure first-time users.",
       "highlights": [
-        "Scope: Project-focused website design.",
-        "Challenge: Showcase large visual work without making the experience feel heavy.",
-        "Outcome: A bolder, cleaner portfolio presence built to support credibility and enquiries."
+        "Scope: Web design and build covering the product story, business and individual journeys, currency converter and trust and security content.",
+        "Challenge: Make cross-border payments feel simple, transparent and trustworthy for businesses wary of hidden fees and delays.",
+        "Outcome: A polished fintech presence that explains the product quickly and drives sign-ups."
       ],
+      "liveUrl": "https://www.scaza.org/",
       "ctaHref": "contact-us.html",
-      "ctaLabel": "Plan your project site",
+      "ctaLabel": "Start a similar project",
       "featured": true,
-      "sortOrder": 40
+      "sortOrder": 3
+    },
+    {
+      "id": "edjuvera",
+      "title": "Edjuvera",
+      "slug": "edjuvera",
+      "categories": [
+        "web-design"
+      ],
+      "tags": [
+        "Web Design",
+        "Education"
+      ],
+      "cardImage": "images/edjuvera_1edjuvera.avif",
+      "cardImageAlt": "Edjuvera website homepage showing a tutor reading with a child",
+      "cardDescription": "A warm, reassuring website for a SEND tuition and alternative provision service in Medway and Kent.",
+      "summary": "A new website for Edjuvera, a specialist SEND tuition and alternative provision service supporting families, schools and local authorities across Medway, Central Kent and online.",
+      "detailText": "The site speaks to three very different audiences at once — parents, schools and local authorities — with needs-led content, clear trust signals and simple routes to book a free consultation or refer a learner.",
+      "highlights": [
+        "Scope: Web design and build covering learning needs, tuition, schools and local authorities, parent guidance, resources and tutor recruitment.",
+        "Challenge: Make a sensitive, specialist service feel warm and approachable while building trust with professionals.",
+        "Status: In progress — the site is currently in development ahead of launch."
+      ],
+      "liveUrl": "https://edjuvera.louisokoebor.workers.dev/",
+      "inProgress": true,
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Start a similar project",
+      "featured": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "hank-robotics",
+      "title": "Hank Robotics",
+      "slug": "hank-robotics",
+      "categories": [
+        "web-design"
+      ],
+      "tags": [
+        "Web Design",
+        "Robotics",
+        "Lead Generation"
+      ],
+      "cardImage": "images/hank-robotics_1hank-robotics.avif",
+      "cardImageAlt": "Hank Robotics website homepage showing a drone cleaning a hotel facade",
+      "cardDescription": "A bold, high-impact website for a Miami drone cleaning company — built to turn property managers into quote requests.",
+      "summary": "A modern web presence for Hank Robotics, a Florida-based provider of drone and robotic cleaning for commercial, hospitality and residential properties.",
+      "detailText": "The site leads with a clear safety-first message, then guides visitors through services, industries and a simple three-step process — with instant-quote and estimate CTAs throughout to keep enquiries flowing.",
+      "highlights": [
+        "Scope: Web design and build covering services, industries, locations, blog and gallery.",
+        "Challenge: Make a new, technical service feel credible and easy to understand for property and facilities decision-makers.",
+        "Outcome: A confident, conversion-focused site with location pages for local search and quote CTAs on every page."
+      ],
+      "liveUrl": "https://www.hankrobotics.com/",
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Start a similar project",
+      "featured": true,
+      "sortOrder": 5
     },
     {
       "id": "seedrock-consulting",
@@ -129,6 +218,7 @@
         "Challenge: Communicate expertise without relying on dense or overly corporate messaging.",
         "Outcome: A more refined digital presence that supports premium positioning."
       ],
+      "liveUrl": "https://seedrock-new.webflow.io/",
       "ctaHref": "contact-us.html",
       "ctaLabel": "Position your business better",
       "featured": true,

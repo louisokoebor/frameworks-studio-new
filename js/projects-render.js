@@ -10,7 +10,12 @@ function escapeHtml(value) {
 }
 
 function renderProjectCard(project) {
-  const categories = Array.isArray(project.categories) ? project.categories.join(" ") : "";
+  const categoryList = Array.isArray(project.categories) ? [...project.categories] : [];
+  if (project.inProgress) categoryList.push("in-progress");
+  const categories = categoryList.join(" ");
+  const statusMarkup = project.inProgress ? `<span class="project-card_status">Work in progress</span>` : "";
+  const cardClass = project.inProgress ? "project-card is-in-progress" : "project-card";
+  const linkLabel = project.inProgress ? "View progress" : "View project";
   const tags = Array.isArray(project.tags) ? project.tags : [];
   const tagsMarkup = tags
     .map((tag, index) => {
@@ -20,8 +25,9 @@ function renderProjectCard(project) {
     .join("");
 
   return `
-    <a href="#" class="project-card motion-stagger-item" data-categories="${escapeHtml(categories)}" data-project="${escapeHtml(project.id)}" aria-haspopup="dialog">
+    <a href="#" class="${cardClass} motion-stagger-item" data-categories="${escapeHtml(categories)}" data-project="${escapeHtml(project.id)}" aria-haspopup="dialog">
       <div class="project-card_image-wrap">
+        ${statusMarkup}
         <img src="${escapeHtml(project.cardImage)}" alt="${escapeHtml(project.cardImageAlt)}" class="project-card_image" loading="lazy">
       </div>
       <div class="project-card_body">
@@ -29,7 +35,7 @@ function renderProjectCard(project) {
         <h2 class="project-card_title">${escapeHtml(project.title)}</h2>
         <p class="project-card_desc">${escapeHtml(project.cardDescription)}</p>
         <span class="project-card_link">
-          View project
+          ${linkLabel}
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
       </div>
@@ -51,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalHighlights = document.getElementById("project-modal-highlights");
   const modalCta = document.getElementById("project-modal-cta");
   const modalCtaLabel = document.getElementById("project-modal-cta-label");
+  const modalLive = document.getElementById("project-modal-live");
+  const modalLiveLabel = document.getElementById("project-modal-live-label");
   const modalCloseButtons = projectModal ? projectModal.querySelectorAll("[data-modal-close='true'], #project-modal-close") : [];
   const orderedProjects = [...projectsContent.projects].sort(function (a, b) {
     return (a.sortOrder || 0) - (b.sortOrder || 0);
@@ -81,7 +89,19 @@ document.addEventListener("DOMContentLoaded", function () {
     modalCta.href = project.ctaHref;
     modalCtaLabel.textContent = project.ctaLabel;
 
+    if (modalLive) {
+      modalLive.hidden = !project.liveUrl;
+      if (project.liveUrl) modalLive.href = project.liveUrl;
+      modalLiveLabel.textContent = project.inProgress ? "View preview site" : "Visit live site";
+    }
+
     modalTags.innerHTML = "";
+    if (project.inProgress) {
+      const statusEl = document.createElement("span");
+      statusEl.className = "project-card_tag is-status";
+      statusEl.textContent = "Work in progress";
+      modalTags.appendChild(statusEl);
+    }
     project.tags.forEach(function (tag, index) {
       const tagEl = document.createElement("span");
       tagEl.className = index === 0 ? "project-card_tag is-gold" : "project-card_tag";

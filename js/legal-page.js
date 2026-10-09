@@ -54,5 +54,16 @@ if (navLinks.length) {
     );
 
     sections.forEach((section) => observer.observe(section));
+
+    // The observer never fires for the area above the first section, so reset when back at the top
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (sections[0].getBoundingClientRect().top > window.innerHeight * 0.18) {
+          setActiveLink(sections[0]);
+        }
+      },
+      { passive: true }
+    );
   }
 }

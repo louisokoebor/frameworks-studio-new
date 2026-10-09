@@ -99,6 +99,8 @@ type ProjectsProjects {
   summary: String!
   detailText: String!
   highlights: [String!]!
+  liveUrl: String
+  inProgress: Boolean
   ctaHref: String!
   ctaLabel: String!
   featured: Boolean
@@ -153,6 +155,8 @@ input ProjectsProjectsFilter {
   summary: StringFilter
   detailText: StringFilter
   highlights: StringFilter
+  liveUrl: StringFilter
+  inProgress: BooleanFilter
   ctaHref: StringFilter
   ctaLabel: StringFilter
   featured: BooleanFilter
@@ -205,6 +209,8 @@ input ProjectsProjectsMutation {
   summary: String
   detailText: String
   highlights: [String]
+  liveUrl: String
+  inProgress: Boolean
   ctaHref: String
   ctaLabel: String
   featured: Boolean

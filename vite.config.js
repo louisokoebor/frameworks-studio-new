@@ -42,6 +42,11 @@ function copyStaticAssetsPlugin() {
         path.join(targetDir, 'webflow.js')
       )
 
+      // Project card images are referenced from content JSON, so Vite doesn't bundle them
+      fs.cpSync(path.join(rootDir, 'images'), path.join(rootDir, 'dist', 'images'), {
+        recursive: true,
+      })
+
       ;['robots.txt', 'sitemap.xml'].forEach((filename) => {
         const sourceFile = path.join(rootDir, filename)
         const targetFile = path.join(rootDir, 'dist', filename)

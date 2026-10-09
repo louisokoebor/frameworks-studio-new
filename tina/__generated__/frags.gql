@@ -13,6 +13,8 @@ fragment ProjectsParts on Projects {
     summary
     detailText
     highlights
+    liveUrl
+    inProgress
     ctaHref
     ctaLabel
     featured
