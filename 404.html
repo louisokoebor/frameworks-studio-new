@@ -15,12 +15,28 @@
   <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:300,400,500,600,700"]  }});</script>
   <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="/images/webclip.png" rel="apple-touch-icon">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGVB34BVLZ"></script>
   <script>
+    // Google Analytics loads only after cookie consent (see js/cookie-consent.js)
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
     gtag('js', new Date());
     gtag('config', 'G-LGVB34BVLZ');
+    (function () {
+      var choice = null;
+      try { choice = localStorage.getItem('fs-cookie-consent'); } catch (e) {}
+      if (choice !== 'granted') return;
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LGVB34BVLZ';
+      document.head.appendChild(s);
+    })();
   </script>
   <style>
     .not-found {
@@ -103,5 +119,6 @@
       </div>
     </main>
   </div>
+<script type="module" src="/js/cookie-consent.js"></script>
 </body>
 </html>
