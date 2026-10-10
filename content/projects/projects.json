@@ -223,6 +223,33 @@
       "ctaLabel": "Position your business better",
       "featured": true,
       "sortOrder": 50
+    },
+    {
+      "id": "talent-crest",
+      "title": "Talent Crest Consulting",
+      "slug": "talent-crest",
+      "categories": [
+        "web-design"
+      ],
+      "tags": [
+        "Web Design",
+        "Consulting"
+      ],
+      "cardImage": "images/talent-crest_1talent-crest.avif",
+      "cardImageAlt": "Talent Crest Consulting website homepage with the headline 'Build an organization that can deliver your strategy.'",
+      "cardDescription": "A composed, credible website for an organizational effectiveness and talent consultancy — built to turn senior leaders into booked conversations.",
+      "summary": "A website for Talent Crest Consulting, an organizational effectiveness and talent consultancy helping businesses redesign structures, roles and people systems so they can deliver their strategy.",
+      "detailText": "The site leads with a clear strategic promise, then walks leaders through the four service areas, the Understand-to-Implement approach and the founder's credentials — with a 'Book a Conversation' CTA on every screen.",
+      "highlights": [
+        "Scope: Web design and build covering services, approach, about, insights and contact.",
+        "Challenge: Make a specialist, senior-level consultancy feel authoritative and easy to understand without dense corporate language.",
+        "Outcome: A confident, trust-led presence that explains the offer quickly and drives consultation bookings."
+      ],
+      "liveUrl": "https://www.talentcrestconsulting.com/",
+      "ctaHref": "contact-us.html",
+      "ctaLabel": "Start a similar project",
+      "featured": true,
+      "sortOrder": 7
     }
   ]
 }
